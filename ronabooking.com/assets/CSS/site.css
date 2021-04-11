@@ -1,0 +1,76 @@
+.am-card-amenities-amount-minus {
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: .6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    background-color: #F58B3D;
+    position: absolute;
+    top: 0;
+    right: 3rem;
+}
+
+.am-card-amenities-amount-minus:hover{
+    cursor: pointer;
+    background-color: #DD7731;
+}
+
+.am-card-amenities-amount-count {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ .am-card-amenities-amount-plus {
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: .6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    background-color: #F58B3D;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ .am-card-amenities-amount-plus:hover{
+    cursor: pointer;
+    background-color: #DD7731;
+}
+
+.am-card-pop-up-amenities {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.disabled-class {
+    opacity: 50%;
+    pointer-events: none
+}
+

@@ -1,0 +1,1383 @@
+﻿<!DOCTYPE html>
+<html lang="sl">
+
+<!-- Mirrored from ronabooking.com/sl/site/search?SearchForm%5Blocation%5D=Kvarner&SearchForm%5Bfrom%5D=11.05.2021&SearchForm%5Bto%5D=15.05.2021 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Apr 2021 12:28:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160202092-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160202092-1');
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name='title' content="#1 Prices | Book your holiday in Croatia | Rona Booking"/>
+    <meta name='description'
+          content="Book your ideal Holiday in Croatia. Rent apartments in Istria, Kvarner, or on Croatian islands. Find the perfect Croatian holiday spot for your family/friends"/>
+    <meta name='keywords'
+          content='book croatian apartments, croatian holiday, holiday booking in coratia, holiday in istria, holiday in kvarner, holiday on croatian islands, book camping houses in croatia, rental management vacation rental yielding pms cleaning housekeeping reception'/>
+
+    <link rel="icon" type="image/png" href="https://ronabooking.com/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://ronabooking.com/favicon-16x16.png" sizes="16x16" />
+    <title>Search apartment</title>
+    <!-- Bootstrap -->
+<!--    <link rel="stylesheet" href="assets/Plugins/bootstrap-4.3.1-dist/css/bootstrap.css">-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <!-- Font google -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,700&amp;display=swap&amp;subset=latin-ext"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300,500&amp;display=swap&amp;subset=latin-ext"
+          rel="stylesheet">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+
+    <!-- Mapbox -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- CSS -->
+<!--    <link rel="stylesheet" href="assets/SCSS/main.css">-->
+    <!-- flatpickr  -->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/hr.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/de.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/it.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/sl.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/hu.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
+
+
+    <link href="https://ronabooking.com/assets/Plugins/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet">
+<link href="https://ronabooking.com/assets/SCSS/main.css" rel="stylesheet">
+<link href="https://ronabooking.com/assets/CSS/site.css" rel="stylesheet">
+<link href="https://ronabooking.com/assets/CSS/map.css" rel="stylesheet">
+<script src="https://ronabooking.com/assets/Plugins/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+<script src="https://ronabooking.com/assets/JS/script.js"></script>
+<script src="https://ronabooking.com/assets/JS/calendar.js"></script></head>
+<body>
+
+<section class="section-search-nav-green">
+    <nav class="navbar navbar-expand-xl navbar-dark nav-container fixed-top">
+        <div class="logo-input">
+            <a href="https://ronabooking.com/" class="logo-desktop"><img src="https://ronabooking.com/Images/Icons/rona-logo02.svg" alt=""></a>
+            <a href="https://ronabooking.com/" class="logo-mobile"><img src="https://ronabooking.com/Images/Icons/rona-logo-mobile.svg" alt=""></a>
+            <div class="form-input" style="width: 190px;">
+                <input form="search-form" type="text" name="SearchForm[searchString]" id="input-searchString" placeholder="Išči" value=""
+                       onended="$('#search-form').submit(); return false;">
+                <script>
+                    $('#input-searchString').on('keyup', function(e) {
+                        if (e.keyCode === 13) {
+                            $('#search-form').submit();
+                        }
+                    });
+                </script>
+                <input form="search-form" type="text" hidden name="SearchForm[destination]" id = "input-destination" placeholder=""  value="">
+                <input form="search-form" type="text" hidden name="SearchForm[location]" id = "input-location" placeholder=""  value="Kvarner">
+                <input form="search-form" type="text" hidden name="SearchForm[propertyType]" id = "input-propertyType" placeholder=""  value="">
+                <input form="search-form" type="text" hidden name="SearchForm[from]" id = "input-from-date" placeholder=""  value="04.11.2021">
+                <input form="search-form" type="text" hidden name="SearchForm[to]" id = "input-to-date" placeholder=""  value=" 04.12.2021">
+                <span><img src="https://ronabooking.com/Images/Icons/search-icon.svg" alt="Search" title="Search" onclick="$('#search-form').submit(); return false;"></span>
+            </div>
+            <div class="form-input02 text-center" style="width: 220px;">
+                <input form="search-form" style="width: 220px;" type="text" id="flatpickrCalendar" name="SearchForm[period]" placeholder="Prijava - Odjava"
+                       onchange="getDatesFromRange(this);" value="04.11.2021 — 04.12.2021">
+            </div>
+            <div class="advanced-nav">
+                <div class="advanced-nav-link">Napredni<span><i class="fas fa-caret-down"></i></span></div>
+            </div>
+            <div class="filters-nav">
+                <div class="filters-nav-link">Filtri<span><i class="fas fa-caret-down"></i></span></div>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                    <li class="nav-item sa-nav-item-filters">
+                        <a class="nav-link advanced-filters-link">Napredni filtri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://hosta.hr/">Najemi moj prostor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-partner-sign-up">Partnerska prijava</a>
+                    </li>
+                                            <li class="nav-item">
+                            <a class="nav-link nav-sign-in">Prijava</a>
+                        </li>
+                                    </ul>
+        </div>
+    </nav>
+    <!-- ============================================================================================================== -->
+</section>
+<!-- Cards apartment & map -->
+<section class="section-cards-apartment-and-map">
+    <div class="sa-cards-apartment-box">
+        <!-- Position fixed button map -->
+        <div class="pos-fix map-fix-button">
+            <div>Map <i class="far fa-map"></i></div>
+        </div>
+        <div class="sa-map-mobile-close" style="display: none;"><i class="fas fa-times"></i></div>
+        <!-- Card apartment & footer -->
+        <div class="sa-cards-apartment-scroll">
+                        <!-- Card apartments -->
+            <div class="sa-cards-apartment-item">
+                                                    <div class="sa-col-xs-12 col-lg-6 sa-p-card-apartment">
+                    <div class="card-apartment">
+                        <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        <a id="apartment-view-link" href="#"  onClick="collectData(19227, 81.9, 0);">
+                            <div class="card">
+                                <div class="img-box">
+                                    <img class="img-fluid"
+                                        src="https://myrentdm.s3.eu-central-1.amazonaws.com/1421/objects/pictures/19227/main/19227.jpeg"
+                                        alt="Apartment Ivonne">
+                                </div>
+                                <div class="card-body">
+                                    <div class="apartment">
+                                        <div class="apartment-name">Apartment Ivonne</div>
+                                        <div class="apartment-city-country">Ičići, Croatia</div>
+                                        <div class="apartment-items">
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">6</div>
+                                                <div class="apartment-items-item-sub">﻿Gostov</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">2</div>
+                                                <div class="apartment-items-item-sub">postelje</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">3</div>
+                                                <div class="apartment-items-item-sub">sobi</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">kopalnica</div>
+                                            </div>
+                                        </div>
+                                        <div class="apartment-stars">
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: none;"></i>
+                                        </div>
+                                      <div class="apartment-min-stay">4 nights min</div>
+                                        <div class="apartment-price">82 €</div>
+                                  <div class="apartment-per-night">na noč</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                                                    <div class="sa-col-xs-12 col-lg-6 sa-p-card-apartment">
+                    <div class="card-apartment">
+                        <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        <a id="apartment-view-link" href="#"  onClick="collectData(20836, 79, 0);">
+                            <div class="card">
+                                <div class="img-box">
+                                    <img class="img-fluid"
+                                        src="https://myrentdm.s3.eu-central-1.amazonaws.com/1421/objects/pictures/20836/main/20836.jpeg"
+                                        alt="Apartment Smokva 3">
+                                </div>
+                                <div class="card-body">
+                                    <div class="apartment">
+                                        <div class="apartment-name">Apartment Smokva 3</div>
+                                        <div class="apartment-city-country">Opatija, Croatia</div>
+                                        <div class="apartment-items">
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">4</div>
+                                                <div class="apartment-items-item-sub">Gosta</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">2</div>
+                                                <div class="apartment-items-item-sub">postelje</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">2</div>
+                                                <div class="apartment-items-item-sub">sobe</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">kopalnica</div>
+                                            </div>
+                                        </div>
+                                        <div class="apartment-stars">
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: none;"></i>
+                                            <i class="fas fa-star color-java" style="display: none;"></i>
+                                        </div>
+                                      <div class="apartment-min-stay">4 nights min</div>
+                                        <div class="apartment-price">79 €</div>
+                                  <div class="apartment-per-night">na noč</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                                                    <div class="sa-col-xs-12 col-lg-6 sa-p-card-apartment">
+                    <div class="card-apartment">
+                        <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        <a id="apartment-view-link" href="#"  onClick="collectData(19214, 75.87, 0);">
+                            <div class="card">
+                                <div class="img-box">
+                                    <img class="img-fluid"
+                                        src="https://myrentdm.s3.eu-central-1.amazonaws.com/1421/objects/pictures/19214/main/19214.jpeg"
+                                        alt="Apartment Bepi">
+                                </div>
+                                <div class="card-body">
+                                    <div class="apartment">
+                                        <div class="apartment-name">Apartment Bepi</div>
+                                        <div class="apartment-city-country">Opatija, Croatia</div>
+                                        <div class="apartment-items">
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">4</div>
+                                                <div class="apartment-items-item-sub">Gosta</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">3</div>
+                                                <div class="apartment-items-item-sub">postelji</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">2</div>
+                                                <div class="apartment-items-item-sub">sobe</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">2</div>
+                                                <div class="apartment-items-item-sub">kopalnice</div>
+                                            </div>
+                                        </div>
+                                        <div class="apartment-stars">
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: none;"></i>
+                                        </div>
+                                      <div class="apartment-min-stay">4 nights min</div>
+                                        <div class="apartment-price">76 €</div>
+                                  <div class="apartment-per-night">na noč</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                                                    <div class="sa-col-xs-12 col-lg-6 sa-p-card-apartment">
+                    <div class="card-apartment">
+                        <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        <a id="apartment-view-link" href="#"  onClick="collectData(19259, 74.43, 0);">
+                            <div class="card">
+                                <div class="img-box">
+                                    <img class="img-fluid"
+                                        src="https://myrentdm.s3.eu-central-1.amazonaws.com/1421/objects/pictures/19259/main/19259.jpeg"
+                                        alt="Rona Erea Ičići  F6">
+                                </div>
+                                <div class="card-body">
+                                    <div class="apartment">
+                                        <div class="apartment-name">Rona Erea Ičići  F6</div>
+                                        <div class="apartment-city-country">Ičići, Croatia</div>
+                                        <div class="apartment-items">
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">5</div>
+                                                <div class="apartment-items-item-sub">Gostov</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">postelja</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">soba</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">kopalnica</div>
+                                            </div>
+                                        </div>
+                                        <div class="apartment-stars">
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: none;"></i>
+                                        </div>
+                                      <div class="apartment-min-stay">2 nights min</div>
+                                        <div class="apartment-price">74 €</div>
+                                  <div class="apartment-per-night">na noč</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                                                    <div class="sa-col-xs-12 col-lg-6 sa-p-card-apartment">
+                    <div class="card-apartment">
+                        <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        <a id="apartment-view-link" href="#"  onClick="collectData(19215, 71.43, 0);">
+                            <div class="card">
+                                <div class="img-box">
+                                    <img class="img-fluid"
+                                        src="https://myrentdm.s3.eu-central-1.amazonaws.com/1421/objects/pictures/19215/main/19215.jpeg"
+                                        alt="Apartment Ela">
+                                </div>
+                                <div class="card-body">
+                                    <div class="apartment">
+                                        <div class="apartment-name">Apartment Ela</div>
+                                        <div class="apartment-city-country">Opatija, Croatia</div>
+                                        <div class="apartment-items">
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">4</div>
+                                                <div class="apartment-items-item-sub">Gosta</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">postelja</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">soba</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">kopalnica</div>
+                                            </div>
+                                        </div>
+                                        <div class="apartment-stars">
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: none;"></i>
+                                        </div>
+                                      <div class="apartment-min-stay">4 nights min</div>
+                                        <div class="apartment-price">71 €</div>
+                                  <div class="apartment-per-night">na noč</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                                                    <div class="sa-col-xs-12 col-lg-6 sa-p-card-apartment">
+                    <div class="card-apartment">
+                        <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        <a id="apartment-view-link" href="#"  onClick="collectData(19262, 65, 0);">
+                            <div class="card">
+                                <div class="img-box">
+                                    <img class="img-fluid"
+                                        src="https://myrentdm.s3.eu-central-1.amazonaws.com/1421/objects/pictures/19262/main/19262.jpeg"
+                                        alt="Rona Erea Ičići C3">
+                                </div>
+                                <div class="card-body">
+                                    <div class="apartment">
+                                        <div class="apartment-name">Rona Erea Ičići C3</div>
+                                        <div class="apartment-city-country">Ičići, Croatia</div>
+                                        <div class="apartment-items">
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">5</div>
+                                                <div class="apartment-items-item-sub">Gostov</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">postelja</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">soba</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">kopalnica</div>
+                                            </div>
+                                        </div>
+                                        <div class="apartment-stars">
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: none;"></i>
+                                        </div>
+                                      <div class="apartment-min-stay">3 nights min</div>
+                                        <div class="apartment-price">65 €</div>
+                                  <div class="apartment-per-night">na noč</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                                                    <div class="sa-col-xs-12 col-lg-6 sa-p-card-apartment">
+                    <div class="card-apartment">
+                        <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        <a id="apartment-view-link" href="#"  onClick="collectData(20355, 62.57, 0);">
+                            <div class="card">
+                                <div class="img-box">
+                                    <img class="img-fluid"
+                                        src="https://myrentdm.s3.eu-central-1.amazonaws.com/1421/objects/pictures/20355/main/20355.jpeg"
+                                        alt="Apartment Ani nr. 3">
+                                </div>
+                                <div class="card-body">
+                                    <div class="apartment">
+                                        <div class="apartment-name">Apartment Ani nr. 3</div>
+                                        <div class="apartment-city-country">Ičići, Croatia</div>
+                                        <div class="apartment-items">
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">4</div>
+                                                <div class="apartment-items-item-sub">Gosta</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">2</div>
+                                                <div class="apartment-items-item-sub">postelje</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">2</div>
+                                                <div class="apartment-items-item-sub">sobe</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">kopalnica</div>
+                                            </div>
+                                        </div>
+                                        <div class="apartment-stars">
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: none;"></i>
+                                            <i class="fas fa-star color-java" style="display: none;"></i>
+                                        </div>
+                                      <div class="apartment-min-stay">4 nights min</div>
+                                        <div class="apartment-price">63 €</div>
+                                  <div class="apartment-per-night">na noč</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                                                    <div class="sa-col-xs-12 col-lg-6 sa-p-card-apartment">
+                    <div class="card-apartment">
+                        <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        <a id="apartment-view-link" href="#"  onClick="collectData(19264, 60.83, 0);">
+                            <div class="card">
+                                <div class="img-box">
+                                    <img class="img-fluid"
+                                        src="https://myrentdm.s3.eu-central-1.amazonaws.com/1421/objects/pictures/19264/main/19264.jpeg"
+                                        alt="Rona Erea Ičići E5">
+                                </div>
+                                <div class="card-body">
+                                    <div class="apartment">
+                                        <div class="apartment-name">Rona Erea Ičići E5</div>
+                                        <div class="apartment-city-country">Ičići, Croatia</div>
+                                        <div class="apartment-items">
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">4</div>
+                                                <div class="apartment-items-item-sub">Gosta</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">postelja</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">soba</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">kopalnica</div>
+                                            </div>
+                                        </div>
+                                        <div class="apartment-stars">
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: none;"></i>
+                                        </div>
+                                      <div class="apartment-min-stay">3 nights min</div>
+                                        <div class="apartment-price">61 €</div>
+                                  <div class="apartment-per-night">na noč</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                                                    <div class="sa-col-xs-12 col-lg-6 sa-p-card-apartment">
+                    <div class="card-apartment">
+                        <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        <a id="apartment-view-link" href="#"  onClick="collectData(19256, 60.8, 0);">
+                            <div class="card">
+                                <div class="img-box">
+                                    <img class="img-fluid"
+                                        src="https://myrentdm.s3.eu-central-1.amazonaws.com/1421/objects/pictures/19256/main/19256.png"
+                                        alt="Apartment Rika 2">
+                                </div>
+                                <div class="card-body">
+                                    <div class="apartment">
+                                        <div class="apartment-name">Apartment Rika 2</div>
+                                        <div class="apartment-city-country">Ika, Croatia</div>
+                                        <div class="apartment-items">
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">3</div>
+                                                <div class="apartment-items-item-sub">Gosta</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">postelja</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">soba</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">kopalnica</div>
+                                            </div>
+                                        </div>
+                                        <div class="apartment-stars">
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                        </div>
+                                      <div class="apartment-min-stay">5 nights min</div>
+                                        <div class="apartment-price">61 €</div>
+                                  <div class="apartment-per-night">na noč</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                                                    <div class="sa-col-xs-12 col-lg-6 sa-p-card-apartment">
+                    <div class="card-apartment">
+                        <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        <a id="apartment-view-link" href="#"  onClick="collectData(19229, 59, 0);">
+                            <div class="card">
+                                <div class="img-box">
+                                    <img class="img-fluid"
+                                        src="https://myrentdm.s3.eu-central-1.amazonaws.com/1421/objects/pictures/19229/main/19229.jpeg"
+                                        alt="Apartment Marin">
+                                </div>
+                                <div class="card-body">
+                                    <div class="apartment">
+                                        <div class="apartment-name">Apartment Marin</div>
+                                        <div class="apartment-city-country">Lovran, Croatia</div>
+                                        <div class="apartment-items">
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">3</div>
+                                                <div class="apartment-items-item-sub">Gosta</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">postelja</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">soba</div>
+                                            </div>
+                                            <div class="apartment-items-item">
+                                                <div class="apartment-items-item-counter">1</div>
+                                                <div class="apartment-items-item-sub">kopalnica</div>
+                                            </div>
+                                        </div>
+                                        <div class="apartment-stars">
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: inline-block;"></i>
+                                            <i class="fas fa-star color-java" style="display: none;"></i>
+                                            <i class="fas fa-star color-java" style="display: none;"></i>
+                                        </div>
+                                      <div class="apartment-min-stay">4 nights min</div>
+                                        <div class="apartment-price">59 €</div>
+                                  <div class="apartment-per-night">na noč</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                            </div>
+                        <!-- Pagination -->
+            <div class="sa-pagination" style="max-width: 450px;">
+                <div id="sa-pagination-box" class="sa-pagination-box">
+                    <input form="search-form" type="text" hidden name="SearchForm[currentPage]" id = "search-form-current-page" placeholder=""  value="1">
+                                            <div class="pagination-button pagination-active">
+                            <a href="https://ronabooking.com/sl/site/site/search" onClick="$('#search-form-current-page').val(1);$('#search-form').submit();return false;">1</a>
+                        </div>
+                                                <div class="pagination-button ">
+                            <a href="https://ronabooking.com/sl/site/site/search" onClick="$('#search-form-current-page').val(2);$('#search-form').submit();return false;">2</a>
+                        </div>
+                                                <div class="pagination-button ">
+                            <a href="https://ronabooking.com/sl/site/site/search" onClick="$('#search-form-current-page').val(3);$('#search-form').submit();return false;">3</a>
+                        </div>
+                                        </div>
+            </div>
+
+
+            <!-- 1200px new footer for tablet/mobile -->
+            <div class="sa-cards-apartment-footer-table-mobile" style="display: none;">
+                <div class="apartment-footer-table-mobile-box">
+                    <div class="apartment-footer-table-mobile-box-copyright">
+                        <div class="footer-sub">Vse pravice RONA 2020</div><span><i class="far fa-copyright"></i></span>
+                    </div>
+                    <div id="btns-lang02" class="apartment-footer-table-mobile-box-language">
+                        <div class="lang px-1 lang-active"><a style="color: #ffffff;" href="https://ronabooking.com/sl/site/search?SearchForm%5Blocation%5D=Kvarner&amp;SearchForm%5Bfrom%5D=11.05.2021&amp;SearchForm%5Bto%5D=15.05.2021">SI</a></div><span class="white-line">-</span>
+                        <div class="lang px-1 "><a style="color: #ffffff;" href="https://ronabooking.com/hr/site/search?SearchForm%5Blocation%5D=Kvarner&amp;SearchForm%5Bfrom%5D=11.05.2021&amp;SearchForm%5Bto%5D=15.05.2021">HR</a></div><span class="white-line">-</span>
+                        <div class="lang px-1 "><a style="color: #ffffff;" href="https://ronabooking.com/en/site/search?SearchForm%5Blocation%5D=Kvarner&amp;SearchForm%5Bfrom%5D=11.05.2021&amp;SearchForm%5Bto%5D=15.05.2021">EN</a></div><span class="white-line">-</span>
+                        <div class="lang px-1 "><a style="color: #ffffff;" href="https://ronabooking.com/de/site/search?SearchForm%5Blocation%5D=Kvarner&amp;SearchForm%5Bfrom%5D=11.05.2021&amp;SearchForm%5Bto%5D=15.05.2021">DE</a></div><span class="white-line">-</span>
+                        <div class="lang px-1 "><a style="color: #ffffff;" href="https://ronabooking.com/ru/site/search?SearchForm%5Blocation%5D=Kvarner&amp;SearchForm%5Bfrom%5D=11.05.2021&amp;SearchForm%5Bto%5D=15.05.2021">RU</a></div><span class="white-line">-</span>
+                        <div class="lang px-1 "><a style="color: #ffffff;" href="https://ronabooking.com/hu/site/search?SearchForm%5Blocation%5D=Kvarner&amp;SearchForm%5Bfrom%5D=11.05.2021&amp;SearchForm%5Bto%5D=15.05.2021">HU</a></div>
+                    </div>
+<!--                    <div id="btns-cur02" class="apartment-footer-table-mobile-box-currency">-->
+<!--                        <div class="currency02 px-1 cur-active02">EUR</div><span class="white-line">-</span>-->
+<!--                        <div class="currency02 px-1">GBP</div><span class="white-line">-</span>-->
+<!--                        <div class="currency02 px-1">USD</div><span class="white-line">-</span>-->
+<!--                        <div class="currency02 px-1">HRK</div>-->
+<!--                    </div>-->
+                    <div class="apartment-footer-table-mobile-box-privacy-terms">
+                        <ul>
+                            <li><a href="#">Pravilnik o zasebnosti</a></li>
+                            <li><a href="#">Splošni pogoji</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cards apartment footer -->
+        <div class="sa-cards-apartment-footer">
+            <div class="apartment-footer-box">
+                <div class="apartment-footer-box-copyright">
+                    <div class="footer-sub">Vse pravice RONA 2020</div><span><i class="far fa-copyright"></i></span>
+                </div>
+                <div id="btns-lang" class="apartment-footer-box-language">
+                    <div class="lang px-1 lang-active"><a style="color: #ffffff;" href="https://ronabooking.com/sl/site/search?SearchForm%5Blocation%5D=Kvarner&amp;SearchForm%5Bfrom%5D=11.05.2021&amp;SearchForm%5Bto%5D=15.05.2021">SI</a></div><span class="white-line">-</span>
+                    <div class="lang px-1 "><a style="color: #ffffff;" href="https://ronabooking.com/hr/site/search?SearchForm%5Blocation%5D=Kvarner&amp;SearchForm%5Bfrom%5D=11.05.2021&amp;SearchForm%5Bto%5D=15.05.2021">HR</a></div><span class="white-line">-</span>
+                    <div class="lang px-1 "><a style="color: #ffffff;" href="https://ronabooking.com/en/site/search?SearchForm%5Blocation%5D=Kvarner&amp;SearchForm%5Bfrom%5D=11.05.2021&amp;SearchForm%5Bto%5D=15.05.2021">EN</a></div><span class="white-line">-</span>
+                    <div class="lang px-1 "><a style="color: #ffffff;" href="https://ronabooking.com/de/site/search?SearchForm%5Blocation%5D=Kvarner&amp;SearchForm%5Bfrom%5D=11.05.2021&amp;SearchForm%5Bto%5D=15.05.2021">DE</a></div><span class="white-line">-</span>
+                    <div class="lang px-1 "><a style="color: #ffffff;" href="https://ronabooking.com/ru/site/search?SearchForm%5Blocation%5D=Kvarner&amp;SearchForm%5Bfrom%5D=11.05.2021&amp;SearchForm%5Bto%5D=15.05.2021">RU</a></div><span class="white-line">-</span>
+                    <div class="lang px-1 "><a style="color: #ffffff;" href="https://ronabooking.com/hu/site/search?SearchForm%5Blocation%5D=Kvarner&amp;SearchForm%5Bfrom%5D=11.05.2021&amp;SearchForm%5Bto%5D=15.05.2021">HU</a></div>
+                </div>
+<!--                <div id="btns-cur" class="apartment-footer-box-currency">-->
+<!--                    <div class="currency px-1 cur-active">EUR</div><span class="white-line">-</span>-->
+<!--                    <div class="currency px-1">GBP</div><span class="white-line">-</span>-->
+<!--                    <div class="currency px-1">USD</div><span class="white-line">-</span>-->
+<!--                    <div class="currency px-1">HRK</div>-->
+<!--                </div>-->
+                <div class="apartment-footer-box-privacy-terms">
+                    <ul>
+                        <li><a href="#">Pravilnik o zasebnosti</a></li>
+                        <li><a href="#">Splošni pogoji</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sa-map-box">
+        <!-- Arrow right -->
+        <div class="sa-arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <!-- Map -->
+<!--            <div leaflet [leafletOptions]="options" id="map">-->
+            <div id="sa-map">
+                
+
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiaG9zdGEiLCJhIjoiY2pzYzAzYTVzMGc2cDQzbXV0YnVvdms2NSJ9.8_IUy4eQ7Ctcl3ImkHvmZw';
+      console.log();
+      var map = new mapboxgl.Map({
+        container: 'sa-map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        //center: [<?//=$center[0]?>//,<?//=$center[1]?>//],
+        // center: [14.29951,45.32910],
+        // center: [15.7,44.5],//44.374145, 15.133899
+        //center: [<?//=$form->longitude??15.133899?>//,<?//=$form->latitude??44.374145?>//],//44.374145, 15.133899
+        center: [15.138077389066,44.853985079708],//44.374145, 15.133899
+        zoom: 8      });
+      debugger;
+      var apartments = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[14.28454747619628,45.31570136313004]},"properties":{"id":19227,"address":"Put za veprinac 12","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Apartment Ivonne","object_period_price":2457,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":2,"can_sleep_max":6,"bedrooms":3}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.297599,45.325657]},"properties":{"id":20836,"address":"Nova cesta 230","price":"","city":"Opatija","country":"Croatia","title":"Apartment Smokva 3","object_period_price":2370,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":2,"can_sleep_max":4,"bedrooms":2}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.308469,45.339205]},"properties":{"id":19214,"address":"Spin\u010di\u0107eva 2","price":"","city":"Opatija","country":"Croatia","title":"Apartment Bepi","object_period_price":2276,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":3,"can_sleep_max":4,"bedrooms":2}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.28725,45.31486]},"properties":{"id":19259,"address":"Mornarska 8","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Rona Erea I\u010di\u0107i  F6","object_period_price":2233,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":5,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[18.214719000152733,49.24545500015273]},"properties":{"id":19215,"address":"Spin\u010di\u0107eva 2","price":"","city":"Opatija","country":"Croatia","title":"Apartment Ela","object_period_price":2143,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.287263400000029,45.3148801]},"properties":{"id":19262,"address":"Mornarska 8","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Rona Erea I\u010di\u0107i C3","object_period_price":1950,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":5,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.28912,45.31551]},"properties":{"id":20355,"address":"Liburnijska ulica 4","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Apartment Ani nr. 3","object_period_price":1877,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":2,"can_sleep_max":4,"bedrooms":2}},{"type":"Feature","geometry":{"type":"Point","coordinates":[18.193513400152764,49.221130100152735]},"properties":{"id":19264,"address":"Mornarska 8","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Rona Erea I\u010di\u0107i E5","object_period_price":1825,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.280666744893683,45.30621091146853]},"properties":{"id":19256,"address":"Primorska 30","price":"","city":"Ika","country":"Croatia","title":"Apartment Rika 2","object_period_price":1824,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":3,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.266154,45.2998003]},"properties":{"id":19229,"address":"Cesta za lovransku dragu 35","price":"","city":"Lovran","country":"Croatia","title":"Apartment Marin","object_period_price":1770,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":3,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.299202,45.328797]},"properties":{"id":19244,"address":"ulica Dr. Maxa Josepha \u00d6rthela 19","price":"","city":"Opatija","country":"Croatia","title":"Apartment Rona superior Agava","object_period_price":1861,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[18.205452000152732,49.23504700015273]},"properties":{"id":19245,"address":"ulica Dr. Maxa Josepha \u00d6rthela 19","price":"","city":"Opatija","country":"Croatia","title":"Apartment Rona superior Palma","object_period_price":1861,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[22.0997634003055,53.12738010030547]},"properties":{"id":19263,"address":"Mornarska 8","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Rona Erea I\u010di\u0107i D7","object_period_price":1691,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[18.195370000152735,49.22176000015274]},"properties":{"id":19211,"address":"Liburnijska ulica 4","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Apartment Ani nr. 1","object_period_price":1665,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":3,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[26.006013400458233,57.03363010045821]},"properties":{"id":19261,"address":"Mornarska 8","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Rona Erea I\u010di\u0107i B2","object_period_price":1601,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.2660551,45.2997129]},"properties":{"id":21274,"address":"Cesta za Lovransku Dragu 35","price":"","city":"Lovran","country":"Croatia","title":"Apartment Lara","object_period_price":1561,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":2,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[22.10162000030547,53.12801000030548]},"properties":{"id":19206,"address":"Liburnijska ulica 4","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Apartment Ani nr. 2","object_period_price":1589,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":3,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.27200161224963,45.29314682324648]},"properties":{"id":21229,"address":"Brajdice 30","price":"","city":"Lovran","country":"Croatia","title":"Apartment studio Tena","object_period_price":1470,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":2,"bedrooms":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.28972,45.316891]},"properties":{"id":19222,"address":"Liburnijska 1D, stan 105","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Apartment Esko","object_period_price":1322,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[13.607763999999975,45.151135]},"properties":{"id":15271,"address":"Aldo Negri 13","price":"","city":"Vrsar","country":"Croatia","title":"Lali\u0107 (B4 3)","object_period_price":1500,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":3,"can_sleep_max":4,"bedrooms":2}},{"type":"Feature","geometry":{"type":"Point","coordinates":[17.51401400015271,49.05738500015273]},"properties":{"id":15269,"address":"Aldo Negri 13","price":"","city":"Vrsar","country":"Croatia","title":"Lali\u0107 (A3 2)","object_period_price":1260,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":2,"can_sleep_max":3,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[21.420264000305444,52.963635000305466]},"properties":{"id":15270,"address":"Aldo Negri 13","price":"","city":"Vrsar","country":"Croatia","title":"Lali\u0107 (A3 4)","object_period_price":1260,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":2,"can_sleep_max":3,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[25.32651400045818,56.869885000458204]},"properties":{"id":15268,"address":"Aldo Negri 13","price":"","city":"Vrsar","country":"Croatia","title":"Lali\u0107 (S2 1)","object_period_price":960,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":2,"can_sleep_max":2,"bedrooms":1}}]};
+
+      map.on('load', function () {
+
+          map.scrollZoom.enable();
+          map.addControl(new mapboxgl.NavigationControl());
+
+          map.addControl(new mapboxgl.ScaleControl({position: 'bottom-left'}));
+          map.addSource('places', {
+              type: 'geojson',
+              data: {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[14.28454747619628,45.31570136313004]},"properties":{"id":19227,"address":"Put za veprinac 12","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Apartment Ivonne","object_period_price":2457,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":2,"can_sleep_max":6,"bedrooms":3}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.297599,45.325657]},"properties":{"id":20836,"address":"Nova cesta 230","price":"","city":"Opatija","country":"Croatia","title":"Apartment Smokva 3","object_period_price":2370,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":2,"can_sleep_max":4,"bedrooms":2}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.308469,45.339205]},"properties":{"id":19214,"address":"Spin\u010di\u0107eva 2","price":"","city":"Opatija","country":"Croatia","title":"Apartment Bepi","object_period_price":2276,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":3,"can_sleep_max":4,"bedrooms":2}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.28725,45.31486]},"properties":{"id":19259,"address":"Mornarska 8","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Rona Erea I\u010di\u0107i  F6","object_period_price":2233,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":5,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[18.214719000152733,49.24545500015273]},"properties":{"id":19215,"address":"Spin\u010di\u0107eva 2","price":"","city":"Opatija","country":"Croatia","title":"Apartment Ela","object_period_price":2143,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.287263400000029,45.3148801]},"properties":{"id":19262,"address":"Mornarska 8","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Rona Erea I\u010di\u0107i C3","object_period_price":1950,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":5,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.28912,45.31551]},"properties":{"id":20355,"address":"Liburnijska ulica 4","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Apartment Ani nr. 3","object_period_price":1877,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":2,"can_sleep_max":4,"bedrooms":2}},{"type":"Feature","geometry":{"type":"Point","coordinates":[18.193513400152764,49.221130100152735]},"properties":{"id":19264,"address":"Mornarska 8","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Rona Erea I\u010di\u0107i E5","object_period_price":1825,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.280666744893683,45.30621091146853]},"properties":{"id":19256,"address":"Primorska 30","price":"","city":"Ika","country":"Croatia","title":"Apartment Rika 2","object_period_price":1824,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":3,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.266154,45.2998003]},"properties":{"id":19229,"address":"Cesta za lovransku dragu 35","price":"","city":"Lovran","country":"Croatia","title":"Apartment Marin","object_period_price":1770,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":3,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.299202,45.328797]},"properties":{"id":19244,"address":"ulica Dr. Maxa Josepha \u00d6rthela 19","price":"","city":"Opatija","country":"Croatia","title":"Apartment Rona superior Agava","object_period_price":1861,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[18.205452000152732,49.23504700015273]},"properties":{"id":19245,"address":"ulica Dr. Maxa Josepha \u00d6rthela 19","price":"","city":"Opatija","country":"Croatia","title":"Apartment Rona superior Palma","object_period_price":1861,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[22.0997634003055,53.12738010030547]},"properties":{"id":19263,"address":"Mornarska 8","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Rona Erea I\u010di\u0107i D7","object_period_price":1691,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[18.195370000152735,49.22176000015274]},"properties":{"id":19211,"address":"Liburnijska ulica 4","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Apartment Ani nr. 1","object_period_price":1665,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":3,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[26.006013400458233,57.03363010045821]},"properties":{"id":19261,"address":"Mornarska 8","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Rona Erea I\u010di\u0107i B2","object_period_price":1601,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.2660551,45.2997129]},"properties":{"id":21274,"address":"Cesta za Lovransku Dragu 35","price":"","city":"Lovran","country":"Croatia","title":"Apartment Lara","object_period_price":1561,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":2,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[22.10162000030547,53.12801000030548]},"properties":{"id":19206,"address":"Liburnijska ulica 4","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Apartment Ani nr. 2","object_period_price":1589,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":3,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.27200161224963,45.29314682324648]},"properties":{"id":21229,"address":"Brajdice 30","price":"","city":"Lovran","country":"Croatia","title":"Apartment studio Tena","object_period_price":1470,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":2,"bedrooms":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.28972,45.316891]},"properties":{"id":19222,"address":"Liburnijska 1D, stan 105","price":"","city":"I\u010di\u0107i","country":"Croatia","title":"Apartment Esko","object_period_price":1322,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":1,"can_sleep_max":4,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[13.607763999999975,45.151135]},"properties":{"id":15271,"address":"Aldo Negri 13","price":"","city":"Vrsar","country":"Croatia","title":"Lali\u0107 (B4 3)","object_period_price":1500,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":3,"can_sleep_max":4,"bedrooms":2}},{"type":"Feature","geometry":{"type":"Point","coordinates":[17.51401400015271,49.05738500015273]},"properties":{"id":15269,"address":"Aldo Negri 13","price":"","city":"Vrsar","country":"Croatia","title":"Lali\u0107 (A3 2)","object_period_price":1260,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":2,"can_sleep_max":3,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[21.420264000305444,52.963635000305466]},"properties":{"id":15270,"address":"Aldo Negri 13","price":"","city":"Vrsar","country":"Croatia","title":"Lali\u0107 (A3 4)","object_period_price":1260,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":2,"can_sleep_max":3,"bedrooms":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[25.32651400045818,56.869885000458204]},"properties":{"id":15268,"address":"Aldo Negri 13","price":"","city":"Vrsar","country":"Croatia","title":"Lali\u0107 (S2 1)","object_period_price":960,"price_day":"","currency":"","min_stay":"","objects_prices_days_price":"","beds":2,"can_sleep_max":2,"bedrooms":1}}]}          });
+          if (typeof apartments.features !== 'undefined' )
+            apartments.features.forEach(function(marker) {
+              // var content='';
+              // var accordeon = $.each(marker.properties.pictures, function( k, v ) {
+              //     // content = content+ '<div class="carousel-item carousel-image-'+(k+2)+'">'+
+              //     content = content+ '<div class="carousel-item carousel-image-'+(k+2)+'>" data-slide="next"'+
+              //
+              //         '<img src="'+v+'">'+
+              //
+              //         '</div>';
+              // });
+
+              // create a HTML element for each feature
+              var el = document.createElement('img',{'width':'50','height':'50'});
+              el.className = 'marker';
+              // el.src="/Images/Icons/icon-location.svg";
+              el.src="https://ronabooking.com/Images/Icons/LOGO-STAR_YELLOW.svg";
+
+              // make a marker for each feature and add to the map
+              new mapboxgl.Marker(el)
+                  .setLngLat(marker.geometry.coordinates)
+                  .addTo(map);
+
+              new mapboxgl.Marker(el)
+                  .setLngLat(marker.geometry.coordinates)
+                  .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+                      // .setHTML('<h5>' + marker.properties.title + '</h5><p>' + marker.properties.objects_prices_days_price + marker.properties.currency + '</p>'))
+                      .setHTML('        <!-- Card Location -->\n'+
+'        <div class="card-location" style="cursor: pointer; " onclick="collectData('+marker.properties.id+', '+marker.properties.object_period_price+', 0);">\n'+
+'            <div class="card-img">\n'+
+'                <div id="myCarousel" class="carousel slide">\n'+
+'                    <div class="carousel-inner pos-rel">\n'+
+'                        <div class="carousel-item  carousel-image-1 active">   <img src="https://api.my-rent.net/objects/picture_main/'+marker.properties.id+'" alt="marker.properties.title"  >'+
+'                        </div>'+
+                          // content+
+'                        <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">\n'+
+'                            <img src="/Images/Icons/arrow-left.svg" alt="">\n'+
+'                        </a>\n'+
+'                        <a href="#myCarousel" data-slide="next" class="carousel-control-next">\n'+
+'                            <img src="/Images/Icons/arrow-right.svg" alt="">\n'+
+'                        </a>\n'+
+'                    </div>\n'+
+'                </div>\n'+
+'            </div>\n'+
+'                <div class="card-body">\n'+
+'                    <div class="card-body-box">\n'+
+'                        <div class="card-body-label">'+marker.properties.title+'</div>\n'+
+'                        <div class="card-body-price">\n'+
+'                            <div class="card-body-price-number"><span>'+marker.properties.object_period_price+'</span> €</div>\n'+
+'                            <div class="card-body-price-label">per booking</div>\n'+
+'                        </div>\n'+
+'                        <div class="card-body-items">\n'+
+'                            <div class="card-body-item">\n'+
+'                                <div class="card-body-item-sub">'+marker.properties.can_sleep_max+'</div>\n'+
+'                                <div class="card-body-item-label">guests</div>\n'+
+'                            </div>\n'+
+'                            <div class="card-body-item">\n'+
+'                                <div class="card-body-item-sub">'+marker.properties.beds+'</div>\n'+
+'                                <div class="card-body-item-label">beds</div>\n'+
+'                            </div>\n'+
+'                            <div class="card-body-item">\n'+
+'                                <div class="card-body-item-sub">'+marker.properties.bedrooms+'</div>\n'+
+'                                <div class="card-body-item-label">bedrooms</div>\n'+
+'                            </div>\n'+
+'                        </div>\n'+
+'                    </div>\n'+
+'                </div>\n'+
+'        </div>\n'+
+'        <div class="">\n'+
+'            <div class=""></div>\n'+
+'        </div>\n'+
+'        <!-- Card Location end -->'))
+                  .addTo(map);
+          });
+
+
+      });
+
+      // Here the events for zooming and dragging
+      map.on('zoomend', function (a) {
+          debugger;
+          console.log("zoomed");
+              if(typeof timeout !== 'undefined') clearTimeout(timeout);
+              var timeout = setTimeout(function () {
+                  var center = map.getCenter();
+                  var zoom = map.getZoom();
+                  var longitude= center['lng'];
+                  var latitude = center['lat'];
+                  debugger
+                  var bounds = map.getBounds();
+                  console.log("Fragment : "+bounds["_sw"]["lat"]+"/"+bounds["_sw"]["lng"]+"/"+bounds["_ne"]["lat"]+"/"+bounds["_ne"]["lng"]);
+                  var mapdiagonal = getDistanceFromLatLonInKm(bounds["_ne"]["lat"],bounds["_ne"]["lng"],bounds["_sw"]["lat"],bounds["_sw"]["lng"]);
+                  console.log (mapdiagonal);
+                  var centLat =(bounds["_sw"]["lat"] + bounds["_ne"]["lat"])/2;
+                  var centLon =(bounds["_sw"]["lng"] + bounds["_ne"]["lng"])/2;
+                  console.log (centLat+","+centLon);
+                  var distance = getDistanceFromLatLonInKm(latitude,longitude,bounds["_sw"]["lat"],bounds["_sw"]["lng"]);
+                  console.log("GPS zoom: "+longitude+"/"+latitude+"/"+distance);
+                  $("#range").val(distance);
+                  $("#longitude").val(longitude);
+                  $("#latitude").val(latitude);
+                  $("#zoom").val(zoom);
+                  $('#search-form').submit();  console.log("Fragment : "+bounds["_sw"]["lat"]+"/"+bounds["_sw"]["lng"]+"/"+bounds["_ne"]["lat"]+"/"+bounds["_ne"]["lng"]);
+              }, 1500);
+      });
+
+      // when we move map
+      map.on('dragend', function (a) {
+          console.log("dragend");
+              if(typeof timeout !== 'undefined') clearTimeout(timeout);
+              timeout = setTimeout(function () {
+                  var center = map.getCenter();
+                  var longitude= center['lng'];
+                  var zoom = map.getZoom();
+                  var latitude = center['lat'];
+                  debugger
+                  var bounds = map.getBounds();
+                  console.log("Fragment : "+bounds["_sw"]["lat"]+"/"+bounds["_sw"]["lng"]+"/"+bounds["_ne"]["lat"]+"/"+bounds["_ne"]["lng"]);
+                  var mapdiagonal = getDistanceFromLatLonInKm(bounds["_ne"]["lat"],bounds["_ne"]["lng"],bounds["_sw"]["lat"],bounds["_sw"]["lng"]);
+                  console.log (mapdiagonal);
+                  var centLat =(bounds["_sw"]["lat"] + bounds["_ne"]["lat"])/2;
+                  var centLon =(bounds["_sw"]["lng"] + bounds["_ne"]["lng"])/2;
+                  console.log (centLat+","+centLon);
+                  var distance = getDistanceFromLatLonInKm(latitude,longitude,bounds["_sw"]["lat"],bounds["_sw"]["lng"]);
+                  console.log("GPS zoom: "+longitude+"/"+latitude+"/"+distance);
+                  $("#range").val(distance*2);
+                  $("#distance").val(distance*2);
+                  $("#longitude").val(longitude);
+                  $("#latitude").val(latitude);
+                  $("#zoom").val(zoom);
+                  $('#search-form').submit();
+              }, 1500);
+      });
+
+      function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
+          var R = 6371; // Radius of the earth in km
+          var dLat = deg2rad(lat2-lat1);  // deg2rad below
+          var dLon = deg2rad(lon2-lon1);
+          var a =
+              Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
+              Math.sin(dLon/2) * Math.sin(dLon/2)
+          ;
+          var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+          var d = R * c; // Distance in km
+          return d;
+      }
+
+      function deg2rad(deg) {
+          return deg * (Math.PI/180)
+      }
+    </script>            </div>
+<!--            </div>-->
+    </div>
+    <!-- Advanced -->
+    <div class="nav-popup-advanced" style="display: none;">
+
+        <div class="advanced-columns">
+            <div id="advancedColumn01" class="advanced-column01 flex">
+                <div class="advanced-column01-box">
+                    <div class="advanced-options">
+                        <div class="advanced-options-column01">
+                            <!-- Check in - Check out -->
+                            <div class="advanced-input-checkInOut">
+                                <div class="form-input02" style="width: 400px;">
+                                    <input form="search-form" type="text" id="flatpickrCalendar02" onchange="getDatesFromRange(this);" placeholder="Check in - Check out" value="04.11.2021 —  04.12.2021">
+                                </div>
+                            </div>
+                            <div class="advanced-item">
+                                <div class="d-flex align-items-center">
+                                    <div class="advanced-item-label">Odrasli</div>
+                                </div>
+                                <div class="advanced-item-box">
+                                    <div class="advanced-item-box-minus advancedMinus-adults"><i class="fas fa-minus"></i></div>
+                                    <div class="advanced-item-box-counter advancedCount-adults">1</div>
+                                    <div class="advanced-item-box-plus advancedPlus-adults"><i class="fas fa-plus"></i></div>
+                                </div>
+                            </div>
+                            <div class="advanced-item">
+                                <div class="d-flex align-items-center">
+                                    <div class="advanced-item-label">Otroci</div>
+                                </div>
+                                <div class="advanced-item-box">
+                                    <div class="advanced-item-box-minus advancedMinus-children"><i class="fas fa-minus"></i></div>
+                                    <div class="advanced-item-box-counter advancedCount-children">0</div>
+                                    <div class="advanced-item-box-plus advancedPlus-children"><i class="fas fa-plus"></i></div>
+                                </div>
+                            </div>
+                            <div class="advanced-item">
+                                <div class="d-flex align-items-center">
+                                    <div class="advanced-item-label">Hišni ljubljenčki</div>
+                                </div>
+                                <div class="advanced-item-box">
+                                    <div class="advanced-item-box-minus advancedMinus-pets"><i class="fas fa-minus"></i></div>
+                                    <div class="advanced-item-box-counter advancedCount-pets">0</div>
+                                    <div class="advanced-item-box-plus advancedPlus-pets"><i class="fas fa-plus"></i></div>
+                                </div>
+                            </div>
+                            <div class="advanced-item">
+                                <div class="d-flex align-items-center">
+                                    <div class="advanced-item-label">Zvezdice</div>
+                                </div>
+                                <div class="advanced-item-box">
+                                    <div class="advanced-item-box-minus advancedMinus-rating"><i class="fas fa-minus"></i></div>
+                                    <div class="advanced-item-box-counter advancedCount-rating">1</div>
+                                    <div class="advanced-item-box-plus advancedPlus-rating"><i class="fas fa-plus"></i></div>
+                                </div>
+                            </div>
+                            <div class="advanced-item mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="advanced-item-label">Razvrščanje</div>
+                                </div>
+                                <div class="advanced-item-box02">
+                                    <div class="advanced-item-box02-arrow-left"><i class="fas fa-caret-left"></i></div>
+                                    <div class="advanced-item-box02-sort-price">Višja cena najprej</div>
+                                    <div class="advanced-item-box02-arrow-right"><i class="fas fa-caret-right"></i></div>
+                                </div>
+                                <input form="search-form" type="text" hidden name="SearchForm[sorting]" id="rent-input-sorting" value = "1">
+                            </div>
+                        </div>
+                        <div class="advanced-options-column02">
+                            <div class="advanced-item02">
+                                <label class="advanced-checkbox">Podeželje                                    <input form="search-form" type="checkbox"  name="FacilitiesForm[countryside]" id="countryside">
+                                    <span class="icon-check"></span>
+                                </label>
+                            </div>
+                            <div class="advanced-item02">
+                                <label class="advanced-checkbox">Plaža                                    <input form="search-form" type="checkbox"  name="FacilitiesForm[near_beach]" id="beach">
+                                    <span class="icon-check"></span>
+                                </label>
+                            </div>
+                            <div class="advanced-item02">
+                                <label class="advanced-checkbox">Mesto                                    <input form="search-form" type="checkbox"  name="FacilitiesForm[near_city]" id="city">
+                                    <span class="icon-check"></span>
+                                </label>
+                            </div>
+                            <div class="advanced-item02">
+                                <label class="advanced-checkbox">Parkirno mesto                                    <input form="search-form" type="checkbox"  name="FacilitiesForm[parking]" id="parking_space">
+                                    <span class="icon-check"></span>
+                                </label>
+                            </div>
+                            <div class="advanced-item02">
+                                <label class="advanced-checkbox">Klima                                    <input form="search-form" type="checkbox"  name="FacilitiesForm[air_conditioning]" id="air_conditioning">
+                                    <span class="icon-check"></span>
+                                </label>
+                            </div>
+<!--                            <div class="advanced-item02">-->
+<!--                                <label class="advanced-checkbox">Swimming pool-->
+<!--                                    <input form="search-form" type="checkbox" --><!-- name="FacilitiesForm[swimming_pool]" id="swimming_pool">-->
+<!--                                    <span class="icon-check"></span>-->
+<!--                                </label>-->
+<!--                            </div>-->
+                            <div class="advanced-item02">
+                                <label class="advanced-checkbox">Pogled na morje                                    <input form="search-form" type="checkbox"  name="FacilitiesForm[seaview]" id="seaview">
+                                    <span class="icon-check"></span>
+                                </label>
+                            </div>
+                            <div class="advanced-item02">
+                                <label class="advanced-checkbox">Wi-Fi                                    <input form="search-form" type="checkbox"  name="FacilitiesForm[wifi]" id="wifi">
+                                    <span class="icon-check"></span>
+                                </label>
+                            </div>
+                            <div class="advanced-item02">
+                                <label class="advanced-checkbox">Otroška posteljica                                    <input form="search-form" type="checkbox"  name="FacilitiesForm[babycot]" id="baby-cot">
+                                    <span class="icon-check"></span>
+                                </label>
+                            </div>
+                            <div class="advanced-item02">
+                                <label class="advanced-checkbox">Terasa                                    <input form="search-form" type="checkbox"  name="FacilitiesForm[terrace]" id="terrace">
+                                    <span class="icon-check"></span>
+                                </label>
+                            </div>
+                            <div class="advanced-item02">
+                                <label class="advanced-checkbox">Satelitska TV                                    <input form="search-form" type="checkbox"  name="FacilitiesForm[tv_satelite]" id="tv_satelite">
+                                    <span class="icon-check"></span>
+                                </label>
+                            </div>
+<!--                            <div class="advanced-item02">-->
+<!--                                <label class="advanced-checkbox">Wheelchair accessible-->
+<!--                                    <input form="search-form" type="checkbox" --><!-- name="FacilitiesForm[wheelchair_accessible]" id="wheelchair_accessible">-->
+<!--                                    <span class="icon-check"></span>-->
+<!--                                </label>-->
+<!--                            </div>-->
+                            <div>
+                                <input form="search-form" type="text" hidden name="SearchForm[children]" id="children" value="0">
+                                <input form="search-form" type="text" hidden name="SearchForm[pets]" id="pets" value="0">
+                                <input form="search-form" type="text" hidden name="SearchForm[adults]" id="adults" value="0">
+                                <input form="search-form" type="text" hidden name="SearchForm[classification_star]" id="classification_star" value="1">
+                                <input form="search-form" type="hidden" name="_csrf" value="eLp5eXjVxLxWwatEMnEGUs7O7oRBt9ZiC8EGwdtaoVtIilQjJ6GdjgmNnXJKJzAcobnewwfUmAtqkVWEnzLIdg==">
+                                <input form="search-form" type="hidden" name="range" id="range" value="150">
+                                <input form="search-form" type="hidden" name="latitude" id="latitude" value="44.853985079708">
+                                <input form="search-form" type="hidden" name="longitude" id="longitude" value="15.138077389066">
+                                <input form="search-form" type="hidden" name="distance" id="distance" value="150">
+                                <input form="search-form" type="hidden" name="zoom" id="zoom" value="8">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advanced-button-apply">
+                        <div class="button-orange">
+                            <button class="btn" onClick="$('#search-form').submit(); return false;">Uporabi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="advancedColumn02" class="advanced-column02 flex test-white">
+            </div>
+        </div>
+    </div>
+</section>
+<form  id="search-form" action="https://ronabooking.com/sl/site/search?page=1" method="get" ></form>
+<form  id="rent-form-mockup-apartment" action="https://ronabooking.com/sl/site/apartment-view" method="get" target="_blank">
+        <input form="rent-form-mockup-apartment" type="text" hidden name="MobileRentForm[id]" id="rent-input-id" >
+        <input form="rent-form-mockup-apartment" type="text" hidden name="MobileRentForm[price_per_day]" id="rent-input-price_day" >
+        <input form="rent-form-mockup-apartment" type="text" hidden name="MobileRentForm[sort]" id="rent-input-sort" value="1" >
+        <input form="rent-form-mockup-apartment" type="text" hidden name="MobileRentForm[price]" id="rent-input-price" >
+        <input form="rent-form-mockup-apartment" type="text" hidden name="MobileRentForm[object_id]" id="rent-input-object_id" >
+        <input form="rent-form-mockup-apartment" type="text" hidden name="MobileRentForm[from_date]" id="rent-input-date_from" value="04.11.2021">
+        <input form="rent-form-mockup-apartment" type="text" hidden name="MobileRentForm[until_date]" id="rent-input-date_until" value=" 04.12.2021">
+        <input form="rent-form-mockup-apartment" type="text" hidden name="MobileRentForm[adults]" id="rent-input-adults" value="0">
+        <input form="rent-form-mockup-apartment" type="text" hidden name="MobileRentForm[children]" id="rent-input-children" value="0">
+        <input form="rent-form-mockup-apartment" type="text" hidden name="MobileRentForm[pets]" id="rent-input-pets" value="0">
+        <input form="rent-form-mockup-apartment" type="text" hidden name="MobileRentForm[classification_star]" id="rent-input-classification_star" value="1">
+        <input form="rent-form-mockup-apartment" type="hidden" name="_csrf" value="eLp5eXjVxLxWwatEMnEGUs7O7oRBt9ZiC8EGwdtaoVtIilQjJ6GdjgmNnXJKJzAcobnewwfUmAtqkVWEnzLIdg==">
+        <input form="rent-form-mockup-apartment" type="hidden" name="_firstDayOfCalendar" id="firstDayOfCalendar" value="01.11.2021">
+</form>
+<script>
+    var from;
+    var to;
+    var canSleepMax=10;
+    var today = new Date();
+    var tomorrow = new Date();
+    var startDate = new Date('2021-04-01');
+    tomorrow.setDate(tomorrow.getDate() + 1);
+
+
+    var from;
+    var to;
+
+    ///Date change/////
+    function changeDay(date, diff){
+        var newDate = new Date(date.getUTCFullYear(),date.getMonth(),date.getDate()+diff,date.getHours(),date.getMinutes(),date.getSeconds());
+        var newDateString =  ('0'+ newDate.getDate()).slice(-2) + '.' + ('0'+ (newDate.getMonth()+1)).slice(-2) + '.' + newDate.getFullYear();
+        return newDateString;
+    }
+
+    /** "15.04.2020" => 2020-04-15*/
+    function convertDate(date){
+        var dataArray = date.split('.');
+        var year = dataArray[2];
+        var day = dataArray[0];
+        var month = dataArray[1];
+        var newDateString =  (year + '.' + month + '.' + day);
+        return newDateString;
+    }
+
+    /** "04/16/2020" => "16.04.2020"*/
+    function convertDateFromLocalDateString(date){
+        var dataArray = date.split('.');
+        var year = dataArray[2];
+        var day = dataArray[0];
+        var month = dataArray[1];
+        var newDateString =  (year + '.' + month + '.' + day);
+        return newDateString;
+    }
+
+
+    $(document).ready(function() {
+        switch (LANGUAGE) {
+            case 'ru':
+                flatpickr.localize(flatpickr.l10ns.ru);
+                break;
+            case 'de':
+                flatpickr.localize(flatpickr.l10ns.de);
+                break;
+            case 'sl':
+                flatpickr.localize(flatpickr.l10ns.sl);
+                break;
+            case 'hr':
+                flatpickr.localize(flatpickr.l10ns.hr);
+                break;
+            case 'it':
+                flatpickr.localize(flatpickr.l10ns.it);
+                break;
+            case 'hu':
+                flatpickr.localize(flatpickr.l10ns.hu);
+                break;
+
+        };
+
+        var today = new Date();
+        var tomorrow = new Date();
+        var startDate = convertDate($("#firstDayOfCalendar").val());
+        console.log(startDate);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        from = $("#input-from-date").val();
+        to = $("#input-to-date").val();
+
+        $("#flatpickrCalendar").flatpickr({
+            mode: "range",
+            altFormat: "d.m.Y",
+            dateFormat: "d.m.Y",
+            minDate : "11.04.2021",
+            defaultDate: [from, to],
+            // local: "ru",
+            "locale": {
+                "firstDayOfWeek": 1,
+                "rangeSeparator":" — "
+            },
+            onClose: function(selectedDates, dateStr, instance){
+                var needRequest = false;
+                var dateRange = dateStr;
+                var positionSeparator = dateRange.indexOf(" — ");
+                if (positionSeparator>0) {
+                    var new_from = dateRange.substring(0, positionSeparator);
+                    var new_to = dateRange.substring(positionSeparator  + (" — ").length, dateRange.length);
+                    $("#input-from-date").val(new_from);
+                    $("#input-to-date").val(new_to);
+                    $("#rent-input-date_from").val(new_from);
+                    $("#rent-input-date_to").val(new_to);
+                    needRequest = ( !from.localeCompare(new_from) || !to.localeCompare(new_to));
+                }
+                else {
+                    var new_from = dateRange.substring(0, positionSeparator);
+                    from = dateStr;
+                    $("#input-from-date").val(from);
+                    $("#rent-input-date_from").val(from);
+                    needRequest = (!from.localeCompare(new_from));
+                }
+                if (needRequest)
+                    $('#search-form').submit();
+                return false;
+            }
+        });
+
+
+        $("#flatpickrCalendar02").flatpickr("#flatpickrCalendar02", {
+            mode: "range",
+            minDate: "today",
+            maxDate: "31.1.2020",
+            altFormat: "d.m.Y",
+            dateFormat: "d.m.Y",
+            "locale": {
+                "firstDayOfWeek": 1,
+                "rangeSeparator":" — "
+            },
+            onClose: function(selectedDates, dateStr, instance){
+                var needRequest = false;
+                var dateRange = dateStr;
+                var positionSeparator = dateRange.indexOf(" — ");
+                if (positionSeparator>0) {
+                    var new_from = dateRange.substring(0, positionSeparator);
+                    var new_to = dateRange.substring(positionSeparator  + (" — ").length, dateRange.length);
+                    $("#input-from-date").val(new_from);
+                    $("#input-to-date").val(new_to);
+                    $("#rent-input-date_from").val(new_from);
+                    $("#rent-input-date_to").val(new_to);
+                    needRequest = ( !from.localeCompare(new_from) || !to.localeCompare(new_to));
+                }
+                else {
+                    var new_from = dateRange.substring(0, positionSeparator);
+                    from = dateStr;
+                    $("#input-from-date").val(from);
+                    $("#rent-input-date_from").val(from);
+                    needRequest = (!from.localeCompare(new_from));
+                }
+                if (needRequest)
+                    $('#search-form').submit();
+                return false;
+            }
+        });
+
+    });
+
+
+    function getDatesFromRange(elem) {
+        var dateRange = elem.value;
+        var positionSeparator = dateRange.indexOf(" — ");
+        if(positionSeparator>0) {
+            from = dateRange.substring(0, positionSeparator);
+            to = dateRange.substring(positionSeparator  + (" — ").length, dateRange.length);
+            $("#input-from-date").val(from);
+            $("#input-to-date").val(to);
+            $("#rent-input-date_from").val(from);
+            $("#rent-input-date_to").val(to);
+        }
+        else {
+            from = dateRange;
+            $("#input-from-date").val(from);
+            $("#rent-input-date_from").val(from);
+        }
+        return false;
+    }
+
+    function parseFromFlatepickr(data) {
+        var positionSeparator = data.indexOf(" — ");
+        from = data.substring(0,positionSeparator);
+        to = data.substring(positionSeparator  + (" — ").length, positionSeparator);
+    }
+    //Collecting form data
+    function collectData (id, price_day, period_price_full) {
+
+        $("#rent-input-from-date").val( $("#input-from-date").val());
+        $("#rent-input-date_until").val( $("#input-to-date").val());
+        $("#rent-input-adults").val( $("#adults").val());
+        $("#rent-input-children").val( $("#children").val());
+        $("#rent-input-pets").val( $("#pets").val());
+        $("#rent-input-id").val(id);
+        $("#rent-input-object_id").val(id);
+        $("#rent-input-price_day").val(price_day);
+        $("#rent-input-price").val(period_price_full);
+        $("#rent-form-mockup-apartment").submit();
+        return false;
+    }
+
+    function submitSearchFormForApartmentView(form,id) {
+        $("#rent-input-id").val(id);
+        form.submit();
+        return false;
+    }
+</script><script>
+    LANGUAGE = "sl";
+</script>
+<!---------------- Inside pop up navigation ---------------->
+<!-- Sign in -->
+<div class="nav-popup-sign-in" style="display: none;">
+    <form  id="sign-in" action="https://ronabooking.com/en/site/sign-in" method="post">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" name="SignInForm[username]" id="signIn-email" placeholder="Uporabniško ime ali e-pošta">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="password" name="SignInForm[password]" id="signIn-password" placeholder="Geslo">
+                <div class="forgot-pass">
+                    <a href="https://ronabooking.com/en/site/password-restore">Pozabljeno geslo?</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-button">
+                <label class="remember-me">Zapomni si me                    <input type="checkbox" name="SignInForm[rememberMe]" id="rememberMe" class="checkbox">
+                    <span class="icon-check"></span>
+                </label>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="button-sign-in">
+                <button class="btn">Prijava</button>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+<!-- Sign up -->
+<div class="nav-popup-sign-up" style="display: none;">
+    <form  id="sign-up" action="https://ronabooking.com/en/site/sign-up" method="post">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="email" name="SignUpForm[email]" id="signUp-email" placeholder="E-pošta">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" name="SignUpForm[username]" id="signUp-fullName" placeholder="Uporabniško ime">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="password" name="SignUpForm[password]" id="signUp-password" placeholder="Geslo">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="password" name="SignUpForm[confirm-password]" id="signUp-confirm-password" placeholder="Potrdi geslo">
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label class="checkbox-box">Ne želim prejemati tržnih sporočil od RonaBookinga. Prav tako lahko prekličem prejemanje takšnih sporočil kadarkoli v nastavitvah mojega računa ali preko povezave v sporočilu.                 <input type="checkbox" name="SignUpForm[message]" id="nav-checbox-message">
+                <span class="icon-check"></span>
+            </label>
+        </div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+            <div class="button-sign-up">
+                <button class="btn">Registracija</button>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+<!-- Partner sign in -->
+<div class="nav-popup-partner-sign-up" style="display: none;">
+    <form  id="partner-sign-up" action="https://ronabooking.com/en/site/partner-sign-up" method="post">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="email" name="PartnerSignUpForm[email]" id="partner-email" placeholder="E-pošta">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" name="PartnerSignUpForm[username]" id="partner-fullName" placeholder="Uporabniško ime">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="password" name="PartnerSignUpForm[password]" id="partner-password" placeholder="Geslo">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="password" name="PartnerSignUpForm[confirmPassword]" id="partner-confirm-password" placeholder="Potrdi geslo">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" name="PartnerSignUpForm[company]" id="partner-company" placeholder="Podjetje">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" name="PartnerSignUpForm[corporate_ID]" id="partner-corporate_ID" placeholder="ID podjetja">
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label class="checkbox-box">Ne želim prejemati tržnih sporočil od RonaBookinga. Prav tako lahko prekličem prejemanje takšnih sporočil kadarkoli v nastavitvah mojega računa ali preko povezave v sporočilu.                 <input type="checkbox" name="PartnerSignUpForm[message]" id="nav-checbox-message02">
+                <span class="icon-check"></span>
+            </label>
+        </div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+            <div class="button-partner-sign-up">
+                <button class="btn">Prijava</button>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+
+</body>
+
+<!-- Mirrored from ronabooking.com/sl/site/search?SearchForm%5Blocation%5D=Kvarner&SearchForm%5Bfrom%5D=11.05.2021&SearchForm%5Bto%5D=15.05.2021 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Apr 2021 12:28:43 GMT -->
+</html>

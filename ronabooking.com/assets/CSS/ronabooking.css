@@ -1,0 +1,67 @@
+.disabled-class {
+    opacity: 50%;
+    pointer-events: none
+}
+
+.social-icons {
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #222222;
+}
+
+.social-icons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.social-icons ul li {
+    display: inline-block;
+    zoom: 1;
+    width: 40px;
+    vertical-align: middle;
+    font-size: 12px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 5px;
+}
+
+.social-icons .sign-up ul li {
+    background-color: #03818B;
+    border: 1px solid #03818B;
+}
+
+.social-icons .sign-in ul li {
+    background-color: #F58B3D;
+    border: 1px solid #F58B3D;
+}
+
+.social-icons .partner-sign-up ul li {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.social-icons .sign-up ul li a {
+    display: block;
+    font-size: 1.4em;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.social-icons ul li a i {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.social-icons ul li a:focus i,
+.social-icons ul li a:active i {
+    transition: none;
+    color: #F58B3D;
+}
+
+.social-icons .instagramm {
+    background: url("../../en/ImageS/ICONS/instagram.html") no-repeat;
+}

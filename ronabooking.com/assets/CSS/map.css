@@ -1,0 +1,22 @@
+.marker {
+    /*background-image: url('/Images/Icons/icon-location.svg');*/
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    /*border-radius: 50%;*/
+    cursor: pointer;
+    /*position: absolute;*/
+    /*top: -25px;*/
+    /*left: 25px;*/
+    will-change: transform;
+}
+
+.mapboxgl-popup {
+    /*transition-delay: 2s;*/
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}

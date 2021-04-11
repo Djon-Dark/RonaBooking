@@ -1,0 +1,5 @@
+
+.flatpickr-disabled {
+    cursor: not-allowed;
+    color: red;
+}
