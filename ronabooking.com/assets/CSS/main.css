@@ -8,6 +8,11 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .pos-rel {
   position: relative;
 }
@@ -4530,7 +4535,41 @@ input[type=checkbox]:checked ~ .icon-check:before {
     font-size: 2.5rem;
   }
 }
+/************** LANDING PAGE **************/
+.header__text-box{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70vh;
+}
+/************** Search button **************/
+.search-btn{
+  width: 80vw;
+  height: 2rem;
+  background-color: lightgray;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  justify-items: center;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.search-btn img{
+  margin-right: 0.5rem;
+}
+.search-btn p{
+  margin: 0;
+  font-size: 1.2rem;
+  color: gray;
+}
 
+/************** SEARCH FORM **************/
+.heading-primary-form{
+  display: none;
+}
 .header__text-box .container .heading-primary-form {
   padding: .5rem;
 }
