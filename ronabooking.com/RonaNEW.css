@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightgray;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*  HEADER, TOP PART OF PAGE */
+header{
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.mainLogo img{
+    height:5vh;
+    margin-left: 1rem;
+}
+
+/*  BURGER */
+.burger{
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+    z-index: 11;
+}
+.burger div{
+    width: 1.5rem;
+    height: 2px;
+    margin: 5px 0;
+    background-color: rgb(100,100,100); /* COLORS */
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+}
+.toggle .line1{    
+    transform: rotate(-45deg) translate(-1px,9px);
+}
+.toggle .line2{    
+    opacity: 0;
+}
+.toggle .line3{    
+    transform: rotate(45deg) translate(-1px,-9px);
+}
+/*  BURGER */
+/*  NAVIGATION LINKS */
+.navLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background-color: lightgray;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+.navLinks li{
+    font-size:1.5rem;
+    padding: 1rem;
+}
+.navLinks img{
+    width: 90%;
+    margin: 1rem auto;
+}
+/*  NAVIGATION LINKS */
+ /*  show/hide navigation links */
+.showNav{
+    right: 0 !important;
+}
+ /*  show/hide navigation links */
+/*  HEADER, TOP PART OF PAGE */
+/*  DOCK */
+.navDock{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.navDock ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8vh;
+    background-color: lightgray;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.navDock li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 70%;
+}
+
+.navDock p{
+    font-size: 0.6rem;
+}
+/*  DOCK */
+/*  BOOKING FORM AND BUTTON */
+.mainImg{
+    background-color: lightgray;
+    height: 93vh;
+}
+/*  SEARCH BUTTON */
+.searchBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius:1rem;
+    margin: 0 auto;
+    position: relative;
+    top: 70vh;
+}
+/*  SEARCH BUTTON */
+
+
+/*  BOOKING FORM  */
+.bookingForm{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.3s ease;
+    position:absolute;
+    right: -100%;
+    top: 0;
+    z-index: 11;
+}
+.showBookingForm{
+    opacity: 1;
+    transform: translateX(-100%);
+}
+/* close booking form button */
+.closeBtn{
+    height: 2rem;
+    margin-left: 82vw;
+}
+.x{
+    height:2px;
+    width: 1.5rem;
+    background-color:gray;
+    transition: all 0.2s ease;
+}
+.cross .line1{
+    transform: rotate(-45deg) translate(-1px,0px);
+}
+.cross .line2{
+    transform: rotate(45deg) translate(-1px,0px);
+}
+/* close booking form button */
+
+.bookingInfo{
+    width: 90%;
+    height: 3rem;
+    border: 1px solid gray;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+}
+.dates{
+    display: flex;
+    justify-content: space-between;
+}
+.checkIn{
+    width: 50%;
+    border-right: 1px solid gray;
+}
+.checkOut{
+    width: 45%;
+}
+.menu-logo{
+    width: 90%;
+}
+/*  BOOKING FORM  */
+/*  BOOKING FORM AND BUTTON */

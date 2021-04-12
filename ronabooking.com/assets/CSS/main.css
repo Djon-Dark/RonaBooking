@@ -4554,6 +4554,7 @@ input[type=checkbox]:checked ~ .icon-check:before {
   align-items: center;
   justify-content:center;
   justify-items: center;
+  border: 1px solid gray;
   border-radius: 10px;
   margin: 0 auto;
 }
@@ -4932,12 +4933,9 @@ input[type=checkbox]:checked ~ .icon-check:before {
 }
 
 .navbar-nav .nav-link {
-  padding: 1.7rem 2rem .7rem 2rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  padding: 1rem 2rem;
   cursor: pointer;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -4978,7 +4976,13 @@ input[type=checkbox]:checked ~ .icon-check:before {
 
 @media screen and (max-width: 767px) {
   .navbar .shadow-green {
-    background-color: rgba(1, 129, 140, 0.6);
+    background-color: rgba(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
   }
 }
 
