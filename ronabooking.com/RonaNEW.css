@@ -37,7 +37,7 @@ header{
     position: absolute;
     top: 1rem;
     right: 0.5rem;
-    z-index: 11;
+    z-index: 15;
 }
 .burger div{
     width: 1.5rem;
@@ -155,9 +155,11 @@ header{
     transform: translateX(-100%);
 }
 /* close booking form button */
+/* OBSOLETE, INCORPORATED TO ONE OPEN/CLOSE BUTTON
 .closeBtn{
     height: 2rem;
     margin-left: 82vw;
+    display: none;
 }
 .x{
     height:2px;
@@ -171,6 +173,7 @@ header{
 .cross .line2{
     transform: rotate(45deg) translate(-1px,0px);
 }
+*/
 /* close booking form button */
 
 .bookingInfo{
