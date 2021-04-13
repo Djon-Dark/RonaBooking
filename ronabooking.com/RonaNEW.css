@@ -131,6 +131,7 @@ header{
     margin: 0 auto;
     position: relative;
     top: 70vh;
+    background-color: white;
 }
 /*  SEARCH BUTTON */
 
@@ -154,27 +155,6 @@ header{
     opacity: 1;
     transform: translateX(-100%);
 }
-/* close booking form button */
-/* OBSOLETE, INCORPORATED TO ONE OPEN/CLOSE BUTTON
-.closeBtn{
-    height: 2rem;
-    margin-left: 82vw;
-    display: none;
-}
-.x{
-    height:2px;
-    width: 1.5rem;
-    background-color:gray;
-    transition: all 0.2s ease;
-}
-.cross .line1{
-    transform: rotate(-45deg) translate(-1px,0px);
-}
-.cross .line2{
-    transform: rotate(45deg) translate(-1px,0px);
-}
-*/
-/* close booking form button */
 
 .bookingInfo{
     width: 90%;
@@ -199,3 +179,69 @@ header{
 }
 /*  BOOKING FORM  */
 /*  BOOKING FORM AND BUTTON */
+/*  SPECIAL OFFERS  */
+.special-carousel{
+    display: flex;
+    overflow: scroll;
+}
+.special-item{
+    margin: 0 1rem;
+}
+.special img{
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 10rem;
+    width: 20rem;
+}
+/*  SPECIAL OFFERS  */
+.section-heading{
+    text-align: center;
+    margin: 1rem;
+}
+/*  BOOK WITH US  */
+.bookwithus{
+    margin: 5rem auto;
+}
+.reasons{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.reason{
+    display: inline-flex;
+    flex-direction: column;
+    width: 5rem;
+    justify-content:center;
+    align-items:center;
+}
+.reason svg{
+    height: 4rem;
+}
+.reason p{
+    font-size: 0.7rem;
+    text-align:center;                        
+}
+/*  BOOK WITH US  */
+/*  EXPLORE CROATIA  */
+.explore-croatia{
+    margin: 5rem auto;
+}
+.places{
+    display: flex;
+    justify-content:space-evenly;
+}
+.place-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.place{
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid gray;
+    border-radius:1rem;
+    margin: 1rem auto;
+}
+
+/*  EXPLORE CROATIA  */

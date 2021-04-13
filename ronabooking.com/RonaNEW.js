@@ -27,12 +27,3 @@ searchBtn.addEventListener('click', ()=>{
     }
 })
  
-/* OBSOLETE, INCORPORATED TO ONE OPEN/CLOSE BUTTON
-closeBtn.addEventListener('click', ()=>{
-    closeBtn.classList.toggle('cross');
-    setTimeout(()=>{
-        bookingForm.classList.toggle('showBookingForm');
-    },200)
-    
-})
-*/
