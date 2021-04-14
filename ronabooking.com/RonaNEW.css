@@ -243,5 +243,65 @@ header{
     border-radius:1rem;
     margin: 1rem auto;
 }
-
 /*  EXPLORE CROATIA  */
+/*  RONA CLUB  */
+.ronaclub{
+    height:30rem;
+    width: 90vw;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+.ronaclub .top{
+    border-bottom: 1px solid gray;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ronaclub .top button{
+    width: 10rem;
+    height: 3rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+/*  RONA CLUB  */
+/*  RELAX ANYWHERE  */
+.relax-anywhere{
+    margin: 3rem auto;
+}
+.specific-carousel{
+    display: flex;
+    overflow-x: scroll;
+    margin: 2rem 0;
+}
+.specific{
+    width: 100%;
+}
+.specific{
+    margin: 0 1rem;
+}
+.specific img{
+    width: 15rem;
+    height: 15rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+}
+/*  RELAX ANYWHERE  */
+/*  PARTNERS  */
+.partners{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.partner-logos{
+
+}
+.partners button{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+}
+/*  PARTNERS  */
