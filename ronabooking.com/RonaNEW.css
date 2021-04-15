@@ -262,7 +262,7 @@ header{
     padding: 0 1rem;
 }
 
-.ronaclub .top button{
+.learnmore{
     width: 10rem;
     height: 3rem;
     margin: 0 auto;
@@ -296,9 +296,13 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 4rem auto;
 }
 .partner-logos{
-
+    text-align: center;
+}
+.partner-logos img{
+    margin: 1rem;
 }
 .partners button{
     width: 10rem;
@@ -307,3 +311,52 @@ header{
     margin: 0 auto;
 }
 /*  PARTNERS  */
+/*  EXPERIENCES  */
+.experiences{
+    text-align: center;
+    margin: 4rem auto;
+}
+.experience-carousel{
+    display: flex;
+    overflow-x: scroll;
+}
+.experience{
+    margin: 1rem;
+}
+.experience img{
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+}
+.experience p{
+    text-align: left;
+}
+/*  EXPERIENCES  */
+/*  RONA CLUB BENEFITS  */
+.summary{
+    border: 1px solid gray;
+    text-align: center;
+    color: rgb(80, 80, 80);
+}
+.summary-section{
+    margin: 4rem auto;
+}
+.summary-section p{
+    margin: 2rem 1rem;
+}
+.summary-section ul{
+    width: 15rem;
+    margin: 0 auto;
+}
+.summary-section li{
+    margin: 2rem auto;
+    text-align: left;
+}
+/*  RONA CLUB BENEFITS  */
+/*  FOOTER  */
+footer{
+    text-align: center;
+    margin: 1rem auto;
+}
+/*  FOOTER  */
