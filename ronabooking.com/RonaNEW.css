@@ -11,7 +11,8 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: lightgray;
-
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 a{
@@ -58,7 +59,7 @@ header{
 }
 /*  BURGER */
 /*  NAVIGATION LINKS */
-.navLinks{
+.navlinks{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -71,11 +72,11 @@ header{
     transition: all 0.3s ease;
     z-index: 10;
 }
-.navLinks li{
+.navlinks li{
     font-size:1.5rem;
     padding: 1rem;
 }
-.navLinks img{
+.navlinks img{
     width: 90%;
     margin: 1rem auto;
 }
@@ -100,6 +101,7 @@ header{
     background-color: lightgray;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    text-align: center;
 }
 
 .navDock li{
@@ -161,7 +163,8 @@ header{
     height: 3rem;
     border: 1px solid gray;
     border-radius: 1.5rem;
-    padding: 0.5rem;
+    padding: 0.8rem;
+    font-size: 0.8rem;
 }
 .dates{
     display: flex;
@@ -184,6 +187,9 @@ header{
     display: flex;
     overflow: scroll;
 }
+.special-carousel::-webkit-scrollbar {
+    display: none;
+  }
 .special-item{
     margin: 0 1rem;
 }
@@ -278,6 +284,9 @@ header{
     overflow-x: scroll;
     margin: 2rem 0;
 }
+.specific-carousel::-webkit-scrollbar {
+    display: none;
+}
 .specific{
     width: 100%;
 }
@@ -320,6 +329,9 @@ header{
     display: flex;
     overflow-x: scroll;
 }
+.experience-carousel::-webkit-scrollbar {
+    display: none;
+}
 .experience{
     margin: 1rem;
 }
@@ -335,7 +347,8 @@ header{
 /*  EXPERIENCES  */
 /*  RONA CLUB BENEFITS  */
 .summary{
-    border: 1px solid gray;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
     text-align: center;
     color: rgb(80, 80, 80);
 }
@@ -360,3 +373,107 @@ footer{
     margin: 1rem auto;
 }
 /*  FOOTER  */
+
+/* ---------- MEDIA QUERIES ----------- */
+@media only screen and (min-width: 1050px){
+.burger{
+    display: none;
+}
+.navlinks{
+    flex-direction: row;
+    height: 7vh;
+    max-width: 70%;
+    right: 0;
+}
+.navlinks .logo{
+    display: none;
+}
+.navlinks ul{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 100%;
+    margin: 0 1rem;
+}
+.navlinks li{
+   
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0;
+}
+/* BOOKING FORM */
+.bookingForm{
+    height: auto;
+    width: 100vw;
+    max-width:1024px;
+    margin: 0 auto;
+    padding: 0;
+    flex-direction: row;
+    right: 50%;
+    top: 70vh;
+    transform: translateX(50%);
+}
+.closeBtn{
+    display: none;
+}
+.bookingInfo{
+    margin: 0 0.5rem;
+    width: 20%;
+}
+.menu-logo{
+    display: none;
+}
+.navDock{
+    display: none;
+}
+.search{
+    width: 3rem;
+    border-radius: 2rem;
+}
+/* BOOKING FORM */
+/*  EXPLORE CROATIA  */
+.place{
+    width: 20rem;
+    height: 10rem;
+}
+.searchBtn{
+    display: none;
+}
+/*  EXPLORE CROATIA  */
+/*  RONA CLUB  */
+.ronaclub{
+    display: flex;
+    height: 20rem;
+}
+.ronaclub .top{
+    width: 25%;
+    height: 100%;
+    border-bottom: none;
+    border-right: 1px solid gray;
+}
+/*  RONA CLUB  */
+/*  SUMMARY  */
+.summary{
+    display: flex;
+    justify-content: space-evenly;
+}
+.summary-section{
+    width: 15%;
+    height: auto;
+    margin: 2rem 1rem;
+}
+.summary-section h2{
+    text-align: left;
+    margin: 0;
+}
+#benefits{
+    width: 35%;
+    margin-left: 0;
+    margin-right: 0;
+}
+#benefits h2{
+    text-align: center;
+}
+/*  SUMMARY  */
+}
+/* ---------- MEDIA QUERIES ----------- */

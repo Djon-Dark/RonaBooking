@@ -1,5 +1,5 @@
 const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.navLinks');
+const navLinks = document.querySelector('.navlinks');
 const searchBtn = document.querySelector('.searchBtn');
 const bookingForm = document.querySelector('.bookingForm');
 const closeBtn = document.querySelector('.closeBtn');
