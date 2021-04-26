@@ -10,7 +10,7 @@ html{
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: lightgray;
+    background-color: rgb(255, 255, 255);
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -21,69 +21,83 @@ a{
 }
 /*  HEADER, TOP PART OF PAGE */
 header{
-    height: 7vh;
+    height: 8vh;
     width: 100vw;
     display: flex;
     justify-content:space-between;
     align-items:center;
+    border-bottom-left-radius: 1rem;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    z-index: 20;
+    overflow: hidden;
+}
+.open-header{
+    height: 100vh;
 }
 
 .mainLogo img{
-    height:5vh;
+    height:4vh;
     margin-left: 1rem;
+    position: absolute;
+    top: 1.5vh;
 }
 
 /*  BURGER */
+
 .burger{
     position: absolute;
-    top: 1rem;
-    right: 0.5rem;
-    z-index: 15;
+    top: 3vh;
+    right: 3vh;
+    z-index: 20;
 }
+
 .burger div{
-    width: 1.5rem;
+    width: 1.2rem;
     height: 2px;
-    margin: 5px 0;
+    margin: 3px 0;
     background-color: rgb(100,100,100); /* COLORS */
     transition: all 0.3s ease;
-    margin-right: 1rem;
+    
 }
 .toggle .line1{    
-    transform: rotate(-45deg) translate(-1px,9px);
+    transform: rotate(-45deg) translate(-1px,6px);
 }
 .toggle .line2{    
     opacity: 0;
 }
 .toggle .line3{    
-    transform: rotate(45deg) translate(-1px,-9px);
+    transform: rotate(45deg) translate(-1px,-6px);
 }
 /*  BURGER */
 /*  NAVIGATION LINKS */
 .navlinks{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     height:100vh;
     width: 100vw;
     position: absolute;
     top: 0;
-    right: -100%;
-    background-color: lightgray;
-    transition: all 0.3s ease;
+    right: 0;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.2s ease;
     z-index: 10;
 }
+
 .navlinks li{
     font-size:1.5rem;
     padding: 1rem;
 }
-.navlinks img{
-    width: 90%;
-    margin: 1rem auto;
-}
 /*  NAVIGATION LINKS */
  /*  show/hide navigation links */
 .showNav{
-    right: 0 !important;
+    opacity: 1;
 }
  /*  show/hide navigation links */
 /*  HEADER, TOP PART OF PAGE */
@@ -91,6 +105,18 @@ header{
 .navDock{
     width: 100%;
     transition: all 0.3s ease;
+    position: absolute;
+    bottom: -8vh;
+    z-index: 20;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    
+    background-color: white;
+    height: 0;
+}
+.show-navDock{
+    height:8vh;
+    bottom: 0;
 }
 
 .navDock ul{
@@ -98,7 +124,7 @@ header{
     align-items: center;
     justify-content: space-evenly;
     height: 8vh;
-    background-color: lightgray;
+    background-color: rgba(255, 255, 255, 0);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     text-align: center;
@@ -118,8 +144,10 @@ header{
 /*  DOCK */
 /*  BOOKING FORM AND BUTTON */
 .mainImg{
-    background-color: lightgray;
-    height: 93vh;
+    background-color: rgb(255, 255, 255);
+    background-image: url("./resources NEW/Img/77ec45c7-f8e0-4f1c-a489-c0bafe674096.JPG");
+    background-size: cover;
+    height: 100vh;
 }
 /*  SEARCH BUTTON */
 .searchBtn{
@@ -149,12 +177,11 @@ header{
     justify-content: space-evenly;
     transition: all 0.3s ease;
     position:absolute;
-    right: -100%;
+    right: 100%;
     top: 0;
     z-index: 11;
 }
 .showBookingForm{
-    opacity: 1;
     transform: translateX(-100%);
 }
 
@@ -162,7 +189,7 @@ header{
     width: 90%;
     height: 3rem;
     border: 1px solid gray;
-    border-radius: 1.5rem;
+    border-radius: 3rem;
     padding: 0.8rem;
     font-size: 0.8rem;
 }
@@ -211,17 +238,17 @@ header{
 .reasons{
     display: flex;
     justify-content:space-evenly;
-    align-items:center;
 }
 .reason{
     display: inline-flex;
     flex-direction: column;
     width: 5rem;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
 }
-.reason svg{
-    height: 4rem;
+.reason img{
+    height: 3rem;
+    margin-bottom: 1rem;
 }
 .reason p{
     font-size: 0.7rem;
@@ -272,7 +299,11 @@ header{
     width: 10rem;
     height: 3rem;
     margin: 0 auto;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
+    background-color: crimson;
+    color: white;
+    border: 1px solid black;
+    font-size: 1.2rem;
 }
 /*  RONA CLUB  */
 /*  RELAX ANYWHERE  */
@@ -315,9 +346,13 @@ header{
 }
 .partners button{
     width: 10rem;
-    height: 2rem;
-    border-radius: 0.5rem;
+    height: 3rem;
+    border-radius: 2rem;
     margin: 0 auto;
+    background-color: crimson;
+    color: white;
+    border: 1px solid black;
+    font-size: 1.2rem;
 }
 /*  PARTNERS  */
 /*  EXPERIENCES  */
@@ -376,6 +411,7 @@ footer{
 
 /* ---------- MEDIA QUERIES ----------- */
 @media only screen and (min-width: 1050px){
+/*
 .burger{
     display: none;
 }
@@ -400,6 +436,13 @@ footer{
     font-size: 1rem;
     margin: 0.5rem;
     padding: 0;
+}
+*/
+.navlinks{
+    width: 20rem;
+    height: 40rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
 }
 /* BOOKING FORM */
 .bookingForm{

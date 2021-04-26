@@ -3,6 +3,8 @@ const navLinks = document.querySelector('.navlinks');
 const searchBtn = document.querySelector('.searchBtn');
 const bookingForm = document.querySelector('.bookingForm');
 const closeBtn = document.querySelector('.closeBtn');
+const header = document.querySelector('header');
+const navDock = document.querySelector('.navDock');
 
 
 
@@ -14,10 +16,11 @@ burger.addEventListener('click', ()=>{
     }
     burger.classList.toggle('toggle');
     navLinks.classList.toggle('showNav');
+    header.classList.toggle('open-header');
+    navDock.classList.toggle('show-navDock');
 })
 
 searchBtn.addEventListener('click', ()=>{
-    
     bookingForm.classList.toggle('showBookingForm');
     setTimeout(()=>{
         closeBtn.classList.toggle('cross');
