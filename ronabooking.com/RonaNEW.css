@@ -14,7 +14,18 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
     scroll-behavior: smooth;
+      /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    /* Hide scrollbar for IE, Edge and Firefox */
 }
+/*  Hide scrollbar Chrome, Safari, Opera  */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+/*  SCROLLBAR HIDDEN  */
 .scroll-disabled{
     overflow: hidden;
 }
@@ -64,6 +75,7 @@ header{
 /*  LANGUAGE  */
 .languages{
     display: none;
+
 }
 /*  LANGUAGE  */
 /*  BURGER  */
@@ -111,7 +123,7 @@ header{
     opacity: 1;
 }
 .disabled{
-    display: none;
+    display: none !important;
 }
 /*  NAVIGATION LINKS */
 /*  HEADER, TOP PART OF PAGE */
@@ -452,6 +464,9 @@ footer{
 /* ---------- MEDIA QUERIES ----------- */
 @media only screen and (min-width: 1050px){
 /*  HEADER  */
+.mainLogo img{
+    height: 5vh;
+}
 .open-header{
     height: 16vh;
 }
@@ -462,6 +477,9 @@ footer{
 }
 .desktop-dock li{
     margin: 0 0.5rem;
+}
+.desktop-dock img{
+    height: 1.5rem;
 }
 .lang-select:hover{
     cursor: pointer;
@@ -528,6 +546,88 @@ footer{
 .section{
     margin: 10vh auto;
 }
+/*  PROFILE PAGE */
+    /* top part */
+.profile-page{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.open-header-profile{
+    height: 100vh;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.profile-picture{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5rem;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+.profile-picture img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.username{
+    font-size: 1.2rem;
+}
+.memberlevel{
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
+.edit-btn{
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    height: 1.5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    /* top part */
+    /* middle part */
+.btn{
+    width: 20rem;
+    height: 3rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.points{
+    margin-left: 1rem;
+}
+    /* middle part */
+    /* bottom part */
+.bottom-profile{
+    display: flex;
+    justify-content: center;
+}
+.bottom-profile ul{
+    display: flex;
+    justify-content: center;
+}
+.bottom-profile li{
+    margin: 0 1rem;
+}
+    /* bottom part */
+/*  PROFILE PAGE */
 /*  SEARCH BUTTON */
 .searchBtn{
     display: flex;

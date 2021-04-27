@@ -8,19 +8,32 @@ const header = document.querySelector('header');
 const navDock = document.querySelector('.navDock');
 const langSelect = document.querySelector('.lang-select');
 const languages = document.querySelector('.languages');
+const avatar = document.querySelector('.avatar');
+const profilePage = document.querySelector('.profile-page');
 
 //BURGER
 burger.addEventListener('click', ()=>{
     body.classList.toggle('scroll-disabled');
+    if(header.classList.contains('open-header-profile')){
+        header.classList.toggle('open-header-profile');
+        setTimeout(()=>{
+           profilePage.classList.add('disabled');
+           burger.classList.toggle('toggle');
+           navLinks.classList.remove('disabled');
+           navLinks.classList.toggle('showNav');
+           header.classList.toggle('open-header');
+        },200);
+        return;
+    }
     if(searchBtn.classList.contains('expand-search')){
         searchBtn.classList.toggle('expand-search');
         burger.classList.toggle('toggle');
         bookingForm.classList.remove('showBookingForm');
         return;
     } else if(languages.classList.contains('display-languages')){
-        languages.classList.toggle('display-languages');
         header.classList.toggle('open-header');
         setTimeout(()=>{
+            languages.classList.toggle('display-languages');
             burger.classList.toggle('toggle');
             header.classList.toggle('open-header');
             navLinks.classList.toggle('disabled');
@@ -30,12 +43,23 @@ burger.addEventListener('click', ()=>{
     }
     burger.classList.toggle('toggle');
     navLinks.classList.toggle('showNav');
+    navLinks.classList.remove('disabled');
     header.classList.toggle('open-header');
     navDock.classList.toggle('show-navDock');
+    profilePage.classList.add('disabled');
 })
 
 //LANGUAGE SELECTOR
 langSelect.addEventListener('click', ()=>{
+    if(header.classList.contains('open-header-profile')){
+        header.classList.toggle('open-header-profile');
+        setTimeout(()=>{
+            languages.classList.toggle('display-languages');
+            profilePage.classList.add('disabled');
+            header.classList.toggle('open-header');
+        },200);
+        return;
+    }
     if(burger.classList.contains('toggle')){
         burger.classList.toggle('toggle');
         navLinks.classList.toggle('showNav');
@@ -47,11 +71,44 @@ langSelect.addEventListener('click', ()=>{
         },200)
         return;
     }
-    languages.classList.toggle('display-languages');
+    if(languages.classList.contains('display-languages')){
+        header.classList.toggle('open-header');
+        setTimeout(()=>{
+            languages.classList.toggle('display-languages');
+        },200)
+        return;
+    }
+    languages.classList.toggle('display-languages');//treba biti prikazano stalno, a disejblati sa delayom
     header.classList.toggle('open-header');
     navLinks.classList.toggle('disabled');
+    profilePage.classList.add('disabled');
+
 })
 
+//PROFILE PAGE
+avatar.addEventListener('click', ()=>{
+    if(burger.classList.contains('toggle')){
+        header.classList.remove('open-header');
+        burger.classList.remove('toggle');
+        navLinks.classList.remove('showNav');
+        setTimeout(()=>{
+            profilePage.classList.remove('disabled');
+            header.classList.toggle('open-header-profile');
+        },200)
+        return;
+    }
+    if(languages.classList.contains('display-languages')){
+        header.classList.toggle('open-header');
+        setTimeout(()=>{
+            languages.classList.toggle('display-languages');
+            profilePage.classList.remove('disabled');
+            header.classList.toggle('open-header-profile');
+        },200)
+        return;
+    }
+    profilePage.classList.remove('disabled');
+    header.classList.toggle('open-header-profile');
+})
 //SEARCH BUTTON
 searchBtn.addEventListener('click', ()=>{
     if(searchBtn.classList.contains('expand-search')){
