@@ -13,8 +13,11 @@ body{
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
-
+.scroll-disabled{
+    overflow: hidden;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -27,12 +30,11 @@ header{
     justify-content:space-between;
     align-items:center;
     border-bottom-left-radius: 1rem;
-    
     position: absolute;
     top: 0;
     left: 0;
     background-color: white;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     z-index: 20;
     overflow: hidden;
 }
@@ -46,23 +48,34 @@ header{
     position: absolute;
     top: 1.5vh;
 }
-
-/*  BURGER */
-
-.burger{
+/*  BURGER GROUP  */
+.burger-group{
     position: absolute;
     top: 3vh;
     right: 3vh;
     z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-
+.desktop-dock{
+    display: none;
+}
+/*  LANGUAGE  */
+.languages{
+    display: none;
+}
+/*  LANGUAGE  */
+/*  BURGER  */
+.burger:hover{
+    cursor: pointer;
+}
 .burger div{
     width: 1.2rem;
     height: 2px;
     margin: 3px 0;
     background-color: rgb(100,100,100); /* COLORS */
-    transition: all 0.3s ease;
-    
+    transition: all 0.1s ease;
 }
 .toggle .line1{    
     transform: rotate(-45deg) translate(-1px,6px);
@@ -74,6 +87,7 @@ header{
     transform: rotate(45deg) translate(-1px,-6px);
 }
 /*  BURGER */
+/*  BURGER GROUP  */
 /*  NAVIGATION LINKS */
 .navlinks{
     display: flex;
@@ -86,39 +100,35 @@ header{
     right: 0;
     opacity: 1;
     background-color: rgba(255, 255, 255, 0);
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
     z-index: 10;
 }
-
 .navlinks li{
     font-size:1.5rem;
     padding: 1rem;
 }
-/*  NAVIGATION LINKS */
- /*  show/hide navigation links */
-.showNav{
+.showNav{/*  show/hide navigation links */
     opacity: 1;
 }
- /*  show/hide navigation links */
+/*  NAVIGATION LINKS */
 /*  HEADER, TOP PART OF PAGE */
+
 /*  DOCK */
 .navDock{
     width: 100%;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     position: absolute;
-    bottom: -8vh;
+    bottom: 0;
     z-index: 20;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    
     background-color: white;
     height: 0;
+    overflow: hidden;
 }
 .show-navDock{
     height:8vh;
-    bottom: 0;
 }
-
 .navDock ul{
     display: flex;
     align-items: center;
@@ -129,7 +139,6 @@ header{
     border-top-right-radius: 1rem;
     text-align: center;
 }
-
 .navDock li{
     display: flex;
     flex-direction: column;
@@ -137,11 +146,11 @@ header{
     justify-content: flex-end;
     height: 70%;
 }
-
 .navDock p{
     font-size: 0.6rem;
 }
 /*  DOCK */
+
 /*  BOOKING FORM AND BUTTON */
 .mainImg{
     background-color: rgb(255, 255, 255);
@@ -155,42 +164,56 @@ header{
     justify-content: center;
     align-items: center;
     width: 70%;
-    height: 2rem;
+    height: 3rem;
     border: 1px solid black;
-    border-radius:1rem;
+    border-radius:2rem;
     margin: 0 auto;
-    position: relative;
-    top: 70vh;
+    position: absolute;
+    top: 50vh;
+    left:50%;
+    transform:translateX(-50%);
     background-color: white;
+    transition: all 0.1s ease;
+    overflow: hidden;
+}
+.expand-search{
+    height: 100vh;
+    width: 100vw;
+    top:0;
+    border: none;
+    border-radius: 0;
+}
+.searchBtn img{
+    margin-right: 1rem;
 }
 /*  SEARCH BUTTON */
-
-
 /*  BOOKING FORM  */
 .bookingForm{
     height: 100vh;
     width: 100vw;
-    background-color: lightgray;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     transition: all 0.3s ease;
     position:absolute;
-    right: 100%;
+    left: 0;
     top: 0;
     z-index: 11;
+    opacity: 0;
 }
 .showBookingForm{
-    transform: translateX(-100%);
+    opacity: 1;
 }
 
 .bookingInfo{
-    width: 90%;
-    height: 3rem;
-    border: 1px solid gray;
-    border-radius: 3rem;
+    width: 80%;
+    height: 2rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2rem;
     padding: 0.8rem;
+    margin: 1rem;
     font-size: 0.8rem;
 }
 .dates{
@@ -204,8 +227,12 @@ header{
 .checkOut{
     width: 45%;
 }
-.menu-logo{
-    width: 90%;
+.search{
+    background-color: crimson;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    color: white;
 }
 /*  BOOKING FORM  */
 /*  BOOKING FORM AND BUTTON */
@@ -249,6 +276,7 @@ header{
 .reason img{
     height: 3rem;
     margin-bottom: 1rem;
+    opacity: 0.7;
 }
 .reason p{
     font-size: 0.7rem;
@@ -320,8 +348,6 @@ header{
 }
 .specific{
     width: 100%;
-}
-.specific{
     margin: 0 1rem;
 }
 .specific img{
@@ -329,6 +355,10 @@ header{
     height: 15rem;
     border: 1px solid gray;
     border-radius: 1rem;
+}
+
+.romantic img{
+    margin-right: 1rem;
 }
 /*  RELAX ANYWHERE  */
 /*  PARTNERS  */
@@ -348,7 +378,7 @@ header{
     width: 10rem;
     height: 3rem;
     border-radius: 2rem;
-    margin: 0 auto;
+    margin: 1rem auto;
     background-color: crimson;
     color: white;
     border: 1px solid black;
@@ -375,6 +405,7 @@ header{
     width: 15rem;
     border: 1px solid gray;
     border-radius: 1rem;
+    margin-right: 1rem;
 }
 .experience p{
     text-align: left;
@@ -407,80 +438,209 @@ footer{
     text-align: center;
     margin: 1rem auto;
 }
+.social img{
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem;
+    filter: grayscale(1);
+}
 /*  FOOTER  */
 
 /* ---------- MEDIA QUERIES ----------- */
 @media only screen and (min-width: 1050px){
-/*
-.burger{
-    display: none;
+/*  HEADER  */
+.open-header{
+    height: 16vh;
 }
-.navlinks{
-    flex-direction: row;
-    height: 7vh;
-    max-width: 70%;
-    right: 0;
-}
-.navlinks .logo{
-    display: none;
-}
-.navlinks ul{
+.desktop-dock{
     display: flex;
-    align-items: center;
-    justify-content:flex-end;
-    width: 100%;
-    margin: 0 1rem;
+    opacity: 0.7;
+    margin: 0 0.5rem;
 }
-.navlinks li{
-   
-    font-size: 1rem;
-    margin: 0.5rem;
-    padding: 0;
+.desktop-dock li{
+    margin: 0 0.5rem;
 }
-*/
+/*  BURGER GROUP  */
+
+/*  LANGUAGE  */
+.languages{
+    position: absolute;
+    top:8vh;
+    right:5rem;
+    z-index: 21;
+    background-color: white;
+    width: 7rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.display-languages{
+    display: block;
+
+}
+/*  LANGUAGE  */
+/*  BURGER */
+.burger div{
+    width: 1.3rem;
+    height: 3px;
+    margin: 3px 0;
+    border-radius: 1px;
+}
+.toggle .line1{    
+    transform: rotate(-45deg) translate(-3px,6px);
+}
+.toggle .line2{    
+    opacity: 0;
+}
+.toggle .line3{    
+    transform: rotate(45deg) translate(-3px,-6px);
+}
+/*  BURGER */
+/*  BURGER GROUP  */
 .navlinks{
     width: 20rem;
     height: 40rem;
-    border: 1px solid gray;
     border-radius: 1rem;
-}
-/* BOOKING FORM */
-.bookingForm{
-    height: auto;
-    width: 100vw;
-    max-width:1024px;
-    margin: 0 auto;
-    padding: 0;
     flex-direction: row;
-    right: 50%;
-    top: 70vh;
-    transform: translateX(50%);
+    width: 100%;
+    height: 8vh;
+    top:8vh;
+    right: auto;
 }
-.closeBtn{
-    display: none;
+.dropdown{
+    display: flex;
 }
-.bookingInfo{
-    margin: 0 0.5rem;
-    width: 20%;
+.navlinks li{
+    font-size: 1rem;
 }
-.menu-logo{
-    display: none;
-}
+/*  HEADER  */
+/*  DOCK */
 .navDock{
     display: none;
 }
-.search{
-    width: 3rem;
-    border-radius: 2rem;
+/*  DOCK */
+.section{
+    margin: 10vh auto;
 }
-/* BOOKING FORM */
+/*  SEARCH BUTTON */
+.searchBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 3rem;
+    border: none;
+    border-radius:2rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 60vh;
+    left:0;
+    transform:translateX(0);
+    background-color: rgba(255, 255, 255, 0);
+    color:rgba(255, 255, 255, 0);
+    transition: all 0.1s ease;
+    overflow:visible;
+}
+.expand-search{
+    height: 3rem;
+    width: 100vw;
+    top:60vh;
+    border: none;
+    border-radius: 0;
+}
+.searchBtn img{
+    display: none;
+}
+/*  SEARCH BUTTON */
+/*  BOOKING FORM  */
+.bookingForm{
+    height: 4rem;
+    width: 70vw;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position:absolute;
+    left: auto;
+    top: auto;
+    z-index: 11;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.bookingInfo{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 0;
+    padding: 0.8rem;
+    margin: 0;
+    font-size: 0.8rem;
+    color: black;
+    background-color: white;
+}
+.location{
+    border-right: 1px solid gray;
+}
+.dates{
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid gray;
+}
+.checkIn{
+    width: 50%;
+    border-right: 1px solid gray;
+}
+.checkOut{
+    width: 45%;
+}
+.guests{
+    border-right: 1px solid gray;
+}
+.type{
+    border-right: 1px solid gray;
+}
+.search{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    color: white;
+    width: 2rem;
+    border-radius: 2rem;
+    content:url("./resources NEW/SVG/search_black_24dp.svg")
+}
+/*  BOOKING FORM  */
+/*  SPECIAL OFFERS  */
+.section-heading{
+    margin-bottom: 3rem;
+}
+/*  SPECIAL OFFERS  */
+/*  BOOK WITH US  */
+.bookwithus{
+    width: 70vw;
+}
+.reason{
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+    justify-content:space-between;
+    align-items:center;
+}
+.reason img{
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+.reason p{
+    font-size: 1rem;
+    text-align:center;                        
+}
 /*  EXPLORE CROATIA  */
 .place{
     width: 20rem;
     height: 10rem;
-}
-.searchBtn{
-    display: none;
 }
 /*  EXPLORE CROATIA  */
 /*  RONA CLUB  */
@@ -495,6 +655,8 @@ footer{
     border-right: 1px solid gray;
 }
 /*  RONA CLUB  */
+/*  RELAX ANYWHERE  */
+/*  RELAX ANYWHERE  */
 /*  SUMMARY  */
 .summary{
     display: flex;
@@ -518,5 +680,11 @@ footer{
     text-align: center;
 }
 /*  SUMMARY  */
+/*  FOOTER  */
+.social img:hover{
+    filter: grayscale(0);
+}
+/*  FOOTER  */
+
 }
 /* ---------- MEDIA QUERIES ----------- */
