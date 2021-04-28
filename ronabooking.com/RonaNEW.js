@@ -16,7 +16,7 @@ const dockSearch = document.querySelector('.dock-search');
 
 //BURGER
 burger.addEventListener('click', ()=>{
-    body.classList.toggle('scroll-disabled');
+    //body.classList.toggle('scroll-disabled');
     if(header.classList.contains('open-header-profile')){
         header.classList.toggle('open-header-profile');
         setTimeout(()=>{
@@ -144,6 +144,9 @@ function openProfile(){
 
 //SEARCH BUTTON
 searchBtn.addEventListener('click', ()=>{
+    if(searchBtn.classList.contains('expand-search')){
+        return;
+    }
     expandSearch();
     })
 
@@ -156,7 +159,7 @@ function expandSearch(){
         navLinks.classList.remove('showNav');
         languages.classList.remove('display-languages');
         setTimeout(()=>{
-            body.classList.toggle('scroll-disabled');
+            //body.classList.toggle('scroll-disabled');
             searchBtn.classList.toggle('expand-search');
             burger.classList.toggle('toggle');
             bookingForm.classList.toggle('showBookingForm');
@@ -171,7 +174,7 @@ function expandSearch(){
         burger.classList.remove('toggle');
         return;
     }
-    body.classList.toggle('scroll-disabled');
+    //body.classList.toggle('scroll-disabled');
     searchBtn.classList.toggle('expand-search');
     burger.classList.toggle('toggle');
     bookingForm.classList.toggle('showBookingForm');

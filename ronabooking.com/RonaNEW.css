@@ -324,7 +324,7 @@ header{
     opacity: 0;
 }
 .showBookingForm{
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .bookingInfo{
