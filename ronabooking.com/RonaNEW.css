@@ -249,6 +249,12 @@ header{
     font-size: 1.3rem;
     color: white;
 }
+input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
 /*  BOOKING FORM  */
 /*  BOOKING FORM AND BUTTON */
 /*  SPECIAL OFFERS  */
