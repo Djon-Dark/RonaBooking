@@ -32,7 +32,8 @@ burger.addEventListener('click', ()=>{
         burger.classList.toggle('toggle');
         bookingForm.classList.remove('showBookingForm');
         return;
-    } else if(languages.classList.contains('display-languages')){
+    } 
+    if(languages.classList.contains('display-languages')){
         header.classList.toggle('open-header');
         setTimeout(()=>{
             languages.classList.toggle('display-languages');
@@ -47,7 +48,7 @@ burger.addEventListener('click', ()=>{
     navLinks.classList.toggle('showNav');
     navLinks.classList.remove('disabled');
     header.classList.toggle('open-header');
-    navDock.classList.toggle('show-navDock');
+    navDock.classList.add('show-navDock');
     profilePage.classList.add('disabled');
 })
 
