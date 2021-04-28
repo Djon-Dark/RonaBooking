@@ -324,15 +324,18 @@ header{
     opacity: 0;
 }
 .showBookingForm{
-    opacity: 1 !important;
+    opacity: 1;
 }
-
+.bookingForm h2{
+    margin-bottom: 1rem;
+    color:rgb(80, 80, 80);
+}
 .bookingInfo{
     width: 80%;
-    height: 2rem;
-    border: 2px solid rgb(0, 0, 0);
+    height: 3rem;
+    border: 1px solid rgb(80, 80, 80);
     border-radius: 2rem;
-    padding: 0.8rem;
+    padding: 0.4rem 1.5rem;
     margin: 1rem;
     font-size: 0.8rem;
 }
@@ -349,16 +352,21 @@ header{
 }
 .search{
     background-color: crimson;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: 2rem;
     font-size: 1.3rem;
+    font-weight: bold;
     color: white;
 }
 input {
     width: 100%;
-    height: 100%;
+    height: 60%;
     border: none;
+    outline: none;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
 }
 /*  BOOKING FORM  */
 /*  BOOKING FORM AND BUTTON */

@@ -115,42 +115,30 @@
         <!-- Search button -->
         <div class="searchBtn">
             <img src="./resources NEW/SVG/search_black_24dp.svg" alt="">
-            <a href="#">Find your ideal holliday!</a>
-            <!--
+            <a class='slogan' href="#">Find your ideal holiday!</a>
             <div class="bookingForm">
-                <div class="bookingInfo location">Location</div>
-                <div class="bookingInfo dates">
-                    <div class="date checkIn">Check in</div>
-                    <div class="date checkOut">Check out</div>
-                </div>
-                <div class="bookingInfo guests">Guests</div>
-                <div class="bookingInfo type">Accomodation type</div>
-                <div class="bookingInfo search">Search</div>
-            </div>
-            -->
-            <div class="bookingForm">
+                <h2>Find your ideal holiday!</h2>
                 <div class="bookingInfo location">
-                    <!-- TAKEN FROM OLD RONA -->
-                    <div class="form-dropdown">
-                        <input type='text' id="location" form='search-form' name='SearchForm[location]'
-                            value="All Destinations" style="display:none" />
-                        <input type='text' form='search-form' name='SearchForm[location-facade]' placeholder="Destination"
-                            id="location-autocomplete" list='locationList' class="location-autocomplete"
-                            onkeyup="locationAutocomlete()" oninput = "setFinalValue()" />
-                        <datalist id='locationList'>
-                            <option  value="All Destinations"></option>
-                            <option  value="Istria"></option>
-                            <option  value="Kvarner"></option>
-                            <option  value="Dalmatia"></option>
-                            <option  value="Islands"></option>
-                        </datalist>
-                    </div>
+                    <label for="location">Location</label>
+                    <input type='text' id="location" form='search-form' name='SearchForm[location]'
+                        value="All Destinations" style="display:none" />
+                    <input type='text' form='search-form' name='SearchForm[location-facade]' placeholder="Destination"
+                        id="location-autocomplete" list='locationList' class="location-autocomplete"
+                        onkeyup="locationAutocomlete()" oninput = "setFinalValue()" />
+                    <datalist id='locationList'>
+                        <option  value="All Destinations"></option>
+                        <option  value="Istria"></option>
+                        <option  value="Kvarner"></option>
+                        <option  value="Dalmatia"></option>
+                        <option  value="Islands"></option>
+                    </datalist>
                 </div>
                 <div class="bookingInfo dates">
                     <div class="date checkIn">Check in</div>
                     <div class="date checkOut">Check out</div>
                 </div>
                 <div class="bookingInfo guests">
+                    <label for="guests">Guests</label>
                     <input list="guests" placeholder="Number of guests">
                     <datalist id="guests">
                         <option value="Any">
@@ -164,6 +152,7 @@
                     </datalist>
                 </div>
                 <div class="bookingInfo type">
+                    <label for="type">Type</label>
                     <input list="type" placeholder="Property type">
                     <datalist id="type">
                     <option value="Any">
