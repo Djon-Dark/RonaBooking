@@ -131,3 +131,15 @@ searchBtn.addEventListener('click', ()=>{
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 })
+
+//SCROLL ACTIVATION ----> DEBOUNCATI ILI NEKI KURAC
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        navDock.classList.add('show-navDock');
+    } else {
+        navDock.classList.remove('show-navDock');
+    }
+    prevScrollpos = currentScrollPos;
+}

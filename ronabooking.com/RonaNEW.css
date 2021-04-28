@@ -234,11 +234,10 @@ header{
 .navDock{
     width: 100%;
     transition: all 0.1s ease;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: 20;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top: 1px solid crimson;
     background-color: white;
     height: 0;
     overflow: hidden;
@@ -246,6 +245,7 @@ header{
 .show-navDock{
     height:8vh;
 }
+
 .navDock ul{
     display: flex;
     align-items: center;
