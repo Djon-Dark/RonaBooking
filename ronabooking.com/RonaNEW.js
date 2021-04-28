@@ -10,6 +10,8 @@ const langSelect = document.querySelector('.lang-select');
 const languages = document.querySelector('.languages');
 const avatar = document.querySelector('.avatar');
 const profilePage = document.querySelector('.profile-page');
+const dockLang = document.querySelector('.dock-language');
+const dockUser = document.querySelector('.dock-user');
 
 //BURGER
 burger.addEventListener('click', ()=>{
@@ -50,7 +52,10 @@ burger.addEventListener('click', ()=>{
 })
 
 //LANGUAGE SELECTOR
-langSelect.addEventListener('click', ()=>{
+langSelect.addEventListener('click', openLanguageSelect);
+dockLang.addEventListener('click', openLanguageSelect);
+
+function openLanguageSelect () {
     if(header.classList.contains('open-header-profile')){
         header.classList.toggle('open-header-profile');
         setTimeout(()=>{
@@ -78,15 +83,18 @@ langSelect.addEventListener('click', ()=>{
         },200)
         return;
     }
-    languages.classList.toggle('display-languages');//treba biti prikazano stalno, a disejblati sa delayom
+    languages.classList.toggle('display-languages');
     header.classList.toggle('open-header');
     navLinks.classList.toggle('disabled');
     profilePage.classList.add('disabled');
 
-})
+}
 
 //PROFILE PAGE
-avatar.addEventListener('click', ()=>{
+avatar.addEventListener('click', openProfile);
+dockUser.addEventListener('click', openProfile);
+
+function openProfile(){
     if(burger.classList.contains('toggle')){
         header.classList.remove('open-header');
         burger.classList.remove('toggle');
@@ -108,7 +116,8 @@ avatar.addEventListener('click', ()=>{
     }
     profilePage.classList.remove('disabled');
     header.classList.toggle('open-header-profile');
-})
+}
+
 //SEARCH BUTTON
 searchBtn.addEventListener('click', ()=>{
     if(searchBtn.classList.contains('expand-search')){

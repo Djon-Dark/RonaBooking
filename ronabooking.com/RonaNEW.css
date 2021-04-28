@@ -74,8 +74,21 @@ header{
 }
 /*  LANGUAGE  */
 .languages{
+    position: absolute;
+    top:8vh;
     display: none;
-
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    transition: all 0.1s ease 0.1s;
+}
+.display-languages{
+    display: flex;
+}
+.languages ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 /*  LANGUAGE  */
 /*  BURGER  */
@@ -494,19 +507,13 @@ footer{
 
 /*  LANGUAGE  */
 .languages{
-    position: absolute;
-    top:8vh;
     height: 8vh;
-    width: 100vw;
-    display: none;
-    justify-content: center;
-    transition: all 0.1s ease 0.1s;
 }
 .display-languages{
     display: flex;
 }
 .languages ul{
-    display: flex;
+    flex-direction: row;
 }
 .languages li{
     padding: 1rem;
