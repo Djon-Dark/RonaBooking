@@ -266,6 +266,9 @@ header{
 .navDock p{
     font-size: 0.6rem;
 }
+.hide-dock-search{
+    display: none !important;
+}
 /*  DOCK */
 
 /*  BOOKING FORM AND BUTTON */
