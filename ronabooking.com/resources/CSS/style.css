@@ -274,7 +274,7 @@ header{
 /*  BOOKING FORM AND BUTTON */
 .mainImg{
     background-color: rgb(255, 255, 255);
-    background-image: url("./resources NEW/Img/77ec45c7-f8e0-4f1c-a489-c0bafe674096.JPG");
+    background-image: url("../Img/girl-on-beach.JPG");
     background-size: cover;
     height: 100vh;
 }
@@ -864,7 +864,7 @@ footer{
     color: white;
     width: 2rem;
     border-radius: 2rem;
-    content:url("./resources NEW/SVG/search_black_24dp.svg");
+    content: url("../SVG/search_black_24dp.svg");
     padding-right: 0;
 }
 input{
