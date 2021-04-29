@@ -9,23 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript">
-        var datefield=document.createElement("input")
-        datefield.setAttribute("type", "date")
-        if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
-            document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
-            document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
-            document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n') 
-        }
-    </script>   
-    <script>
-    if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
-        jQuery(function($){ //on document.ready
-            $('#check-in').datepicker();
-            $('#check-out').datepicker();
-        })
-    }
-    </script>
 </head>
 <body>
     <!-- LOGO AND NAVBAR -->
@@ -128,11 +111,11 @@
     <!-- MOBILE NAVIGATION DOCK -->
     <!-- BOOKING FORM AND BUTTON -->
     <div class="mainImg">
-        <h1 class='slogan desktop'>Find your ideal holiday!</h1>
+
         <!-- Search button -->
         <div class="searchBtn">
             <img src="./resources NEW/SVG/search_black_24dp.svg" alt="">
-            <a class='slogan mobile' href="#">Find your ideal holiday!</a>
+            <a class='slogan' href="#">Find your ideal holiday!</a>
             <div class="bookingForm">
                 <h2>Find your ideal holiday!</h2>
                 <div class="bookingInfo location">
@@ -151,19 +134,12 @@
                     </datalist>
                 </div>
                 <div class="bookingInfo dates">
-                    <div class="date checkIn">
-                        <label for="start">Check in</label>
-                        <input type="date" id="check-in" name="check-in" size="20" placeholder='dd/mm/yyyy'/>
-                    </div>
-                    <div class="date checkOut">
-                        <label for="start">Check out</label>
-                        <input type="date" id="check-out" name="check-out" size="20" placeholder='dd/mm/yyyy'/>
-                    </div>
-
+                    <div class="date checkIn">Check in</div>
+                    <div class="date checkOut">Check out</div>
                 </div>
                 <div class="bookingInfo guests">
                     <label for="guests">Guests</label>
-                    <input list="guests" placeholder="Number">
+                    <input list="guests" placeholder="Number of guests">
                     <datalist id="guests">
                         <option value="Any">
                         <option value="1">
@@ -176,8 +152,8 @@
                     </datalist>
                 </div>
                 <div class="bookingInfo type">
-                    <label for="type">Property type</label>
-                    <input list="type" placeholder="Apartment?">
+                    <label for="type">Type</label>
+                    <input list="type" placeholder="Property type">
                     <datalist id="type">
                     <option value="Any">
                     <option value="Apartment">

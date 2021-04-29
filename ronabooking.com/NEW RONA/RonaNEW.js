@@ -150,13 +150,8 @@ searchBtn.addEventListener('click', ()=>{
     expandSearch();
     })
 
-const mediaQueryList = window.matchMedia("(min-width: 1050px)");
-
-function expandSearch(){//KLIK NA INPUT FORMU U DESKTOPU AKTIVIRA BURGER, MAKNI TO
+function expandSearch(){
     //close other menus if they're open
-    if (mediaQueryList.matches) {
-        return;
-      }
     if(header.classList.contains('open-header')||header.classList.contains('open-header-profile')){
         header.classList.remove('open-header');
         header.classList.remove('open-header-profile');
