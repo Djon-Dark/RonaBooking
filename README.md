@@ -1,2 +1,0 @@
-# RonaBooking
- Ripped from site
