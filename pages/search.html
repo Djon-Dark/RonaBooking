@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../resources/CSS/style.css">
+    <link rel="stylesheet" href="../resources/CSS/search.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript">
+    <script type="text/javascript">//date picker for Safari
         var datefield=document.createElement("input")
         datefield.setAttribute("type", "date")
         if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
@@ -18,7 +19,7 @@
             document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n') 
         }
     </script>   
-    <script>
+    <script>//date picker for Safari
     if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
         jQuery(function($){ //on document.ready
             $('#check-in').datepicker();
@@ -104,6 +105,22 @@
         <!-- NAVIGATION LINKS -->
     </header>
     <!-- LOGO AND NAVBAR -->
+    <!-- DRAGGABLE ELEMENT / SEARCH RESULTS-->
+    <div id="container">
+        <div id="item">
+          <div class="dragline"></div>
+          <div class="result">
+              <div class="result-img-carousel"></div>
+              <div class="result-info">
+                  <div class="bed-num">2 bed - 1 Bedroom</div>
+                  <div class="type-and-location">Apartment - Icici</div>
+                  <div class="ppn">500 kn</div>
+                  <div class="price-total">2000 kn</div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-- DRAGGABLE ELEMENT / SEARCH RESULTS-->
     <!-- MOBILE NAVIGATION DOCK -->
     <div class="navDock">
         <ul>
@@ -200,7 +217,6 @@
             <p>RonaBooking.com - All rights reserved.</p>
         </footer>
         <!--  FOOTER  -->
-        
+        <script src="../resources/JS/search.js"></script>
     </body>
-    <script src="../resources/JS/main.js"></script>
     </html>
