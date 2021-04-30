@@ -1,5 +1,7 @@
 
-body{}
+body{
+    overflow: hidden;
+}
 /*  HEADER, TOP PART OF PAGE */
 header{
     height: 8vh;
@@ -46,7 +48,9 @@ header{
 #container {
     width: 100vw;
     height:100vh;
-    background-color: rgba(51, 51, 51, 0);
+    background: url('/resources/Img/Map\ Croatia\ google.png');
+    background-size: cover;
+    background-position: center bottom;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,6 +87,13 @@ header{
       width: 100%;
       border-radius: 1rem;
       border: 1px solid black; /* to be remnoved */
+  }
+  .result-info li{
+      margin: 0.5rem;
+  }
+  .result-info img{
+      height: 1rem;
+      margin-right: 1rem;
   }
 /*
 .container{
