@@ -43,8 +43,8 @@ header{
     opacity: 1;
 }
 /*  HEADER, TOP PART OF PAGE */
-/*  DRAGGABLE ELEMENT */
 
+/*  DRAGGABLE ELEMENT */
 #container {
     width: 100vw;
     height:100vh;
@@ -61,6 +61,7 @@ header{
   }
   #item {
     width: 100%;
+    height: 100vh;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
@@ -70,6 +71,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: scroll;
   }
   .dragline{
       height: 0.2rem;
@@ -86,7 +88,7 @@ header{
       height:20vh;
       width: 100%;
       border-radius: 1rem;
-      border: 1px solid black; /* to be remnoved */
+      border: 1px solid black;
   }
   .result-info li{
       margin: 0.5rem;
@@ -95,49 +97,6 @@ header{
       height: 1rem;
       margin-right: 1rem;
   }
-/*
-.container{
-    width: 100vw;
-    height:100vh;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    touch-action: none;
-}
-.draggable-element{
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    background-color: white;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.dragpoint{
-    height: 3rem;
-}
-.dragline{
-    height: 0.2rem;
-    width: 5rem;
-    margin-top: 1rem;
-    background-color: rgb(80, 80, 80);
-}
-.result{
-    width: 95%;
-    margin-bottom: 2rem;
-
-}
-.result-img-carousel{
-    height:20vh;
-    width: 100%;
-    border-radius: 1rem;
-    border: 1px solid black;
-}
-*/
 /*  DRAGGABLE ELEMENT */
 /*  MOBILE NAVIGATION DOCK  */
 .navDock{
@@ -332,6 +291,27 @@ label{
     font-size: 1rem;
 }
 /*  HEADER  */
+/*  DRAGGABLE ELEMENT */
+#container{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#item{
+    width: 45vw;
+    height: 100vh;
+    border-radius: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+.dragline{
+    display: none;
+}
+.result{
+    margin: 1rem;
+}
+/*  DRAGGABLE ELEMENT */
 /*  DOCK */
 .navDock{
     display: none;
@@ -423,7 +403,7 @@ label{
     /* bottom part */
 /*  PROFILE PAGE */
 .slogan.desktop{
-    display: block;
+    display: none;
 }
 /*  SEARCH BUTTON */
 .searchBtn{
@@ -465,13 +445,15 @@ label{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    position:absolute;
+    position:fixed;
     left: auto;
-    top: auto;
+    top: 20vh;
+    bottom: 0;
     z-index: 11;
     opacity: 1;
     overflow: hidden;
     padding: 0 1rem;
+    border: 1px solid black;
 }
 .bookingInfo{
     width: 100%;
@@ -526,74 +508,7 @@ label{
 input{
     font-size: 0.8rem;
 }
-/*  BOOKING FORM  */
-/*  SPECIAL OFFERS  */
-.section-heading{
-    margin-bottom: 3rem;
-}
-/*  SPECIAL OFFERS  */
-/*  BOOK WITH US  */
-.bookwithus{
-    width: 70vw;
-}
-.reason{
-    display: inline-flex;
-    flex-direction: column;
-    width: auto;
-    justify-content:space-between;
-    align-items:center;
-}
-.reason img{
-    height: 5rem;
-    margin-bottom: 1rem;
-}
-.reason p{
-    font-size: 1rem;
-    text-align:center;                        
-}
-/*  EXPLORE CROATIA  */
-.place{
-    width: 20rem;
-    height: 10rem;
-}
-/*  EXPLORE CROATIA  */
-/*  RONA CLUB  */
-.ronaclub{
-    display: flex;
-    height: 20rem;
-}
-.ronaclub .top{
-    width: 25%;
-    height: 100%;
-    border-bottom: none;
-    border-right: 1px solid gray;
-}
-/*  RONA CLUB  */
-/*  RELAX ANYWHERE  */
-/*  RELAX ANYWHERE  */
-/*  SUMMARY  */
-.summary{
-    display: flex;
-    justify-content: space-evenly;
-}
-.summary-section{
-    width: 15%;
-    height: auto;
-    margin: 2rem 1rem;
-}
-.summary-section h2{
-    text-align: left;
-    margin: 0;
-}
-#benefits{
-    width: 35%;
-    margin-left: 0;
-    margin-right: 0;
-}
-#benefits h2{
-    text-align: center;
-}
-/*  SUMMARY  */
+
 /*  FOOTER  */
 .social img:hover{
     filter: grayscale(0);

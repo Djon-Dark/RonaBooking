@@ -277,6 +277,9 @@ function drag(e) {
 }
 
 function setTranslate(xPos, yPos, el) {
-  el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+    if (mediaQueryList.matches) {
+        return;
+      }
+    el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
 }
 //DRAGGABLE ELEMENT
