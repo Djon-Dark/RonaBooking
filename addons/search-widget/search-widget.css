@@ -1,0 +1,37 @@
+.search-widget{
+    height: 2rem;
+    width: 20rem;
+}
+#option-input{
+    height: 100%;
+    width: 100%;
+}
+#option-list{
+    text-decoration: none;
+    list-style: none;
+    background-color: white;
+    border-radius: 0.2rem;
+    box-shadow: rgba(0,0,0,0.1) 0 0.2rem 1rem 0.1rem;
+    display: none;
+    opacity: 0;
+}
+#option-list li{
+    margin: 0.5rem 0;
+}
+.place{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.location{
+    font-size: 0.8rem;
+}
+
+
+/* animation */
+.show-block{
+    display: block !important;
+}
+.show-transition{
+    transition: all 0.05s ease;
+    opacity: 1 !important;
+}

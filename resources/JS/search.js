@@ -250,10 +250,11 @@ function dragStart(e) {
 }
 
 function dragEnd(e) {
-  initialX = currentX;
-  initialY = currentY;
+    initialX = currentX;
+    initialY = currentY;
 
-  active = false;
+    active = false;
+    snapTop();
 }
 
 function drag(e) {
@@ -273,13 +274,36 @@ function drag(e) {
     yOffset = currentY;
 
     setTranslate(0, currentY, dragItem);
+
+
   }
 }
 
 function setTranslate(xPos, yPos, el) {
     if (mediaQueryList.matches) {
         return;
-      }
+    }
     el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+    
+    let position = dragItem.getBoundingClientRect().top;
+    let threshold = window.innerHeight*0.6;
+    if(position<threshold){
+    
+    }
 }
-//DRAGGABLE ELEMENT
+//DRAGGABLE ELEMENT snap to top
+        //ne radi kako treba. testiraj na mobitelu
+
+function snapTop(){
+          //snap to top
+          console.log('transition ended');
+          let position = dragItem.getBoundingClientRect().top;
+          let threshold = window.innerHeight*0.4;
+          if(position<threshold){
+              console.log('ACTIVATED');
+              console.log('position '+position);
+              setTranslate(0, -currentY/100, dragItem);
+          }
+          //snap to top
+}
+//DRAGGABLE ELEMENT snap to top

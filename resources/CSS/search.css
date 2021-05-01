@@ -1,4 +1,7 @@
-
+/*  Hide scrollbar Chrome, Safari, Opera  */
+*::-webkit-scrollbar {
+    display: none;
+  }
 body{
     overflow: hidden;
 }
@@ -58,6 +61,7 @@ header{
     overflow: hidden;
     border-radius: 7px;
     touch-action: none;
+
   }
   #item {
     width: 100%;
@@ -71,17 +75,30 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: scroll;
+    overflow: hidden;
+    padding-top: 3rem;
+    transition: all 0.1s ease;
   }
   .dragline{
-      height: 0.2rem;
+      position:fixed;
+      top: 0;
+      height: 0.1rem;
       width: 5rem;
       margin-top: 1rem;
       background-color: rgb(80, 80, 80);
       border-radius: 0.2rem;
   }
-  .result{
+  .results{
+      height: 95%;
       width: 95%;
+      overflow: scroll;
+      padding: 1rem;
+  }
+  .result:last-child{
+      margin-bottom: 55vh;
+  }
+  .result{
+      width: 100%;
       margin: 3rem auto;
   }
   .result-img-carousel{
@@ -218,7 +235,7 @@ label{
 /*  BOOKING FORM AND BUTTON */
 
 
-/* ---------- MEDIA QUERIES ----------- */
+/* ------------------------ MEDIA QUERIES ------------------------- */
 @media only screen and (min-width: 1050px){
 /*  HEADER  */
 .mainLogo img{
@@ -300,17 +317,27 @@ label{
     width: 45vw;
     height: 100vh;
     border-radius: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
+    padding: 0;
 }
 .dragline{
     display: none;
 }
-.result{
-    margin: 1rem;
+.results{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
 }
+.result{
+    margin: 0;
+    width: 95%;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    /* Hide scrollbar for IE, Edge and Firefox */
+}
+
 /*  DRAGGABLE ELEMENT */
 /*  DOCK */
 .navDock{
