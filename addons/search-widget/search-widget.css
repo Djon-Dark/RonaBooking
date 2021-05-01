@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
 .search-widget{
     height: 2rem;
     width: 20rem;
@@ -7,8 +13,6 @@
     width: 100%;
 }
 #option-list{
-    text-decoration: none;
-    list-style: none;
     background-color: white;
     border-radius: 0.2rem;
     box-shadow: rgba(0,0,0,0.1) 0 0.2rem 1rem 0.1rem;
@@ -17,12 +21,20 @@
 }
 #option-list li{
     margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
 }
-.place{
+.type-img{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: teal;
+    margin: 0.5rem;
+}
+.title{
     font-size: 0.8rem;
     font-weight: bold;
 }
-.location{
+.subtitle{
     font-size: 0.8rem;
 }
 

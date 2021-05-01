@@ -17,10 +17,21 @@ function populateList(obj){
     let type = obj.type;
     let title = obj.title;
     let subtitle = obj.subtitle;
+    /*
+    let typeImg;
 
+    switch (type){
+        case place:
+            typeImg = '<img src="./SVG/place_black_24dp.svg" alt=""></img>';
+            break;
+        default:
+            typeImg = '<img src="./SVG/place_black_24dp.svg" alt=""></img>';
+    }
+*/
     //create element and append to list
     let x = document.createElement("LI");
-    x.innerHTML=(`<div class="place">`+`${type}`+`</div><div class="location">`+` ${title},`+` ${subtitle}`)
+    x.innerHTML=(`<div class="type-img"></div>
+    <div class="info"><div class="title">`+`${title}`+`</div><div class="subtitle">`+` ${subtitle}`)
     optionList.appendChild(x);
 }
 // ****** POPULATE WIDGET LIST ********
@@ -40,3 +51,35 @@ populateList(randomplace);
 populateList(randomplace2);
 populateList(randomplace3);
 populateList(randomplace4);
+
+let arr1 = [
+    {
+    "type": "place",
+    "title": "Kvarner",
+    "subtitle": "Kvarner, Opatija, Opatija"
+    },
+    {
+    "type": "place",
+    "title": "Kvarner",
+    "subtitle": "Kvarner, Opatija , Matulji"
+    },
+    {
+    "type": "place",
+    "title": "Kvarner",
+    "subtitle": "Kvarner, Opatija, Lovran"
+    },
+    {
+    "type": "place",
+    "title": "Kvarner",
+    "subtitle": "Kvarner, Opatija, Mošćenička Draga"
+    },
+    {
+    "type": "place",
+    "title": "Zagreb surrounding",
+    "subtitle": "Zagreb surrounding, Central Croatia, Pokupsko "
+    }
+    ]
+
+    arr1.forEach(obj => {
+        populateList(obj);
+    });
