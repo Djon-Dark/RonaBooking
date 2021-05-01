@@ -8,14 +8,14 @@
 .search-widget{
     height: 3rem;
     width: 20rem;
-}
-#option-input{
-    height: 100%;
-    
     border: 2px solid gold;
     border-radius: 0.3rem;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.3) 0 0.2rem 0.5rem;
+}
+#option-input{
+    height: 100%;
+    width: 100%;
     padding-left: 2rem;
     line-height: 3rem;
     transition: all 0.2s ease;
@@ -27,6 +27,23 @@
 }
 #option-input img{
     margin-right: 0.5rem;
+}
+.bar{
+    display: flex;
+    align-items: center;
+}
+.clear{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    display: none;
+    cursor: pointer;
+    background-image: url('./SVG/close.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #option-list{
     background-color: white;
