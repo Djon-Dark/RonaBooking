@@ -5,29 +5,38 @@
     list-style: none;
 }
 .search-widget{
-    height: 2rem;
+    height: 3rem;
     width: 20rem;
 }
 #option-input{
     height: 100%;
     width: 100%;
+    border: 2px solid gold;
+    border-radius: 0.3rem;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0.2rem 0.5rem;
+    padding: 0 1rem;
 }
 #option-list{
+    width: 100%;
     background-color: white;
     border-radius: 0.2rem;
     box-shadow: rgba(0,0,0,0.1) 0 0.2rem 1rem 0.1rem;
     display: none;
     opacity: 0;
+    padding: 0.2rem;
 }
 #option-list li{
     margin: 0.5rem 0;
     display: flex;
     align-items: center;
 }
+#option-list li:hover{
+    background-color: lightgray;
+}
 .type-img{
     height: 1.5rem;
     width: 1.5rem;
-    background-color: teal;
     margin: 0.5rem;
 }
 .title{
