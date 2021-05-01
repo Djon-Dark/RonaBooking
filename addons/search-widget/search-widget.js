@@ -17,22 +17,37 @@ function populateList(obj){
     let type = obj.type;
     let title = obj.title;
     let subtitle = obj.subtitle;
-    /*
+    
     let typeImg;
 
     switch (type){
-        case place:
-            typeImg = '<img src="./SVG/place_black_24dp.svg" alt=""></img>';
+        case 'Place':
+            typeImg = '<img src="./SVG/place.svg" alt=""></img>';
+            break;
+        case 'House':
+            typeImg = '<img src="./SVG/house.svg" alt=""></img>';
+            break;
+        case 'Apartment':
+            typeImg = '<img src="./SVG/apartment.svg" alt=""></img>';
+            break;
+        case 'Villa':
+            typeImg = '<img src="./SVG/villa.svg" alt=""></img>';
             break;
         default:
-            typeImg = '<img src="./SVG/place_black_24dp.svg" alt=""></img>';
+            typeImg = '<img src="./SVG/place.svg" alt=""></img>';
     }
-*/
+
     //create element and append to list
     let x = document.createElement("LI");
-    x.innerHTML=(`<div class="type-img"></div>
+    x.innerHTML=(`<div class="type-img">`+`${typeImg}`+`</div>
     <div class="info"><div class="title">`+`${title}`+`</div><div class="subtitle">`+` ${subtitle}`)
     optionList.appendChild(x);
+}
+
+function searchWidget(arr){
+    arr.forEach(obj => {
+        populateList(obj);
+    });
 }
 // ****** POPULATE WIDGET LIST ********
 
@@ -40,17 +55,6 @@ function populateList(obj){
 
 
 //test part
-var data = {"type": "Apartment", "title": "Opatija","subtitle": "Croatia"};
-var randomplace = {"type": "House", "title": "Rijeka","subtitle": "Croatia"};
-var randomplace2 = {"type": "Flat", "title": "Gerovo","subtitle": "Croatia"};
-var randomplace3 = {"type": "Melania", "title": "Gerovo","subtitle": "Croatia"};
-var randomplace4 = {"type": "Boskarin", "title": "Buzet","subtitle": "Croatia"};
-
-populateList(data);
-populateList(randomplace);
-populateList(randomplace2);
-populateList(randomplace3);
-populateList(randomplace4);
 
 let arr1 = [
     {
@@ -80,6 +84,6 @@ let arr1 = [
     }
     ]
 
-    arr1.forEach(obj => {
-        populateList(obj);
-    });
+
+
+    searchWidget(arr1);
