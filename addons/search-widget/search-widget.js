@@ -35,7 +35,7 @@ clear.addEventListener('mouseup',()=>{
 }
 showHideList();
 
-// ****** POPULATE WIDGET LIST ********
+//populate widget list
 function populateList(obj){
     type = obj.type;
     title = obj.title;
@@ -67,15 +67,19 @@ function populateList(obj){
     <div class="info"><div class="title">`+`${title}`+`</div><div class="subtitle">`+` ${subtitle}`)
     optionList.appendChild(x);
 }
+//populate widget list
 
-function searchWidget(arr){// MAIN FUNCTION, FOR EXPORT
+// MAIN FUNCTION, FOR EXPORT
+function searchWidget(arr){
     arr.forEach(obj => {
         populateList(obj);
     });
 }
-// ****** POPULATE WIDGET LIST ********
+// MAIN FUNCTION, FOR EXPORT
+
 
 //test part
+/*
 let arr1 = [
     {
     "type": "House",
@@ -104,6 +108,7 @@ let arr1 = [
     }
     ]
     searchWidget(arr1);
+   */
 //test part
 
 //select list option
