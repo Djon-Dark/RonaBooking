@@ -2,6 +2,7 @@ const optionInput = document.querySelector('#option-input');
 const optionList = document.querySelector('#option-list');
 const body = document.querySelector('body');
 const clear = document.querySelector('.clear');
+const typeIcon = document.querySelector('.type-icon');
 
 function showHideList(){
 //show list on widget click
@@ -27,7 +28,8 @@ window.addEventListener('mouseup',(e)=>{
 
 // clear list
 clear.addEventListener('mouseup',()=>{
-    optionInput.innerHTML = 'Where to go?';
+    optionInput.value= '';
+    typeIcon.innerHTML='<img src="./SVG/search.svg" alt=""></img>';
     clear.classList.remove('show-transition');
     clear.classList.remove('show-block');
     delete optionInput.dataset.id;
@@ -58,7 +60,7 @@ function populateList(obj){
             typeImg = '<img src="./SVG/villa.svg" alt=""></img>';
             break;
         default:
-            typeImg = '<img src="./SVG/place.svg" alt=""></img>';
+            typeImg = '<img src="./SVG/search.svg" alt=""></img>';
     }
     //create element and append to list
     let x = document.createElement("LI");
@@ -244,7 +246,10 @@ item.forEach(element => {
                 typeImg2 = '<img src="./SVG/place.svg" alt=""></img>';
         }
         //display selected option in widget
-        optionInput.innerHTML = (`${typeImg2}`+`${element.dataset.title}`);
+        //optionInput.innerHTML = (`${typeImg2}`+`${element.dataset.title}`);
+        
+        typeIcon.innerHTML = typeImg2;
+        optionInput.value = element.dataset.title;
         clear.classList.add('show-transition');
         clear.classList.add('show-block');
         //display selected option in widget
