@@ -30,6 +30,10 @@ clear.addEventListener('mouseup',()=>{
     optionInput.innerHTML = 'Where to go?';
     clear.classList.remove('show-transition');
     clear.classList.remove('show-block');
+    delete optionInput.dataset.id;
+    delete optionInput.dataset.title;
+    delete optionInput.dataset.type;
+    delete optionInput.dataset.destination;
 })
 // clear list
 }
@@ -79,38 +83,7 @@ function searchWidget(arr){
 }
 // MAIN FUNCTION, FOR EXPORT
 
-
 //test part
-/*
-let arr1 = [
-    {
-    "type": "House",
-    "title": "Kvarner",
-    "subtitle": "Kvarner, Opatija, Opatija"
-    },
-    {
-    "type": "place",
-    "title": "Kvarner",
-    "subtitle": "Kvarner, Opatija , Matulji"
-    },
-    {
-    "type": "Villa",
-    "title": "Kvarner",
-    "subtitle": "Kvarner, Opatija, Lovran"
-    },
-    {
-    "type": "place",
-    "title": "Kvarner",
-    "subtitle": "Kvarner, Opatija, Mošćenička Draga"
-    },
-    {
-    "type": "place",
-    "title": "Zagreb surrounding",
-    "subtitle": "Zagreb surrounding, Central Croatia, Pokupsko "
-    }
-    ]
-    searchWidget(arr1);
-   */
 let testObject = [
     {
         "id": 7370,
@@ -248,8 +221,11 @@ const item = document.querySelectorAll('.item');
 item.forEach(element => {
     element.addEventListener('click',()=>{
         //add datasets to selected option in widget
+        //datasets have to be defined - line 62
         optionInput.dataset.id = element.dataset.id;
+        optionInput.dataset.title = element.dataset.title;
         optionInput.dataset.type = element.dataset.type;
+        optionInput.dataset.destination = element.dataset.destination;
         //add datasets to selected option in widget
         switch (optionInput.dataset.type.toLowerCase()){
             case 'place':
@@ -279,3 +255,51 @@ selectItem();
 //select list item and display in widget
 
 
+
+/*
+// NEED TO ADD PROMISE
+function readFile() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (xhttp.readyState == 4 && xhttp.status == 200) {
+        res = xhttp.responseText;
+        //console.log(res);
+      }
+    };
+    xhttp.open("GET", "testObject.txt", false);//fals is for sync, true for async
+    xhttp.send();
+  }
+  readFile();
+//
+
+
+  getJSON = function(url,data){
+    return new Promise(function(resolve,reject)
+      {
+        var req = new XMLHttpRequest();
+        req.open('GET', url, true);
+        req.onreadystatechange = function () {
+          if (req.readyState == 4) {
+            if(req.status == 200)
+              resolve(JSON.parse(req.responseText));
+            else
+              reject(Error(req.statusText));
+          }
+        };
+        req.onerror = function() {
+          reject(Error("network error"));
+        };
+        req.send(data);
+      });
+  };
+  
+  let result = getJSON('testObject.txt');
+  optionInput.innerHTML = result;
+
+
+
+  */
+
+
+
+ 
