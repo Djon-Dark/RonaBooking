@@ -53,6 +53,8 @@
     opacity: 0;
     padding: 0.2rem;
     transition: all 0.2s ease;
+    max-height: 15rem;
+    overflow: scroll;
 }
 #option-list li{
     margin: 0.5rem 0;
