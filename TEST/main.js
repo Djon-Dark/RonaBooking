@@ -1,5 +1,7 @@
 import {countries} from './countries.js';
+import {testObject} from './testObject.js';
 
+// autocomplete
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
@@ -96,5 +98,28 @@ function autocomplete(inp, arr) {
       closeAllLists(e.target);
   });
   }
-
 autocomplete(document.querySelector('#myInput'), countries);
+// autocomplete
+
+
+let searchResults = [];
+console.log(searchResults);
+//search within object
+function search(object, term){
+  //capitalize first letter
+  function capitalize(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+  //capitalize first letter
+  find = capitalize(term);
+  object.forEach(obj => {
+      if(Object.values(obj.terms).includes(find)){
+        searchResults.push(obj);
+      }
+    }
+  )
+}
+
+
+search(testObject, 'Poreč')
+

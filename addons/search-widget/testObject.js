@@ -1,4 +1,4 @@
-[
+export let testObject = [
 {
 "id": null,
 "type": "destination",
@@ -15,8 +15,8 @@
 },
 {
 "id": null,
-"type": "destination",
-"title": "Istria",
+"type": "home",
+"title": "Porec",
 "subtitle": "Istria",
 "terms": {
 "destination": "Istria",
@@ -29,7 +29,7 @@
 },
 {
 "id": null,
-"type": "area",
+"type": "house",
 "title": "Islands",
 "subtitle": "Islands, Cres",
 "terms": {
@@ -43,7 +43,7 @@
 },
 {
 "id": null,
-"type": "area",
+"type": "villa",
 "title": "Istria",
 "subtitle": "Istria, West coast",
 "terms": {
@@ -57,7 +57,7 @@
 },
 {
 "id": null,
-"type": "area",
+"type": "apartment",
 "title": "Istria",
 "subtitle": "Istria, truffle",
 "terms": {
