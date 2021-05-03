@@ -1,10 +1,18 @@
 import {testObject} from './testObject.js';
 const optionInput = document.querySelector('#option-input');
 const optionList = document.querySelector('#option-list');
-const body = document.querySelector('body');
 const clear = document.querySelector('.clear');
 const typeIcon = document.querySelector('.type-icon');
+const body = document.querySelector('body');
 
+//HIDDEN INPUTS
+const destination = document.querySelector('#destination');
+const area = document.querySelector('#area');
+const sub_area = document.querySelector('#sub_area');
+const place = document.querySelector('#place');
+const settlement = document.querySelector('#settlement');
+const settlement_id = document.querySelector('#settlement_id');
+//HIDDEN INPUTS
 
 function showHideList(){
     //show list on widget click
@@ -31,20 +39,26 @@ function showHideList(){
     // clear list
     clear.addEventListener('mouseup',()=>{
         optionInput.value= '';
-        typeIcon.innerHTML='<img src="./SVG/search.svg" alt=""></img>';
+        typeIcon.innerHTML='<img src="./SVG/magnifier_gray.svg" alt=""></img>';
         clear.classList.remove('show-transition');
         clear.classList.remove('show-block');
         delete optionInput.dataset.id;
         delete optionInput.dataset.title;
         delete optionInput.dataset.type;
         delete optionInput.dataset.destination;
+        destination.value = '';
+        area.value = '';
+        sub_area.value = '';
+        place.value = '';
+        settlement.value = '';
+        settlement_id.value = '';
     })
     // clear list
 }
 showHideList();
 
 // MAIN FUNCTION, FOR EXPORT
-function searchWidget(arr){
+export default function searchWidget(arr){
     arr.forEach(obj => {
     let type = obj.type;
     let title = obj.title;
@@ -76,6 +90,13 @@ function searchWidget(arr){
     x.dataset.type = type;
     x.dataset.destination = obj.terms.destination;
     //add dataset to list item
+    //add dataset to list item to later add to HIDDEN INPUT
+    x.dataset.area = obj.terms.area;
+    x.dataset.sub_area = obj.terms.sub_area;
+    x.dataset.place = obj.terms.place;
+    x.dataset.settlement = obj.terms.settlement;
+    x.dataset.settlement_id = obj.terms.settlement_id;
+    //add dataset to list item to later add to HIDDEN INPUT
     x.innerHTML=(`<div class="type-img">`+`${typeImg}`+`</div>
     <div class="info"><div class="title">`+`${title}`+`</div><div class="subtitle">`+` ${subtitle}`)
     optionList.appendChild(x);
@@ -85,12 +106,21 @@ function searchWidget(arr){
     item.forEach(element => {
     element.addEventListener('click',()=>{
         //add datasets to selected option in widget
-        //datasets have to be defined - line 62
+        //datasets have to be defined - line 80
         optionInput.dataset.id = element.dataset.id;
         optionInput.dataset.title = element.dataset.title;
         optionInput.dataset.type = element.dataset.type;
         optionInput.dataset.destination = element.dataset.destination;
         //add datasets to selected option in widget
+        //add datasets to hidden input
+        destination.value = element.dataset.destination;
+        area.value = element.dataset.area;
+        sub_area.value = element.dataset.sub_area;
+        place.value = element.dataset.place;
+        settlement.value = element.dataset.settlement;
+        settlement_id.value = element.dataset.settlement_id;
+        //add datasets to hidden input
+        
         let typeImg2;
         switch (optionInput.dataset.type.toLowerCase()){
             case 'place':

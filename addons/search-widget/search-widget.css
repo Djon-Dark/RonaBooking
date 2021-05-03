@@ -20,6 +20,7 @@ input[type=text]:hover{
 input[type=text]:focus {
     background-color: rgba(0,0,0,0) !important;
 }
+
 .search-widget{
     height: 3rem;
     width: 20rem;
@@ -81,6 +82,8 @@ input[type=text]:focus {
     transition: all 0.2s ease;
     max-height: 15rem;
     overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
 }
 #option-list li{
     margin: 0.5rem 0;
@@ -90,6 +93,9 @@ input[type=text]:focus {
 #option-list li:hover{
     background-color: rgb(240, 240, 240);
 }
+#option-list::-webkit-scrollbar {
+    display: none !important;
+  }
 .type-img{
     height: 1.5rem;
     width: 1.5rem;

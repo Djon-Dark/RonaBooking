@@ -6,11 +6,11 @@ export let testObject = [
 "subtitle": "Islands",
 "terms": {
 "destination": "Islands",
-"area": null,
-"sub_area": null,
-"place": null,
-"settlment": null,
-"settlement_id": null
+"area": 'testArea',
+"sub_area": 'testSubArea',
+"place": 'testPlace',
+"settlement": 'testsettlement',
+"settlement_id": 'testsettlementId'
 }
 },
 {
@@ -23,7 +23,7 @@ export let testObject = [
 "area": null,
 "sub_area": null,
 "place": null,
-"settlment": null,
+"settlement": null,
 "settlement_id": null
 }
 },
@@ -37,7 +37,7 @@ export let testObject = [
 "area": "Cres",
 "sub_area": "Istria",
 "place": null,
-"settlment": null,
+"settlement": null,
 "settlement_id": null
 }
 },
@@ -51,7 +51,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": null,
-"settlment": null,
+"settlement": null,
 "settlement_id": null
 }
 },
@@ -65,7 +65,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": null,
-"settlment": null,
+"settlement": null,
 "settlement_id": null
 }
 },
@@ -79,7 +79,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": null,
-"settlment": null,
+"settlement": null,
 "settlement_id": null
 }
 },
@@ -93,7 +93,7 @@ export let testObject = [
 "area": "Barbariga",
 "sub_area": "Istra",
 "place": null,
-"settlment": null,
+"settlement": null,
 "settlement_id": null
 }
 },
@@ -107,7 +107,7 @@ export let testObject = [
 "area": "Cres",
 "sub_area": "Istria",
 "place": "Cres",
-"settlment": "ZBIŠINA",
+"settlement": "ZBIŠINA",
 "settlement_id": 7370
 }
 },
@@ -121,7 +121,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BABIĆI",
+"settlement": "BABIĆI",
 "settlement_id": 19200
 }
 },
@@ -135,7 +135,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BRNOBIĆI",
+"settlement": "BRNOBIĆI",
 "settlement_id": 19201
 }
 },
@@ -149,7 +149,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "ROVINJ",
-"settlment": "ROVINJ",
+"settlement": "ROVINJ",
 "settlement_id": 21505
 }
 },
@@ -163,7 +163,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "CERJANI",
+"settlement": "CERJANI",
 "settlement_id": 19202
 }
 },
@@ -177,7 +177,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "FUNTANA",
+"settlement": "FUNTANA",
 "settlement_id": 21506
 }
 },
@@ -191,7 +191,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "BAREDINE",
+"settlement": "BAREDINE",
 "settlement_id": 7171
 }
 },
@@ -205,7 +205,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "DEKLIĆI",
+"settlement": "DEKLIĆI",
 "settlement_id": 19203
 }
 },
@@ -219,7 +219,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "SVETI LOVREČ PAZENATIČKI",
+"settlement": "SVETI LOVREČ PAZENATIČKI",
 "settlement_id": 21507
 }
 },
@@ -233,7 +233,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "BIBALI",
+"settlement": "BIBALI",
 "settlement_id": 7172
 }
 },
@@ -247,7 +247,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "DVORI",
+"settlement": "DVORI",
 "settlement_id": 19204
 }
 },
@@ -261,7 +261,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "BRDO",
+"settlement": "BRDO",
 "settlement_id": 7173
 }
 },
@@ -275,7 +275,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KAŠTELIR",
+"settlement": "KAŠTELIR",
 "settlement_id": 19205
 }
 },
@@ -289,7 +289,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "BRIČ",
+"settlement": "BRIČ",
 "settlement_id": 7174
 }
 },
@@ -303,7 +303,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KOVAČI",
+"settlement": "KOVAČI",
 "settlement_id": 19206
 }
 },
@@ -317,7 +317,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "BUJE",
+"settlement": "BUJE",
 "settlement_id": 7175
 }
 },
@@ -331,7 +331,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KRANČIĆI",
+"settlement": "KRANČIĆI",
 "settlement_id": 19207
 }
 },
@@ -345,7 +345,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "GAMBOCI",
+"settlement": "GAMBOCI",
 "settlement_id": 7176
 }
 },
@@ -359,7 +359,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "LABINCI",
+"settlement": "LABINCI",
 "settlement_id": 19208
 }
 },
@@ -373,7 +373,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "KALDANIJA",
+"settlement": "KALDANIJA",
 "settlement_id": 7177
 }
 },
@@ -387,7 +387,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MEKIŠI KOD KAŠTELIRA",
+"settlement": "MEKIŠI KOD KAŠTELIRA",
 "settlement_id": 19209
 }
 },
@@ -401,7 +401,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "KANEGRA",
+"settlement": "KANEGRA",
 "settlement_id": 7178
 }
 },
@@ -415,7 +415,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ROGOVIĆI",
+"settlement": "ROGOVIĆI",
 "settlement_id": 19210
 }
 },
@@ -429,7 +429,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "KAŠTEL",
+"settlement": "KAŠTEL",
 "settlement_id": 7179
 }
 },
@@ -443,7 +443,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ROJCI",
+"settlement": "ROJCI",
 "settlement_id": 19211
 }
 },
@@ -457,7 +457,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "KRASICA",
+"settlement": "KRASICA",
 "settlement_id": 7180
 }
 },
@@ -471,7 +471,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ROŠKIĆI",
+"settlement": "ROŠKIĆI",
 "settlement_id": 19212
 }
 },
@@ -485,7 +485,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "KUĆIBREG",
+"settlement": "KUĆIBREG",
 "settlement_id": 7181
 }
 },
@@ -499,7 +499,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "TADINI",
+"settlement": "TADINI",
 "settlement_id": 19213
 }
 },
@@ -513,7 +513,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "LOZARI",
+"settlement": "LOZARI",
 "settlement_id": 7182
 }
 },
@@ -527,7 +527,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VALENTIĆI",
+"settlement": "VALENTIĆI",
 "settlement_id": 19214
 }
 },
@@ -541,7 +541,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "MARUŠIĆI",
+"settlement": "MARUŠIĆI",
 "settlement_id": 7183
 }
 },
@@ -555,7 +555,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ANTONCI",
+"settlement": "ANTONCI",
 "settlement_id": 19215
 }
 },
@@ -569,7 +569,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "MERIŠĆE",
+"settlement": "MERIŠĆE",
 "settlement_id": 7184
 }
 },
@@ -583,7 +583,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BADERNA - MOMPADERNO",
+"settlement": "BADERNA - MOMPADERNO",
 "settlement_id": 19216
 }
 },
@@ -597,7 +597,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "MOMJAN",
+"settlement": "MOMJAN",
 "settlement_id": 7185
 }
 },
@@ -611,7 +611,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BANKI - BANCHI",
+"settlement": "BANKI - BANCHI",
 "settlement_id": 19217
 }
 },
@@ -625,7 +625,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "OSKORUŠ",
+"settlement": "OSKORUŠ",
 "settlement_id": 7186
 }
 },
@@ -639,7 +639,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BAŠARINKA - BALZARINI",
+"settlement": "BAŠARINKA - BALZARINI",
 "settlement_id": 19218
 }
 },
@@ -653,7 +653,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "PLOVANIJA",
+"settlement": "PLOVANIJA",
 "settlement_id": 7187
 }
 },
@@ -667,7 +667,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BLAGDANIĆI",
+"settlement": "BLAGDANIĆI",
 "settlement_id": 19219
 }
 },
@@ -681,7 +681,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "SVETA MARIJA NA KRASU-DIO",
+"settlement": "SVETA MARIJA NA KRASU-DIO",
 "settlement_id": 7188
 }
 },
@@ -695,7 +695,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BONACI - BONAZZI",
+"settlement": "BONACI - BONAZZI",
 "settlement_id": 19220
 }
 },
@@ -709,7 +709,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "TRIBAN",
+"settlement": "TRIBAN",
 "settlement_id": 7189
 }
 },
@@ -723,7 +723,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BRATOVIĆI - BRATOVICI",
+"settlement": "BRATOVIĆI - BRATOVICI",
 "settlement_id": 19221
 }
 },
@@ -737,7 +737,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "ANTONCI",
+"settlement": "ANTONCI",
 "settlement_id": 7190
 }
 },
@@ -751,7 +751,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BRČIĆI",
+"settlement": "BRČIĆI",
 "settlement_id": 19222
 }
 },
@@ -765,7 +765,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "BIJELE ZEMLJE",
+"settlement": "BIJELE ZEMLJE",
 "settlement_id": 7191
 }
 },
@@ -779,7 +779,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BUIĆI",
+"settlement": "BUIĆI",
 "settlement_id": 19223
 }
 },
@@ -793,7 +793,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "GROŽNJAN",
+"settlement": "GROŽNJAN",
 "settlement_id": 7192
 }
 },
@@ -807,7 +807,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "CANCINI",
+"settlement": "CANCINI",
 "settlement_id": 19224
 }
 },
@@ -821,7 +821,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "KOSTANJICA",
+"settlement": "KOSTANJICA",
 "settlement_id": 7193
 }
 },
@@ -835,7 +835,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ČERVAR - CERVERA",
+"settlement": "ČERVAR - CERVERA",
 "settlement_id": 19225
 }
 },
@@ -849,7 +849,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "KUBERTON",
+"settlement": "KUBERTON",
 "settlement_id": 7194
 }
 },
@@ -863,7 +863,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ČERVAR-PORAT",
+"settlement": "ČERVAR-PORAT",
 "settlement_id": 19226
 }
 },
@@ -877,7 +877,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "MAKOVCI",
+"settlement": "MAKOVCI",
 "settlement_id": 7195
 }
 },
@@ -891,7 +891,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ČUŠI - CIUSSI",
+"settlement": "ČUŠI - CIUSSI",
 "settlement_id": 19227
 }
 },
@@ -905,7 +905,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "MARTINČIĆI",
+"settlement": "MARTINČIĆI",
 "settlement_id": 7196
 }
 },
@@ -919,7 +919,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "DEKOVIĆI",
+"settlement": "DEKOVIĆI",
 "settlement_id": 19228
 }
 },
@@ -933,7 +933,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "ŠTERNA",
+"settlement": "ŠTERNA",
 "settlement_id": 7197
 }
 },
@@ -947,7 +947,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "DRAČEVAC - MONSPINOSO",
+"settlement": "DRAČEVAC - MONSPINOSO",
 "settlement_id": 19229
 }
 },
@@ -961,7 +961,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "VRNJAK",
+"settlement": "VRNJAK",
 "settlement_id": 7198
 }
 },
@@ -975,7 +975,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "FILIPINI",
+"settlement": "FILIPINI",
 "settlement_id": 19230
 }
 },
@@ -989,7 +989,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "ZAVRŠJE",
+"settlement": "ZAVRŠJE",
 "settlement_id": 7199
 }
 },
@@ -1003,7 +1003,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "FUŠKULIN - FOSCOLINO",
+"settlement": "FUŠKULIN - FOSCOLINO",
 "settlement_id": 19231
 }
 },
@@ -1017,7 +1017,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "BENCANI",
+"settlement": "BENCANI",
 "settlement_id": 7200
 }
 },
@@ -1031,7 +1031,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "GARBINA - GARBINA",
+"settlement": "GARBINA - GARBINA",
 "settlement_id": 19232
 }
 },
@@ -1045,7 +1045,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "ČEPIĆ",
+"settlement": "ČEPIĆ",
 "settlement_id": 7201
 }
 },
@@ -1059,7 +1059,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "JAKIĆI GORINJI - IACHICI",
+"settlement": "JAKIĆI GORINJI - IACHICI",
 "settlement_id": 19233
 }
 },
@@ -1073,7 +1073,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "KRAJIĆI",
+"settlement": "KRAJIĆI",
 "settlement_id": 7202
 }
 },
@@ -1087,7 +1087,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "JASENOVICA - FRASSINETO",
+"settlement": "JASENOVICA - FRASSINETO",
 "settlement_id": 19234
 }
 },
@@ -1101,7 +1101,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "OPRTALJ",
+"settlement": "OPRTALJ",
 "settlement_id": 7203
 }
 },
@@ -1115,7 +1115,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "JEHNIĆI",
+"settlement": "JEHNIĆI",
 "settlement_id": 19235
 }
 },
@@ -1129,7 +1129,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "SVETA LUCIJA",
+"settlement": "SVETA LUCIJA",
 "settlement_id": 7204
 }
 },
@@ -1143,7 +1143,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "JURIĆI - IURICI",
+"settlement": "JURIĆI - IURICI",
 "settlement_id": 19236
 }
 },
@@ -1157,7 +1157,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "SVETI IVAN",
+"settlement": "SVETI IVAN",
 "settlement_id": 7205
 }
 },
@@ -1171,7 +1171,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KADUMI",
+"settlement": "KADUMI",
 "settlement_id": 19237
 }
 },
@@ -1185,7 +1185,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "ŠORGI",
+"settlement": "ŠORGI",
 "settlement_id": 7206
 }
 },
@@ -1199,7 +1199,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KATUN - CATTUNI",
+"settlement": "KATUN - CATTUNI",
 "settlement_id": 19238
 }
 },
@@ -1213,7 +1213,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "VIŽINTINI",
+"settlement": "VIŽINTINI",
 "settlement_id": 7207
 }
 },
@@ -1227,7 +1227,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KIRMENJAK",
+"settlement": "KIRMENJAK",
 "settlement_id": 19239
 }
 },
@@ -1241,7 +1241,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "VIŽINTINI VRHI",
+"settlement": "VIŽINTINI VRHI",
 "settlement_id": 7208
 }
 },
@@ -1255,7 +1255,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KOSINOŽIĆI",
+"settlement": "KOSINOŽIĆI",
 "settlement_id": 19240
 }
 },
@@ -1269,7 +1269,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "ZRENJ",
+"settlement": "ZRENJ",
 "settlement_id": 7209
 }
 },
@@ -1283,7 +1283,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KUKCI",
+"settlement": "KUKCI",
 "settlement_id": 19241
 }
 },
@@ -1297,7 +1297,7 @@ export let testObject = [
 "area": "West coast",
 "sub_area": "Istra",
 "place": "Buje (Buie)",
-"settlment": "ŽNJIDARIĆI",
+"settlement": "ŽNJIDARIĆI",
 "settlement_id": 7210
 }
 },
@@ -1311,7 +1311,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "BARTIĆI",
+"settlement": "BARTIĆI",
 "settlement_id": 9770
 }
 },
@@ -1325,7 +1325,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "LADROVIĆI",
+"settlement": "LADROVIĆI",
 "settlement_id": 19242
 }
 },
@@ -1339,7 +1339,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "BAREDINE",
+"settlement": "BAREDINE",
 "settlement_id": 7211
 }
 },
@@ -1353,7 +1353,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "BREG",
+"settlement": "BREG",
 "settlement_id": 9771
 }
 },
@@ -1367,7 +1367,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MATULINI - MATTULINI",
+"settlement": "MATULINI - MATTULINI",
 "settlement_id": 19243
 }
 },
@@ -1381,7 +1381,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "BARUŠIĆI",
+"settlement": "BARUŠIĆI",
 "settlement_id": 7212
 }
 },
@@ -1395,7 +1395,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "DUGA LUKA",
+"settlement": "DUGA LUKA",
 "settlement_id": 9772
 }
 },
@@ -1409,7 +1409,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MIČETIĆI",
+"settlement": "MIČETIĆI",
 "settlement_id": 19244
 }
 },
@@ -1423,7 +1423,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "BENČIĆI",
+"settlement": "BENČIĆI",
 "settlement_id": 7213
 }
 },
@@ -1437,7 +1437,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "GONDOLIĆI",
+"settlement": "GONDOLIĆI",
 "settlement_id": 9773
 }
 },
@@ -1451,7 +1451,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MIHATOVIĆI",
+"settlement": "MIHATOVIĆI",
 "settlement_id": 19245
 }
 },
@@ -1465,7 +1465,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "BLATNA VAS",
+"settlement": "BLATNA VAS",
 "settlement_id": 7214
 }
 },
@@ -1479,7 +1479,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "GORA GLUŠIĆI",
+"settlement": "GORA GLUŠIĆI",
 "settlement_id": 9774
 }
 },
@@ -1493,7 +1493,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MIHELIĆI",
+"settlement": "MIHELIĆI",
 "settlement_id": 19246
 }
 },
@@ -1507,7 +1507,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "BRNOBIĆI",
+"settlement": "BRNOBIĆI",
 "settlement_id": 7215
 }
 },
@@ -1521,7 +1521,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "KAPELICA",
+"settlement": "KAPELICA",
 "settlement_id": 9775
 }
 },
@@ -1535,7 +1535,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MONTIŽANA - MONTISANA",
+"settlement": "MONTIŽANA - MONTISANA",
 "settlement_id": 19247
 }
 },
@@ -1549,7 +1549,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "BUZET",
+"settlement": "BUZET",
 "settlement_id": 7216
 }
 },
@@ -1563,7 +1563,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "KRANJCI",
+"settlement": "KRANJCI",
 "settlement_id": 9776
 }
 },
@@ -1577,7 +1577,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MUGEBA - MONGHEBBO",
+"settlement": "MUGEBA - MONGHEBBO",
 "settlement_id": 19248
 }
 },
@@ -1591,7 +1591,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "CUNJ",
+"settlement": "CUNJ",
 "settlement_id": 7217
 }
 },
@@ -1605,7 +1605,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "LABIN",
+"settlement": "LABIN",
 "settlement_id": 9777
 }
 },
@@ -1619,7 +1619,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MUŠALEŽ",
+"settlement": "MUŠALEŽ",
 "settlement_id": 19249
 }
 },
@@ -1633,7 +1633,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "ČIRITEŽ",
+"settlement": "ČIRITEŽ",
 "settlement_id": 7218
 }
 },
@@ -1647,7 +1647,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "MARCELJANI",
+"settlement": "MARCELJANI",
 "settlement_id": 9778
 }
 },
@@ -1661,7 +1661,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "NOVA VAS",
+"settlement": "NOVA VAS",
 "settlement_id": 19250
 }
 },
@@ -1675,7 +1675,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "ČRNICA",
+"settlement": "ČRNICA",
 "settlement_id": 7219
 }
 },
@@ -1689,7 +1689,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "PRESIKA",
+"settlement": "PRESIKA",
 "settlement_id": 9779
 }
 },
@@ -1703,7 +1703,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "POREČ - PARENZO",
+"settlement": "POREČ - PARENZO",
 "settlement_id": 19251
 }
 },
@@ -1717,7 +1717,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "ERKOVČIĆI",
+"settlement": "ERKOVČIĆI",
 "settlement_id": 7220
 }
 },
@@ -1731,7 +1731,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "RABAC",
+"settlement": "RABAC",
 "settlement_id": 9780
 }
 },
@@ -1745,7 +1745,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "RADMANI",
+"settlement": "RADMANI",
 "settlement_id": 19252
 }
 },
@@ -1759,7 +1759,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "FORČIĆI",
+"settlement": "FORČIĆI",
 "settlement_id": 7221
 }
 },
@@ -1773,7 +1773,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "RIPENDA KOSI",
+"settlement": "RIPENDA KOSI",
 "settlement_id": 9781
 }
 },
@@ -1787,7 +1787,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "RADOŠI KOD ŽBANDAJA",
+"settlement": "RADOŠI KOD ŽBANDAJA",
 "settlement_id": 19253
 }
 },
@@ -1801,7 +1801,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "GORNJA NUGLA",
+"settlement": "GORNJA NUGLA",
 "settlement_id": 7222
 }
 },
@@ -1815,7 +1815,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "RIPENDA KRAS",
+"settlement": "RIPENDA KRAS",
 "settlement_id": 9782
 }
 },
@@ -1829,7 +1829,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "RAKOVCI - RACOVAZ",
+"settlement": "RAKOVCI - RACOVAZ",
 "settlement_id": 19254
 }
 },
@@ -1843,7 +1843,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "HUM",
+"settlement": "HUM",
 "settlement_id": 7223
 }
 },
@@ -1857,7 +1857,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "RIPENDA VERBANCI",
+"settlement": "RIPENDA VERBANCI",
 "settlement_id": 9783
 }
 },
@@ -1871,7 +1871,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "RUPENI - RUPENA",
+"settlement": "RUPENI - RUPENA",
 "settlement_id": 19255
 }
 },
@@ -1885,7 +1885,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "JURADI",
+"settlement": "JURADI",
 "settlement_id": 7224
 }
 },
@@ -1899,7 +1899,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "ROGOČANA",
+"settlement": "ROGOČANA",
 "settlement_id": 9784
 }
 },
@@ -1913,7 +1913,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "RUŽIĆI",
+"settlement": "RUŽIĆI",
 "settlement_id": 19256
 }
 },
@@ -1927,7 +1927,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "JURIČIĆI",
+"settlement": "JURIČIĆI",
 "settlement_id": 7225
 }
 },
@@ -1941,7 +1941,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "SALAKOVCI",
+"settlement": "SALAKOVCI",
 "settlement_id": 9785
 }
 },
@@ -1955,7 +1955,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "STANCIJA VODOPIJA-STANZIA BEVILACQU",
+"settlement": "STANCIJA VODOPIJA-STANZIA BEVILACQU",
 "settlement_id": 19257
 }
 },
@@ -1969,7 +1969,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "KAJINI",
+"settlement": "KAJINI",
 "settlement_id": 7226
 }
 },
@@ -1983,7 +1983,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "VINEŽ",
+"settlement": "VINEŽ",
 "settlement_id": 9786
 }
 },
@@ -1997,7 +1997,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "STARIĆI - STARICI",
+"settlement": "STARIĆI - STARICI",
 "settlement_id": 19258
 }
 },
@@ -2011,7 +2011,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "KLARIĆI",
+"settlement": "KLARIĆI",
 "settlement_id": 7227
 }
 },
@@ -2025,7 +2025,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "BARBIĆI",
+"settlement": "BARBIĆI",
 "settlement_id": 9787
 }
 },
@@ -2039,7 +2039,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "STRANIĆI KOD NOVE VASI",
+"settlement": "STRANIĆI KOD NOVE VASI",
 "settlement_id": 19259
 }
 },
@@ -2053,7 +2053,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "KOMPANJ",
+"settlement": "KOMPANJ",
 "settlement_id": 7228
 }
 },
@@ -2067,7 +2067,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "BRGOD",
+"settlement": "BRGOD",
 "settlement_id": 9788
 }
 },
@@ -2081,7 +2081,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ŠERAJE - SERAIE",
+"settlement": "ŠERAJE - SERAIE",
 "settlement_id": 19260
 }
 },
@@ -2095,7 +2095,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "KOSORIGA",
+"settlement": "KOSORIGA",
 "settlement_id": 7229
 }
 },
@@ -2109,7 +2109,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "BROVINJE",
+"settlement": "BROVINJE",
 "settlement_id": 9789
 }
 },
@@ -2123,7 +2123,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ŠTIFANIĆI - STIFANICI",
+"settlement": "ŠTIFANIĆI - STIFANICI",
 "settlement_id": 19261
 }
 },
@@ -2137,7 +2137,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "KOTLI",
+"settlement": "KOTLI",
 "settlement_id": 7230
 }
 },
@@ -2151,7 +2151,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "CRNI",
+"settlement": "CRNI",
 "settlement_id": 9790
 }
 },
@@ -2165,7 +2165,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ŠUŠNJIĆI - SUSNICI",
+"settlement": "ŠUŠNJIĆI - SUSNICI",
 "settlement_id": 19262
 }
 },
@@ -2179,7 +2179,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "KRAS",
+"settlement": "KRAS",
 "settlement_id": 7231
 }
 },
@@ -2193,7 +2193,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "DRENJE",
+"settlement": "DRENJE",
 "settlement_id": 9791
 }
 },
@@ -2207,7 +2207,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VALKARIN",
+"settlement": "VALKARIN",
 "settlement_id": 19263
 }
 },
@@ -2221,7 +2221,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "KRBAVČIĆI",
+"settlement": "KRBAVČIĆI",
 "settlement_id": 7232
 }
 },
@@ -2235,7 +2235,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "KOROMAČNO",
+"settlement": "KOROMAČNO",
 "settlement_id": 9792
 }
 },
@@ -2249,7 +2249,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VARVARI",
+"settlement": "VARVARI",
 "settlement_id": 19264
 }
 },
@@ -2263,7 +2263,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "KRKUŽ",
+"settlement": "KRKUŽ",
 "settlement_id": 7233
 }
 },
@@ -2277,7 +2277,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "KRAPAN",
+"settlement": "KRAPAN",
 "settlement_id": 9793
 }
 },
@@ -2291,7 +2291,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VELENIKI",
+"settlement": "VELENIKI",
 "settlement_id": 19265
 }
 },
@@ -2305,7 +2305,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "KRUŠVARI",
+"settlement": "KRUŠVARI",
 "settlement_id": 7234
 }
 },
@@ -2319,7 +2319,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "KUNJ",
+"settlement": "KUNJ",
 "settlement_id": 9794
 }
 },
@@ -2333,7 +2333,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VEŽNAVERI",
+"settlement": "VEŽNAVERI",
 "settlement_id": 19266
 }
 },
@@ -2347,7 +2347,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "MALA HUBA",
+"settlement": "MALA HUBA",
 "settlement_id": 7235
 }
 },
@@ -2361,7 +2361,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "LETAJAC",
+"settlement": "LETAJAC",
 "settlement_id": 9795
 }
 },
@@ -2375,7 +2375,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ŽBANDAJ",
+"settlement": "ŽBANDAJ",
 "settlement_id": 19267
 }
 },
@@ -2389,7 +2389,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "MALI MLUN",
+"settlement": "MALI MLUN",
 "settlement_id": 7236
 }
 },
@@ -2403,7 +2403,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "MOST-RAŠA",
+"settlement": "MOST-RAŠA",
 "settlement_id": 9796
 }
 },
@@ -2417,7 +2417,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ČEHIĆI",
+"settlement": "ČEHIĆI",
 "settlement_id": 19268
 }
 },
@@ -2431,7 +2431,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "MARČENEGLA",
+"settlement": "MARČENEGLA",
 "settlement_id": 7237
 }
 },
@@ -2445,7 +2445,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "POLJE",
+"settlement": "POLJE",
 "settlement_id": 9797
 }
 },
@@ -2459,7 +2459,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "FRNJOLIĆI",
+"settlement": "FRNJOLIĆI",
 "settlement_id": 19269
 }
 },
@@ -2473,7 +2473,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "MARINCI",
+"settlement": "MARINCI",
 "settlement_id": 7238
 }
 },
@@ -2487,7 +2487,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "RAŠA",
+"settlement": "RAŠA",
 "settlement_id": 9798
 }
 },
@@ -2501,7 +2501,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "HERAKI",
+"settlement": "HERAKI",
 "settlement_id": 19270
 }
 },
@@ -2515,7 +2515,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "MARTINCI",
+"settlement": "MARTINCI",
 "settlement_id": 7239
 }
 },
@@ -2529,7 +2529,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "RAVNI",
+"settlement": "RAVNI",
 "settlement_id": 9799
 }
 },
@@ -2543,7 +2543,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "IVIĆI",
+"settlement": "IVIĆI",
 "settlement_id": 19271
 }
 },
@@ -2557,7 +2557,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "MEDVEJE",
+"settlement": "MEDVEJE",
 "settlement_id": 7240
 }
 },
@@ -2571,7 +2571,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "SKITAČA",
+"settlement": "SKITAČA",
 "settlement_id": 9800
 }
 },
@@ -2585,7 +2585,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "JAKIĆI DOLINJI",
+"settlement": "JAKIĆI DOLINJI",
 "settlement_id": 19272
 }
 },
@@ -2599,7 +2599,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "NEGNAR",
+"settlement": "NEGNAR",
 "settlement_id": 7241
 }
 },
@@ -2613,7 +2613,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "SKVARANSKA",
+"settlement": "SKVARANSKA",
 "settlement_id": 9801
 }
 },
@@ -2627,7 +2627,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "JURCANI",
+"settlement": "JURCANI",
 "settlement_id": 19273
 }
 },
@@ -2641,7 +2641,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "PALADINI",
+"settlement": "PALADINI",
 "settlement_id": 7242
 }
 },
@@ -2655,7 +2655,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "STANIŠOVI",
+"settlement": "STANIŠOVI",
 "settlement_id": 9802
 }
 },
@@ -2669,7 +2669,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KAPOVIĆI",
+"settlement": "KAPOVIĆI",
 "settlement_id": 19274
 }
 },
@@ -2683,7 +2683,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "PENGARI",
+"settlement": "PENGARI",
 "settlement_id": 7243
 }
 },
@@ -2697,7 +2697,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "SVETA MARINA",
+"settlement": "SVETA MARINA",
 "settlement_id": 9803
 }
 },
@@ -2711,7 +2711,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KNAPIĆI",
+"settlement": "KNAPIĆI",
 "settlement_id": 19275
 }
 },
@@ -2725,7 +2725,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "PENIČIĆI",
+"settlement": "PENIČIĆI",
 "settlement_id": 7244
 }
 },
@@ -2739,7 +2739,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "SVETI BARTUL",
+"settlement": "SVETI BARTUL",
 "settlement_id": 9804
 }
 },
@@ -2753,7 +2753,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KRŠULI",
+"settlement": "KRŠULI",
 "settlement_id": 19276
 }
 },
@@ -2767,7 +2767,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "PERCI",
+"settlement": "PERCI",
 "settlement_id": 7245
 }
 },
@@ -2781,7 +2781,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "SVETI LOVREČ LABINSKI",
+"settlement": "SVETI LOVREČ LABINSKI",
 "settlement_id": 9805
 }
 },
@@ -2795,7 +2795,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KRUNČIĆI",
+"settlement": "KRUNČIĆI",
 "settlement_id": 19277
 }
 },
@@ -2809,7 +2809,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "POČEKAJI",
+"settlement": "POČEKAJI",
 "settlement_id": 7246
 }
 },
@@ -2823,7 +2823,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "TOPID",
+"settlement": "TOPID",
 "settlement_id": 9806
 }
 },
@@ -2837,7 +2837,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "LAKOVIĆI",
+"settlement": "LAKOVIĆI",
 "settlement_id": 19278
 }
 },
@@ -2851,7 +2851,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "PODKUK",
+"settlement": "PODKUK",
 "settlement_id": 7247
 }
 },
@@ -2865,7 +2865,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "TRGET",
+"settlement": "TRGET",
 "settlement_id": 9807
 }
 },
@@ -2879,7 +2879,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MEDAKI",
+"settlement": "MEDAKI",
 "settlement_id": 19279
 }
 },
@@ -2893,7 +2893,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "PODREBAR",
+"settlement": "PODREBAR",
 "settlement_id": 7248
 }
 },
@@ -2907,7 +2907,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "TRGETARI",
+"settlement": "TRGETARI",
 "settlement_id": 9808
 }
 },
@@ -2921,7 +2921,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MEDVIDIĆI",
+"settlement": "MEDVIDIĆI",
 "settlement_id": 19280
 }
 },
@@ -2935,7 +2935,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "PRAČANA",
+"settlement": "PRAČANA",
 "settlement_id": 7249
 }
 },
@@ -2949,7 +2949,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "VIŠKOVIĆI",
+"settlement": "VIŠKOVIĆI",
 "settlement_id": 9809
 }
 },
@@ -2963,7 +2963,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ORBANI",
+"settlement": "ORBANI",
 "settlement_id": 19281
 }
 },
@@ -2977,7 +2977,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "PRODANI",
+"settlement": "PRODANI",
 "settlement_id": 7250
 }
 },
@@ -2991,7 +2991,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "CERE",
+"settlement": "CERE",
 "settlement_id": 9810
 }
 },
@@ -3005,7 +3005,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "PAJARI",
+"settlement": "PAJARI",
 "settlement_id": 19282
 }
 },
@@ -3019,7 +3019,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "RAČICE",
+"settlement": "RAČICE",
 "settlement_id": 7251
 }
 },
@@ -3033,7 +3033,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "ERŽIŠĆE",
+"settlement": "ERŽIŠĆE",
 "settlement_id": 9811
 }
 },
@@ -3047,7 +3047,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "PERINI",
+"settlement": "PERINI",
 "settlement_id": 19283
 }
 },
@@ -3061,7 +3061,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "RAČIČKI BRIJEG",
+"settlement": "RAČIČKI BRIJEG",
 "settlement_id": 7252
 }
 },
@@ -3075,7 +3075,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "FRANČIĆI",
+"settlement": "FRANČIĆI",
 "settlement_id": 9812
 }
 },
@@ -3089,7 +3089,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "RADIĆI",
+"settlement": "RADIĆI",
 "settlement_id": 19284
 }
 },
@@ -3103,7 +3103,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "RIM",
+"settlement": "RIM",
 "settlement_id": 7253
 }
 },
@@ -3117,7 +3117,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "JURAZINI",
+"settlement": "JURAZINI",
 "settlement_id": 9813
 }
 },
@@ -3131,7 +3131,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "RAJKI",
+"settlement": "RAJKI",
 "settlement_id": 19285
 }
 },
@@ -3145,7 +3145,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "RIMNJAK",
+"settlement": "RIMNJAK",
 "settlement_id": 7254
 }
 },
@@ -3159,7 +3159,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "KRAJ DRAGE",
+"settlement": "KRAJ DRAGE",
 "settlement_id": 9814
 }
 },
@@ -3173,7 +3173,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "SELINA",
+"settlement": "SELINA",
 "settlement_id": 19286
 }
 },
@@ -3187,7 +3187,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "ROČ",
+"settlement": "ROČ",
 "settlement_id": 7255
 }
 },
@@ -3201,7 +3201,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "MALI GOLJI",
+"settlement": "MALI GOLJI",
 "settlement_id": 9815
 }
 },
@@ -3215,7 +3215,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "STRANIĆI KOD LOVREČA",
+"settlement": "STRANIĆI KOD LOVREČA",
 "settlement_id": 19287
 }
 },
@@ -3229,7 +3229,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "ROČKO POLJE",
+"settlement": "ROČKO POLJE",
 "settlement_id": 7256
 }
 },
@@ -3243,7 +3243,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "MALI TURINI",
+"settlement": "MALI TURINI",
 "settlement_id": 9816
 }
 },
@@ -3257,7 +3257,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "SVETI LOVREČ PAZENATIČKI",
+"settlement": "SVETI LOVREČ PAZENATIČKI",
 "settlement_id": 19288
 }
 },
@@ -3271,7 +3271,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SALEŽ",
+"settlement": "SALEŽ",
 "settlement_id": 7257
 }
 },
@@ -3285,7 +3285,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "MARIĆI",
+"settlement": "MARIĆI",
 "settlement_id": 9817
 }
 },
@@ -3299,7 +3299,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VOŠTENI",
+"settlement": "VOŠTENI",
 "settlement_id": 19289
 }
 },
@@ -3313,7 +3313,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SELCA",
+"settlement": "SELCA",
 "settlement_id": 7258
 }
 },
@@ -3327,7 +3327,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "MARKOCI",
+"settlement": "MARKOCI",
 "settlement_id": 9818
 }
 },
@@ -3341,7 +3341,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ZGRABLJIĆI",
+"settlement": "ZGRABLJIĆI",
 "settlement_id": 19290
 }
 },
@@ -3355,7 +3355,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SELJACI",
+"settlement": "SELJACI",
 "settlement_id": 7259
 }
 },
@@ -3369,7 +3369,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "NEDEŠĆINA",
+"settlement": "NEDEŠĆINA",
 "settlement_id": 9819
 }
 },
@@ -3383,7 +3383,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "FRATA",
+"settlement": "FRATA",
 "settlement_id": 19291
 }
 },
@@ -3397,7 +3397,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SENJ",
+"settlement": "SENJ",
 "settlement_id": 7260
 }
 },
@@ -3411,7 +3411,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "PARADIŽ",
+"settlement": "PARADIŽ",
 "settlement_id": 9820
 }
 },
@@ -3425,7 +3425,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "GEDIĆI",
+"settlement": "GEDIĆI",
 "settlement_id": 19292
 }
 },
@@ -3439,7 +3439,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SIROTIĆI",
+"settlement": "SIROTIĆI",
 "settlement_id": 7261
 }
 },
@@ -3453,7 +3453,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "RUŽIĆI",
+"settlement": "RUŽIĆI",
 "settlement_id": 9821
 }
 },
@@ -3467,7 +3467,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "PERCI",
+"settlement": "PERCI",
 "settlement_id": 19293
 }
 },
@@ -3481,7 +3481,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SOVINJAK",
+"settlement": "SOVINJAK",
 "settlement_id": 7262
 }
 },
@@ -3495,7 +3495,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "SANTALEZI",
+"settlement": "SANTALEZI",
 "settlement_id": 9822
 }
 },
@@ -3509,7 +3509,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ROŠINI",
+"settlement": "ROŠINI",
 "settlement_id": 19294
 }
 },
@@ -3523,7 +3523,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SOVINJSKA BRDA",
+"settlement": "SOVINJSKA BRDA",
 "settlement_id": 7263
 }
 },
@@ -3537,7 +3537,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "SNAŠIĆI",
+"settlement": "SNAŠIĆI",
 "settlement_id": 9823
 }
 },
@@ -3551,7 +3551,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "TAR",
+"settlement": "TAR",
 "settlement_id": 19295
 }
 },
@@ -3565,7 +3565,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SOVINJSKO POLJE",
+"settlement": "SOVINJSKO POLJE",
 "settlement_id": 7264
 }
 },
@@ -3579,7 +3579,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "SVETI MARTIN",
+"settlement": "SVETI MARTIN",
 "settlement_id": 9824
 }
 },
@@ -3593,7 +3593,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VABRIGA",
+"settlement": "VABRIGA",
 "settlement_id": 19296
 }
 },
@@ -3607,7 +3607,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "STANICA ROČ",
+"settlement": "STANICA ROČ",
 "settlement_id": 7265
 }
 },
@@ -3621,7 +3621,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "ŠTRMAC",
+"settlement": "ŠTRMAC",
 "settlement_id": 9825
 }
 },
@@ -3635,7 +3635,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ANŽIĆI",
+"settlement": "ANŽIĆI",
 "settlement_id": 19297
 }
 },
@@ -3649,7 +3649,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "STRANA",
+"settlement": "STRANA",
 "settlement_id": 7266
 }
 },
@@ -3663,7 +3663,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "ŠUMBER",
+"settlement": "ŠUMBER",
 "settlement_id": 9826
 }
 },
@@ -3677,7 +3677,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BABUDRI",
+"settlement": "BABUDRI",
 "settlement_id": 19298
 }
 },
@@ -3691,7 +3691,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SUŠIĆI",
+"settlement": "SUŠIĆI",
 "settlement_id": 7267
 }
 },
@@ -3705,7 +3705,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "VELI GOLJI",
+"settlement": "VELI GOLJI",
 "settlement_id": 9827
 }
 },
@@ -3719,7 +3719,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BAČVA",
+"settlement": "BAČVA",
 "settlement_id": 19299
 }
 },
@@ -3733,7 +3733,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SVETI DONAT",
+"settlement": "SVETI DONAT",
 "settlement_id": 7268
 }
 },
@@ -3747,7 +3747,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "VELI TURINI",
+"settlement": "VELI TURINI",
 "settlement_id": 9828
 }
 },
@@ -3761,7 +3761,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BARAT",
+"settlement": "BARAT",
 "settlement_id": 19300
 }
 },
@@ -3775,7 +3775,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SVETI IVAN",
+"settlement": "SVETI IVAN",
 "settlement_id": 7269
 }
 },
@@ -3789,7 +3789,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "VREĆARI",
+"settlement": "VREĆARI",
 "settlement_id": 9829
 }
 },
@@ -3803,7 +3803,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BARIĆI",
+"settlement": "BARIĆI",
 "settlement_id": 19301
 }
 },
@@ -3817,7 +3817,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SVETI MARTIN",
+"settlement": "SVETI MARTIN",
 "settlement_id": 7270
 }
 },
@@ -3831,7 +3831,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Labin",
-"settlment": "ŽUPANIĆI",
+"settlement": "ŽUPANIĆI",
 "settlement_id": 9830
 }
 },
@@ -3845,7 +3845,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BAŠKOTI",
+"settlement": "BAŠKOTI",
 "settlement_id": 19302
 }
 },
@@ -3859,7 +3859,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "ŠĆULCI",
+"settlement": "ŠĆULCI",
 "settlement_id": 7271
 }
 },
@@ -3873,7 +3873,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BENČANI",
+"settlement": "BENČANI",
 "settlement_id": 19303
 }
 },
@@ -3887,7 +3887,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "ŠKULJARI",
+"settlement": "ŠKULJARI",
 "settlement_id": 7272
 }
 },
@@ -3901,7 +3901,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BOKIĆI",
+"settlement": "BOKIĆI",
 "settlement_id": 19304
 }
 },
@@ -3915,7 +3915,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "ŠTRPED",
+"settlement": "ŠTRPED",
 "settlement_id": 7273
 }
 },
@@ -3929,7 +3929,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BROSKVARI",
+"settlement": "BROSKVARI",
 "settlement_id": 19305
 }
 },
@@ -3943,7 +3943,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "UGRINI",
+"settlement": "UGRINI",
 "settlement_id": 7274
 }
 },
@@ -3957,7 +3957,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BUCALOVIĆI",
+"settlement": "BUCALOVIĆI",
 "settlement_id": 19306
 }
 },
@@ -3971,7 +3971,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "VELI MLUN",
+"settlement": "VELI MLUN",
 "settlement_id": 7275
 }
 },
@@ -3985,7 +3985,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BUJARIĆI",
+"settlement": "BUJARIĆI",
 "settlement_id": 19307
 }
 },
@@ -3999,7 +3999,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "VRH",
+"settlement": "VRH",
 "settlement_id": 7276
 }
 },
@@ -4013,7 +4013,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BUTORI",
+"settlement": "BUTORI",
 "settlement_id": 19308
 }
 },
@@ -4027,7 +4027,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "ŽONTI",
+"settlement": "ŽONTI",
 "settlement_id": 7277
 }
 },
@@ -4041,7 +4041,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "CERION",
+"settlement": "CERION",
 "settlement_id": 19309
 }
 },
@@ -4055,7 +4055,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "BELAJ",
+"settlement": "BELAJ",
 "settlement_id": 7278
 }
 },
@@ -4069,7 +4069,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "CVITANI",
+"settlement": "CVITANI",
 "settlement_id": 19310
 }
 },
@@ -4083,7 +4083,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "PAZ",
+"settlement": "PAZ",
 "settlement_id": 7279
 }
 },
@@ -4097,7 +4097,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "DEKLEVI",
+"settlement": "DEKLEVI",
 "settlement_id": 19311
 }
 },
@@ -4111,7 +4111,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "BREST",
+"settlement": "BREST",
 "settlement_id": 7280
 }
 },
@@ -4125,7 +4125,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "DIKLIĆI",
+"settlement": "DIKLIĆI",
 "settlement_id": 19312
 }
 },
@@ -4139,7 +4139,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "BRGUDAC",
+"settlement": "BRGUDAC",
 "settlement_id": 7281
 }
 },
@@ -4153,7 +4153,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "FABCI",
+"settlement": "FABCI",
 "settlement_id": 19313
 }
 },
@@ -4167,7 +4167,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "DANE",
+"settlement": "DANE",
 "settlement_id": 7282
 }
 },
@@ -4181,7 +4181,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "FARINI",
+"settlement": "FARINI",
 "settlement_id": 19314
 }
 },
@@ -4195,7 +4195,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "JELOVICE",
+"settlement": "JELOVICE",
 "settlement_id": 7283
 }
 },
@@ -4209,7 +4209,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "GAMBETIĆI",
+"settlement": "GAMBETIĆI",
 "settlement_id": 19315
 }
 },
@@ -4223,7 +4223,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "KLENOVŠĆAK",
+"settlement": "KLENOVŠĆAK",
 "settlement_id": 7284
 }
 },
@@ -4237,7 +4237,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KELCI",
+"settlement": "KELCI",
 "settlement_id": 19316
 }
 },
@@ -4251,7 +4251,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "KROPINJAK",
+"settlement": "KROPINJAK",
 "settlement_id": 7285
 }
 },
@@ -4265,7 +4265,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KOČIĆI",
+"settlement": "KOČIĆI",
 "settlement_id": 19317
 }
 },
@@ -4279,7 +4279,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "LANIŠĆE",
+"settlement": "LANIŠĆE",
 "settlement_id": 7286
 }
 },
@@ -4293,7 +4293,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KOLUMBERA",
+"settlement": "KOLUMBERA",
 "settlement_id": 19318
 }
 },
@@ -4307,7 +4307,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "PODGAĆE",
+"settlement": "PODGAĆE",
 "settlement_id": 7287
 }
 },
@@ -4321,7 +4321,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KORLEVIĆI",
+"settlement": "KORLEVIĆI",
 "settlement_id": 19319
 }
 },
@@ -4335,7 +4335,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "PRAPOĆE",
+"settlement": "PRAPOĆE",
 "settlement_id": 7288
 }
 },
@@ -4349,7 +4349,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KOŠUTIĆI",
+"settlement": "KOŠUTIĆI",
 "settlement_id": 19320
 }
 },
@@ -4363,7 +4363,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "RAČJA VAS",
+"settlement": "RAČJA VAS",
 "settlement_id": 7289
 }
 },
@@ -4377,7 +4377,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KURJAVIĆI",
+"settlement": "KURJAVIĆI",
 "settlement_id": 19321
 }
 },
@@ -4391,7 +4391,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "RAŠPOR",
+"settlement": "RAŠPOR",
 "settlement_id": 7290
 }
 },
@@ -4405,7 +4405,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "LEGOVIĆI",
+"settlement": "LEGOVIĆI",
 "settlement_id": 19322
 }
 },
@@ -4419,7 +4419,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SLUM",
+"settlement": "SLUM",
 "settlement_id": 7291
 }
 },
@@ -4433,7 +4433,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MAJKUSI",
+"settlement": "MAJKUSI",
 "settlement_id": 19323
 }
 },
@@ -4447,7 +4447,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "TRSTENIK",
+"settlement": "TRSTENIK",
 "settlement_id": 7292
 }
 },
@@ -4461,7 +4461,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MALIŠI",
+"settlement": "MALIŠI",
 "settlement_id": 19324
 }
 },
@@ -4475,7 +4475,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "VODICE",
+"settlement": "VODICE",
 "settlement_id": 7293
 }
 },
@@ -4489,7 +4489,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MARETIĆI",
+"settlement": "MARETIĆI",
 "settlement_id": 19325
 }
 },
@@ -4503,7 +4503,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "BOLJUN",
+"settlement": "BOLJUN",
 "settlement_id": 7294
 }
 },
@@ -4517,7 +4517,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MARKOVAC",
+"settlement": "MARKOVAC",
 "settlement_id": 19326
 }
 },
@@ -4531,7 +4531,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "BOLJUNSKO POLJE",
+"settlement": "BOLJUNSKO POLJE",
 "settlement_id": 7295
 }
 },
@@ -4545,7 +4545,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MILANEZI",
+"settlement": "MILANEZI",
 "settlement_id": 19327
 }
 },
@@ -4559,7 +4559,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "BREST POD UČKOM",
+"settlement": "BREST POD UČKOM",
 "settlement_id": 7296
 }
 },
@@ -4573,7 +4573,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "PRAŠĆARI",
+"settlement": "PRAŠĆARI",
 "settlement_id": 19328
 }
 },
@@ -4587,7 +4587,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "DOLENJA VAS",
+"settlement": "DOLENJA VAS",
 "settlement_id": 7297
 }
 },
@@ -4601,7 +4601,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "PRHATI",
+"settlement": "PRHATI",
 "settlement_id": 19329
 }
 },
@@ -4615,7 +4615,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "LESIŠĆINA",
+"settlement": "LESIŠĆINA",
 "settlement_id": 7298
 }
 },
@@ -4629,7 +4629,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "PRKOVIĆI",
+"settlement": "PRKOVIĆI",
 "settlement_id": 19330
 }
 },
@@ -4643,7 +4643,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "LUPOGLAV",
+"settlement": "LUPOGLAV",
 "settlement_id": 7299
 }
 },
@@ -4657,7 +4657,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "PRŠURIĆI",
+"settlement": "PRŠURIĆI",
 "settlement_id": 19331
 }
 },
@@ -4671,7 +4671,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "SEMIĆ",
+"settlement": "SEMIĆ",
 "settlement_id": 7300
 }
 },
@@ -4685,7 +4685,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "RADOŠI KOD VIŠNJANA",
+"settlement": "RADOŠI KOD VIŠNJANA",
 "settlement_id": 19332
 }
 },
@@ -4699,7 +4699,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Buzet",
-"settlment": "VRANJA",
+"settlement": "VRANJA",
 "settlement_id": 7301
 }
 },
@@ -4713,7 +4713,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "RADOVANI",
+"settlement": "RADOVANI",
 "settlement_id": 19333
 }
 },
@@ -4727,7 +4727,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "RAFAELI",
+"settlement": "RAFAELI",
 "settlement_id": 19334
 }
 },
@@ -4741,7 +4741,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "RAPAVEL",
+"settlement": "RAPAVEL",
 "settlement_id": 19335
 }
 },
@@ -4755,7 +4755,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "RIBARIĆI",
+"settlement": "RIBARIĆI",
 "settlement_id": 19336
 }
 },
@@ -4769,7 +4769,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "SINOŽIĆI",
+"settlement": "SINOŽIĆI",
 "settlement_id": 19337
 }
 },
@@ -4783,7 +4783,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "SMOLICI",
+"settlement": "SMOLICI",
 "settlement_id": 19338
 }
 },
@@ -4797,7 +4797,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "SREBRNIĆI",
+"settlement": "SREBRNIĆI",
 "settlement_id": 19339
 }
 },
@@ -4811,7 +4811,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "STRPAČIĆI",
+"settlement": "STRPAČIĆI",
 "settlement_id": 19340
 }
 },
@@ -4825,7 +4825,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "SVETI IVAN",
+"settlement": "SVETI IVAN",
 "settlement_id": 19341
 }
 },
@@ -4839,7 +4839,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ŠTUTI",
+"settlement": "ŠTUTI",
 "settlement_id": 19342
 }
 },
@@ -4853,7 +4853,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "TIĆAN",
+"settlement": "TIĆAN",
 "settlement_id": 19343
 }
 },
@@ -4867,7 +4867,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "TRIPARI",
+"settlement": "TRIPARI",
 "settlement_id": 19344
 }
 },
@@ -4881,7 +4881,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VEJAKI",
+"settlement": "VEJAKI",
 "settlement_id": 19345
 }
 },
@@ -4895,7 +4895,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VIŠNJAN",
+"settlement": "VIŠNJAN",
 "settlement_id": 19346
 }
 },
@@ -4909,7 +4909,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "BARBAN",
+"settlement": "BARBAN",
 "settlement_id": 6803
 }
 },
@@ -4923,7 +4923,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VRANIĆI KOD VIŠNJANA",
+"settlement": "VRANIĆI KOD VIŠNJANA",
 "settlement_id": 19347
 }
 },
@@ -4937,7 +4937,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "BIČIĆI",
+"settlement": "BIČIĆI",
 "settlement_id": 6804
 }
 },
@@ -4951,7 +4951,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VRHJANI",
+"settlement": "VRHJANI",
 "settlement_id": 19348
 }
 },
@@ -4965,7 +4965,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "BORINIĆI",
+"settlement": "BORINIĆI",
 "settlement_id": 6805
 }
 },
@@ -4979,7 +4979,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ZORIČIĆI",
+"settlement": "ZORIČIĆI",
 "settlement_id": 19349
 }
 },
@@ -4993,7 +4993,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "DRAGUZETI",
+"settlement": "DRAGUZETI",
 "settlement_id": 6806
 }
 },
@@ -5007,7 +5007,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ŽENODRAGA",
+"settlement": "ŽENODRAGA",
 "settlement_id": 19350
 }
 },
@@ -5021,7 +5021,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "GLAVANI",
+"settlement": "GLAVANI",
 "settlement_id": 6807
 }
 },
@@ -5035,7 +5035,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ŽIKOVIĆI",
+"settlement": "ŽIKOVIĆI",
 "settlement_id": 19351
 }
 },
@@ -5049,7 +5049,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "GRANDIĆI",
+"settlement": "GRANDIĆI",
 "settlement_id": 6808
 }
 },
@@ -5063,7 +5063,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ŽUŽIĆI",
+"settlement": "ŽUŽIĆI",
 "settlement_id": 19352
 }
 },
@@ -5077,7 +5077,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "HRBOKI",
+"settlement": "HRBOKI",
 "settlement_id": 6809
 }
 },
@@ -5091,7 +5091,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BAJKINI",
+"settlement": "BAJKINI",
 "settlement_id": 19353
 }
 },
@@ -5105,7 +5105,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "FAŽANA",
+"settlement": "FAŽANA",
 "settlement_id": 19609
 }
 },
@@ -5119,7 +5119,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "JURIĆEV KAL",
+"settlement": "JURIĆEV KAL",
 "settlement_id": 6810
 }
 },
@@ -5133,7 +5133,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BALDAŠI",
+"settlement": "BALDAŠI",
 "settlement_id": 19354
 }
 },
@@ -5147,7 +5147,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "VALBANDON",
+"settlement": "VALBANDON",
 "settlement_id": 19610
 }
 },
@@ -5161,7 +5161,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "KOROMANI",
+"settlement": "KOROMANI",
 "settlement_id": 6811
 }
 },
@@ -5175,7 +5175,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BRIG",
+"settlement": "BRIG",
 "settlement_id": 19355
 }
 },
@@ -5189,7 +5189,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "JADREŠKI",
+"settlement": "JADREŠKI",
 "settlement_id": 19611
 }
 },
@@ -5203,7 +5203,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "KOŽLJANI",
+"settlement": "KOŽLJANI",
 "settlement_id": 6812
 }
 },
@@ -5217,7 +5217,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BUKORI",
+"settlement": "BUKORI",
 "settlement_id": 19356
 }
 },
@@ -5231,7 +5231,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "LIŽNJAN",
+"settlement": "LIŽNJAN",
 "settlement_id": 19612
 }
 },
@@ -5245,7 +5245,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "MANJADVORCI",
+"settlement": "MANJADVORCI",
 "settlement_id": 6813
 }
 },
@@ -5259,7 +5259,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "CRKLADA",
+"settlement": "CRKLADA",
 "settlement_id": 19357
 }
 },
@@ -5273,7 +5273,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "MUNTIĆ",
+"settlement": "MUNTIĆ",
 "settlement_id": 19613
 }
 },
@@ -5287,7 +5287,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "MELNICA",
+"settlement": "MELNICA",
 "settlement_id": 6814
 }
 },
@@ -5301,7 +5301,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ČUKI",
+"settlement": "ČUKI",
 "settlement_id": 19358
 }
 },
@@ -5315,7 +5315,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "ŠIŠAN",
+"settlement": "ŠIŠAN",
 "settlement_id": 19614
 }
 },
@@ -5329,7 +5329,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "ORIHI",
+"settlement": "ORIHI",
 "settlement_id": 6815
 }
 },
@@ -5343,7 +5343,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "DANCI",
+"settlement": "DANCI",
 "settlement_id": 19359
 }
 },
@@ -5357,7 +5357,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "VALTURA",
+"settlement": "VALTURA",
 "settlement_id": 19615
 }
 },
@@ -5371,7 +5371,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "PETEHI",
+"settlement": "PETEHI",
 "settlement_id": 6816
 }
 },
@@ -5385,7 +5385,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "FERENCI",
+"settlement": "FERENCI",
 "settlement_id": 19360
 }
 },
@@ -5399,7 +5399,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "BANJOLE",
+"settlement": "BANJOLE",
 "settlement_id": 19616
 }
 },
@@ -5413,7 +5413,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "PRHATI",
+"settlement": "PRHATI",
 "settlement_id": 6817
 }
 },
@@ -5427,7 +5427,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "FILIPI",
+"settlement": "FILIPI",
 "settlement_id": 19361
 }
 },
@@ -5441,7 +5441,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "MEDULIN",
+"settlement": "MEDULIN",
 "settlement_id": 19617
 }
 },
@@ -5455,7 +5455,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "PUNTERA",
+"settlement": "PUNTERA",
 "settlement_id": 6818
 }
 },
@@ -5469,7 +5469,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "GRUBIĆI",
+"settlement": "GRUBIĆI",
 "settlement_id": 19362
 }
 },
@@ -5483,7 +5483,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "PJEŠČANA UVALA",
+"settlement": "PJEŠČANA UVALA",
 "settlement_id": 19618
 }
 },
@@ -5497,7 +5497,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "RAJKI",
+"settlement": "RAJKI",
 "settlement_id": 6819
 }
 },
@@ -5511,7 +5511,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "JADRUHI",
+"settlement": "JADRUHI",
 "settlement_id": 19363
 }
 },
@@ -5525,7 +5525,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "POMER",
+"settlement": "POMER",
 "settlement_id": 19619
 }
 },
@@ -5539,7 +5539,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "REBIĆI",
+"settlement": "REBIĆI",
 "settlement_id": 6820
 }
 },
@@ -5553,7 +5553,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "LAŠIĆI",
+"settlement": "LAŠIĆI",
 "settlement_id": 19364
 }
 },
@@ -5567,7 +5567,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "PREMANTURA",
+"settlement": "PREMANTURA",
 "settlement_id": 19620
 }
 },
@@ -5581,7 +5581,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "ROJNIĆI",
+"settlement": "ROJNIĆI",
 "settlement_id": 6821
 }
 },
@@ -5595,7 +5595,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MARKOVIĆI",
+"settlement": "MARKOVIĆI",
 "settlement_id": 19365
 }
 },
@@ -5609,7 +5609,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "VALBONAŠA",
+"settlement": "VALBONAŠA",
 "settlement_id": 19621
 }
 },
@@ -5623,7 +5623,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "ŠAJINI",
+"settlement": "ŠAJINI",
 "settlement_id": 6822
 }
 },
@@ -5637,7 +5637,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MASTELIĆI",
+"settlement": "MASTELIĆI",
 "settlement_id": 19366
 }
 },
@@ -5651,7 +5651,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "VINKURAN",
+"settlement": "VINKURAN",
 "settlement_id": 19622
 }
 },
@@ -5665,7 +5665,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "VADREŠ",
+"settlement": "VADREŠ",
 "settlement_id": 6823
 }
 },
@@ -5679,7 +5679,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MEKIŠI KOD VIŽINADE",
+"settlement": "MEKIŠI KOD VIŽINADE",
 "settlement_id": 19367
 }
 },
@@ -5693,7 +5693,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "VINTIJAN",
+"settlement": "VINTIJAN",
 "settlement_id": 19623
 }
 },
@@ -5707,7 +5707,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "ŽELISKI",
+"settlement": "ŽELISKI",
 "settlement_id": 6824
 }
 },
@@ -5721,7 +5721,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "NARDUĆI",
+"settlement": "NARDUĆI",
 "settlement_id": 19368
 }
 },
@@ -5735,7 +5735,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "PULA",
+"settlement": "PULA",
 "settlement_id": 19624
 }
 },
@@ -5749,7 +5749,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "BELAVIĆI",
+"settlement": "BELAVIĆI",
 "settlement_id": 6825
 }
 },
@@ -5763,7 +5763,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "OHNIĆI",
+"settlement": "OHNIĆI",
 "settlement_id": 19369
 }
 },
@@ -5777,7 +5777,7 @@ export let testObject = [
 "area": "Barbariga",
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "GAJANA",
+"settlement": "GAJANA",
 "settlement_id": 19625
 }
 },
@@ -5791,7 +5791,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "BRATULIĆI",
+"settlement": "BRATULIĆI",
 "settlement_id": 6826
 }
 },
@@ -5805,7 +5805,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "PIŠKOVICA",
+"settlement": "PIŠKOVICA",
 "settlement_id": 19370
 }
 },
@@ -5819,7 +5819,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "GALIŽANA",
+"settlement": "GALIŽANA",
 "settlement_id": 19626
 }
 },
@@ -5833,7 +5833,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "COKUNI",
+"settlement": "COKUNI",
 "settlement_id": 6827
 }
 },
@@ -5847,7 +5847,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "STANIŠI",
+"settlement": "STANIŠI",
 "settlement_id": 19371
 }
 },
@@ -5861,7 +5861,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "PEROJ",
+"settlement": "PEROJ",
 "settlement_id": 19627
 }
 },
@@ -5875,7 +5875,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "DIVŠIĆI",
+"settlement": "DIVŠIĆI",
 "settlement_id": 6828
 }
 },
@@ -5889,7 +5889,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "TROMBAL",
+"settlement": "TROMBAL",
 "settlement_id": 19372
 }
 },
@@ -5903,7 +5903,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "VODNJAN",
+"settlement": "VODNJAN",
 "settlement_id": 19628
 }
 },
@@ -5917,7 +5917,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "FILIPANA",
+"settlement": "FILIPANA",
 "settlement_id": 6829
 }
 },
@@ -5931,7 +5931,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VELIĆI",
+"settlement": "VELIĆI",
 "settlement_id": 19373
 }
 },
@@ -5945,7 +5945,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pula (Pola)",
-"settlment": "MEDULIN",
+"settlement": "MEDULIN",
 "settlement_id": 19629
 }
 },
@@ -5959,7 +5959,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "GOLAŠ",
+"settlement": "GOLAŠ",
 "settlement_id": 21421
 }
 },
@@ -5973,7 +5973,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "HRELJIĆI",
+"settlement": "HRELJIĆI",
 "settlement_id": 6830
 }
 },
@@ -5987,7 +5987,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VIŽINADA",
+"settlement": "VIŽINADA",
 "settlement_id": 19374
 }
 },
@@ -6001,7 +6001,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "CVITIĆI",
+"settlement": "CVITIĆI",
 "settlement_id": 21422
 }
 },
@@ -6015,7 +6015,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "KAVRAN",
+"settlement": "KAVRAN",
 "settlement_id": 6831
 }
 },
@@ -6029,7 +6029,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VRANIĆI KOD VIŽINADE",
+"settlement": "VRANIĆI KOD VIŽINADE",
 "settlement_id": 19375
 }
 },
@@ -6043,7 +6043,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "GORICA",
+"settlement": "GORICA",
 "settlement_id": 21423
 }
 },
@@ -6057,7 +6057,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "KRNICA",
+"settlement": "KRNICA",
 "settlement_id": 6832
 }
 },
@@ -6071,7 +6071,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VRANJE SELO",
+"settlement": "VRANJE SELO",
 "settlement_id": 19376
 }
 },
@@ -6085,7 +6085,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "MEDANČIĆI",
+"settlement": "MEDANČIĆI",
 "settlement_id": 21424
 }
 },
@@ -6099,7 +6099,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "KUJIĆI",
+"settlement": "KUJIĆI",
 "settlement_id": 6833
 }
 },
@@ -6113,7 +6113,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VRBANI",
+"settlement": "VRBANI",
 "settlement_id": 19377
 }
 },
@@ -6127,7 +6127,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "SUTIVANAC",
+"settlement": "SUTIVANAC",
 "settlement_id": 21425
 }
 },
@@ -6141,7 +6141,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "LOBORIKA",
+"settlement": "LOBORIKA",
 "settlement_id": 6834
 }
 },
@@ -6155,7 +6155,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VRH LAŠIĆI",
+"settlement": "VRH LAŠIĆI",
 "settlement_id": 19378
 }
 },
@@ -6169,7 +6169,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "VAROŠ",
+"settlement": "VAROŠ",
 "settlement_id": 21426
 }
 },
@@ -6183,7 +6183,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "MALI VAREŠKI",
+"settlement": "MALI VAREŠKI",
 "settlement_id": 6835
 }
 },
@@ -6197,7 +6197,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "ŽUDETIĆI",
+"settlement": "ŽUDETIĆI",
 "settlement_id": 19379
 }
 },
@@ -6211,7 +6211,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "BATLUG",
+"settlement": "BATLUG",
 "settlement_id": 21427
 }
 },
@@ -6225,7 +6225,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "MUTVORAN",
+"settlement": "MUTVORAN",
 "settlement_id": 6836
 }
 },
@@ -6239,7 +6239,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BEGI",
+"settlement": "BEGI",
 "settlement_id": 19380
 }
 },
@@ -6253,7 +6253,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "MILOTSKI BREG",
+"settlement": "MILOTSKI BREG",
 "settlement_id": 21428
 }
 },
@@ -6267,7 +6267,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "ORBANIĆI",
+"settlement": "ORBANIĆI",
 "settlement_id": 6837
 }
 },
@@ -6281,7 +6281,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "BRALIĆI",
+"settlement": "BRALIĆI",
 "settlement_id": 19381
 }
 },
@@ -6295,7 +6295,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "BARAT",
+"settlement": "BARAT",
 "settlement_id": 21429
 }
 },
@@ -6309,7 +6309,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "PAVIĆINI",
+"settlement": "PAVIĆINI",
 "settlement_id": 6838
 }
 },
@@ -6323,7 +6323,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "BLAŠKOVIĆI",
+"settlement": "BLAŠKOVIĆI",
 "settlement_id": 19126
 }
 },
@@ -6337,7 +6337,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "DELIĆI",
+"settlement": "DELIĆI",
 "settlement_id": 19382
 }
 },
@@ -6351,7 +6351,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "BRAJKOVIĆI",
+"settlement": "BRAJKOVIĆI",
 "settlement_id": 21430
 }
 },
@@ -6365,7 +6365,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "PERUŠKI",
+"settlement": "PERUŠKI",
 "settlement_id": 6839
 }
 },
@@ -6379,7 +6379,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "BOLJEVIĆI",
+"settlement": "BOLJEVIĆI",
 "settlement_id": 19127
 }
 },
@@ -6393,7 +6393,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "FLENGI",
+"settlement": "FLENGI",
 "settlement_id": 19383
 }
 },
@@ -6407,7 +6407,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "BUBANI",
+"settlement": "BUBANI",
 "settlement_id": 21431
 }
 },
@@ -6421,7 +6421,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "PINEZIĆI",
+"settlement": "PINEZIĆI",
 "settlement_id": 6840
 }
 },
@@ -6435,7 +6435,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "ČAMBARELIĆI",
+"settlement": "ČAMBARELIĆI",
 "settlement_id": 19128
 }
 },
@@ -6449,7 +6449,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "GRADINA",
+"settlement": "GRADINA",
 "settlement_id": 19384
 }
 },
@@ -6463,7 +6463,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "BURIĆI",
+"settlement": "BURIĆI",
 "settlement_id": 21432
 }
 },
@@ -6477,7 +6477,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "PRODOL",
+"settlement": "PRODOL",
 "settlement_id": 6841
 }
 },
@@ -6491,7 +6491,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "JESENOVIK",
+"settlement": "JESENOVIK",
 "settlement_id": 19129
 }
 },
@@ -6505,7 +6505,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KLOŠTAR",
+"settlement": "KLOŠTAR",
 "settlement_id": 19385
 }
 },
@@ -6519,7 +6519,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "ČERVARI",
+"settlement": "ČERVARI",
 "settlement_id": 21433
 }
 },
@@ -6533,7 +6533,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "RAKALJ",
+"settlement": "RAKALJ",
 "settlement_id": 6842
 }
 },
@@ -6547,7 +6547,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "KOSTRČANI",
+"settlement": "KOSTRČANI",
 "settlement_id": 19130
 }
 },
@@ -6561,7 +6561,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "KONTEŠIĆI",
+"settlement": "KONTEŠIĆI",
 "settlement_id": 19386
 }
 },
@@ -6575,7 +6575,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "DUBRAVCI",
+"settlement": "DUBRAVCI",
 "settlement_id": 21434
 }
 },
@@ -6589,7 +6589,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "ŠARIĆI",
+"settlement": "ŠARIĆI",
 "settlement_id": 6843
 }
 },
@@ -6603,7 +6603,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "KOŽLJAK",
+"settlement": "KOŽLJAK",
 "settlement_id": 19131
 }
 },
@@ -6617,7 +6617,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "MARASI",
+"settlement": "MARASI",
 "settlement_id": 19387
 }
 },
@@ -6631,7 +6631,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "JURAL",
+"settlement": "JURAL",
 "settlement_id": 21435
 }
 },
@@ -6645,7 +6645,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "ŠEGOTIĆI",
+"settlement": "ŠEGOTIĆI",
 "settlement_id": 6844
 }
 },
@@ -6659,7 +6659,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "KRŠAN",
+"settlement": "KRŠAN",
 "settlement_id": 19132
 }
 },
@@ -6673,7 +6673,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "VRSAR",
+"settlement": "VRSAR",
 "settlement_id": 19388
 }
 },
@@ -6687,7 +6687,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "KANFANAR",
+"settlement": "KANFANAR",
 "settlement_id": 21436
 }
 },
@@ -6701,7 +6701,7 @@ export let testObject = [
 "area": "Istria East coast",
 "sub_area": "Istra",
 "place": "Barban",
-"settlment": "VELIKI VAREŠKI",
+"settlement": "VELIKI VAREŠKI",
 "settlement_id": 6845
 }
 },
@@ -6715,7 +6715,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "BARTOLIĆI",
+"settlement": "BARTOLIĆI",
 "settlement_id": 10173
 }
 },
@@ -6729,7 +6729,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Novigrad-Cittanova",
-"settlment": "BRTONIGLA",
+"settlement": "BRTONIGLA",
 "settlement_id": 10429
 }
 },
@@ -6743,7 +6743,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "LANIŠĆE",
+"settlement": "LANIŠĆE",
 "settlement_id": 19133
 }
 },
@@ -6757,7 +6757,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "KORENIĆI",
+"settlement": "KORENIĆI",
 "settlement_id": 21437
 }
 },
@@ -6771,7 +6771,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "KRTI",
+"settlement": "KRTI",
 "settlement_id": 10174
 }
 },
@@ -6785,7 +6785,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Novigrad-Cittanova",
-"settlment": "FIORINI",
+"settlement": "FIORINI",
 "settlement_id": 10430
 }
 },
@@ -6799,7 +6799,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "LAZARIĆI",
+"settlement": "LAZARIĆI",
 "settlement_id": 19134
 }
 },
@@ -6813,7 +6813,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "KURILI",
+"settlement": "KURILI",
 "settlement_id": 21438
 }
 },
@@ -6827,7 +6827,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "KAROJBA",
+"settlement": "KAROJBA",
 "settlement_id": 10175
 }
 },
@@ -6841,7 +6841,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Novigrad-Cittanova",
-"settlment": "KARIGADOR",
+"settlement": "KARIGADOR",
 "settlement_id": 10431
 }
 },
@@ -6855,7 +6855,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "LETAJ",
+"settlement": "LETAJ",
 "settlement_id": 19135
 }
 },
@@ -6869,7 +6869,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "RADINI",
+"settlement": "RADINI",
 "settlement_id": 20671
 }
 },
@@ -6883,7 +6883,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "LADIĆI",
+"settlement": "LADIĆI",
 "settlement_id": 21439
 }
 },
@@ -6897,7 +6897,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "NOVAKI MOTOVUNSKI",
+"settlement": "NOVAKI MOTOVUNSKI",
 "settlement_id": 10176
 }
 },
@@ -6911,7 +6911,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Novigrad-Cittanova",
-"settlment": "NOVA VAS",
+"settlement": "NOVA VAS",
 "settlement_id": 10432
 }
 },
@@ -6925,7 +6925,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "NOVA VAS",
+"settlement": "NOVA VAS",
 "settlement_id": 19136
 }
 },
@@ -6939,7 +6939,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "BUROLI",
+"settlement": "BUROLI",
 "settlement_id": 20672
 }
 },
@@ -6953,7 +6953,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "MARIĆI",
+"settlement": "MARIĆI",
 "settlement_id": 21440
 }
 },
@@ -6967,7 +6967,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "RAKOTULE",
+"settlement": "RAKOTULE",
 "settlement_id": 10177
 }
 },
@@ -6981,7 +6981,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Novigrad-Cittanova",
-"settlment": "ANTENAL",
+"settlement": "ANTENAL",
 "settlement_id": 10433
 }
 },
@@ -6995,7 +6995,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "PLOMIN",
+"settlement": "PLOMIN",
 "settlement_id": 19137
 }
 },
@@ -7009,7 +7009,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "KRŠETE",
+"settlement": "KRŠETE",
 "settlement_id": 20673
 }
 },
@@ -7023,7 +7023,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "MARUŽINI",
+"settlement": "MARUŽINI",
 "settlement_id": 21441
 }
 },
@@ -7037,7 +7037,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "ŠKROPETI",
+"settlement": "ŠKROPETI",
 "settlement_id": 10178
 }
 },
@@ -7051,7 +7051,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Novigrad-Cittanova",
-"settlment": "BUŽINIJA",
+"settlement": "BUŽINIJA",
 "settlement_id": 10434
 }
 },
@@ -7065,7 +7065,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "PLOMIN LUKA",
+"settlement": "PLOMIN LUKA",
 "settlement_id": 19138
 }
 },
@@ -7079,7 +7079,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "BABIĆI",
+"settlement": "BABIĆI",
 "settlement_id": 20674
 }
 },
@@ -7093,7 +7093,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "MATOHANCI",
+"settlement": "MATOHANCI",
 "settlement_id": 21442
 }
 },
@@ -7107,7 +7107,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "BRKAČ",
+"settlement": "BRKAČ",
 "settlement_id": 10179
 }
 },
@@ -7121,7 +7121,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Novigrad-Cittanova",
-"settlment": "DAJLA",
+"settlement": "DAJLA",
 "settlement_id": 10435
 }
 },
@@ -7135,7 +7135,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "POLJE ČEPIĆ",
+"settlement": "POLJE ČEPIĆ",
 "settlement_id": 19139
 }
 },
@@ -7149,7 +7149,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "BAŠANIJA",
+"settlement": "BAŠANIJA",
 "settlement_id": 20675
 }
 },
@@ -7163,7 +7163,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "MRGANI",
+"settlement": "MRGANI",
 "settlement_id": 21443
 }
 },
@@ -7177,7 +7177,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "KALDIR",
+"settlement": "KALDIR",
 "settlement_id": 10180
 }
 },
@@ -7191,7 +7191,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Novigrad-Cittanova",
-"settlment": "MAREDA",
+"settlement": "MAREDA",
 "settlement_id": 10436
 }
 },
@@ -7205,7 +7205,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "POTPIĆAN",
+"settlement": "POTPIĆAN",
 "settlement_id": 19140
 }
 },
@@ -7219,7 +7219,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "CRVENI VRH",
+"settlement": "CRVENI VRH",
 "settlement_id": 20676
 }
 },
@@ -7233,7 +7233,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "OKRETI",
+"settlement": "OKRETI",
 "settlement_id": 21444
 }
 },
@@ -7247,7 +7247,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "MOTOVUN",
+"settlement": "MOTOVUN",
 "settlement_id": 10181
 }
 },
@@ -7261,7 +7261,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Novigrad-Cittanova",
-"settlment": "NOVIGRAD",
+"settlement": "NOVIGRAD",
 "settlement_id": 10437
 }
 },
@@ -7275,7 +7275,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "PURGARIJA ČEPIĆ",
+"settlement": "PURGARIJA ČEPIĆ",
 "settlement_id": 19141
 }
 },
@@ -7289,7 +7289,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "ČEPLJANI",
+"settlement": "ČEPLJANI",
 "settlement_id": 20677
 }
 },
@@ -7303,7 +7303,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "PUTINI",
+"settlement": "PUTINI",
 "settlement_id": 21445
 }
 },
@@ -7317,7 +7317,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "SVETI BARTOL",
+"settlement": "SVETI BARTOL",
 "settlement_id": 10182
 }
 },
@@ -7331,7 +7331,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "STEPČIĆI",
+"settlement": "STEPČIĆI",
 "settlement_id": 19142
 }
 },
@@ -7345,7 +7345,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "ĐUBA",
+"settlement": "ĐUBA",
 "settlement_id": 20678
 }
 },
@@ -7359,7 +7359,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "SOŠIĆI",
+"settlement": "SOŠIĆI",
 "settlement_id": 21446
 }
 },
@@ -7373,7 +7373,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "GOLUBIĆI",
+"settlement": "GOLUBIĆI",
 "settlement_id": 10183
 }
 },
@@ -7387,7 +7387,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "ŠUŠNJEVICA",
+"settlement": "ŠUŠNJEVICA",
 "settlement_id": 19143
 }
 },
@@ -7401,7 +7401,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "FINIDA",
+"settlement": "FINIDA",
 "settlement_id": 20679
 }
 },
@@ -7415,7 +7415,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "ŠORIĆI",
+"settlement": "ŠORIĆI",
 "settlement_id": 21447
 }
 },
@@ -7429,7 +7429,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "GRADINJE",
+"settlement": "GRADINJE",
 "settlement_id": 10184
 }
 },
@@ -7443,7 +7443,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "VELJAKI",
+"settlement": "VELJAKI",
 "settlement_id": 19144
 }
 },
@@ -7457,7 +7457,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "JURICANI",
+"settlement": "JURICANI",
 "settlement_id": 20680
 }
 },
@@ -7471,7 +7471,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "ŽUNTIĆI",
+"settlement": "ŽUNTIĆI",
 "settlement_id": 21448
 }
 },
@@ -7485,7 +7485,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "IPŠI",
+"settlement": "IPŠI",
 "settlement_id": 10185
 }
 },
@@ -7499,7 +7499,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "VOZILIĆI",
+"settlement": "VOZILIĆI",
 "settlement_id": 19145
 }
 },
@@ -7513,7 +7513,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "KATORO",
+"settlement": "KATORO",
 "settlement_id": 20681
 }
 },
@@ -7527,7 +7527,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "SVETI PETAR U ŠUMI",
+"settlement": "SVETI PETAR U ŠUMI",
 "settlement_id": 21449
 }
 },
@@ -7541,7 +7541,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "LIVADE",
+"settlement": "LIVADE",
 "settlement_id": 10186
 }
 },
@@ -7555,7 +7555,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "DURIČIĆI",
+"settlement": "DURIČIĆI",
 "settlement_id": 18890
 }
 },
@@ -7569,7 +7569,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "ZAGORJE",
+"settlement": "ZAGORJE",
 "settlement_id": 19146
 }
 },
@@ -7583,7 +7583,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "KMETI",
+"settlement": "KMETI",
 "settlement_id": 20682
 }
 },
@@ -7597,7 +7597,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "BIBIĆI",
+"settlement": "BIBIĆI",
 "settlement_id": 21450
 }
 },
@@ -7611,7 +7611,7 @@ export let testObject = [
 "area": "truffle",
 "sub_area": "Istra",
 "place": "Motovun (Montona)",
-"settlment": "PIRELIĆI",
+"settlement": "PIRELIĆI",
 "settlement_id": 10187
 }
 },
@@ -7625,7 +7625,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "BORUT",
+"settlement": "BORUT",
 "settlement_id": 18891
 }
 },
@@ -7639,7 +7639,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "ZANKOVCI",
+"settlement": "ZANKOVCI",
 "settlement_id": 19147
 }
 },
@@ -7653,7 +7653,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "KRIŽINE",
+"settlement": "KRIŽINE",
 "settlement_id": 20683
 }
 },
@@ -7667,7 +7667,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "BOKORDIĆI",
+"settlement": "BOKORDIĆI",
 "settlement_id": 21451
 }
 },
@@ -7681,7 +7681,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "CEROVLJE",
+"settlement": "CEROVLJE",
 "settlement_id": 18892
 }
 },
@@ -7695,7 +7695,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "ZATKA ČEPIĆ",
+"settlement": "ZATKA ČEPIĆ",
 "settlement_id": 19148
 }
 },
@@ -7709,7 +7709,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "LOVREČICA",
+"settlement": "LOVREČICA",
 "settlement_id": 20684
 }
 },
@@ -7723,7 +7723,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "BOŠKARI",
+"settlement": "BOŠKARI",
 "settlement_id": 21452
 }
 },
@@ -7737,7 +7737,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "ĆUSI",
+"settlement": "ĆUSI",
 "settlement_id": 18893
 }
 },
@@ -7751,7 +7751,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "JAKOMIĆI",
+"settlement": "JAKOMIĆI",
 "settlement_id": 19149
 }
 },
@@ -7765,7 +7765,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "MATERADA",
+"settlement": "MATERADA",
 "settlement_id": 20685
 }
 },
@@ -7779,7 +7779,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "BRIČANCI",
+"settlement": "BRIČANCI",
 "settlement_id": 21453
 }
 },
@@ -7793,7 +7793,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "DRAGUĆ",
+"settlement": "DRAGUĆ",
 "settlement_id": 18894
 }
 },
@@ -7807,7 +7807,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "KRBUNE",
+"settlement": "KRBUNE",
 "settlement_id": 19150
 }
 },
@@ -7821,7 +7821,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "MONTEROL",
+"settlement": "MONTEROL",
 "settlement_id": 20686
 }
 },
@@ -7835,7 +7835,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "BUTKOVIĆI",
+"settlement": "BUTKOVIĆI",
 "settlement_id": 21454
 }
 },
@@ -7849,7 +7849,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "GOLOGORICA",
+"settlement": "GOLOGORICA",
 "settlement_id": 18895
 }
 },
@@ -7863,7 +7863,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "TUPLJAK",
+"settlement": "TUPLJAK",
 "settlement_id": 19151
 }
 },
@@ -7877,7 +7877,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "MURINE",
+"settlement": "MURINE",
 "settlement_id": 20687
 }
 },
@@ -7891,7 +7891,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "CUKRIĆI",
+"settlement": "CUKRIĆI",
 "settlement_id": 21455
 }
 },
@@ -7905,7 +7905,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "GOLOGORIČKI DOL",
+"settlement": "GOLOGORIČKI DOL",
 "settlement_id": 18896
 }
 },
@@ -7919,7 +7919,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Podpićan",
-"settlment": "ZAJCI",
+"settlement": "ZAJCI",
 "settlement_id": 19152
 }
 },
@@ -7933,7 +7933,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "PETROVIJA",
+"settlement": "PETROVIJA",
 "settlement_id": 20688
 }
 },
@@ -7947,7 +7947,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "ČABRUNIĆI",
+"settlement": "ČABRUNIĆI",
 "settlement_id": 21456
 }
 },
@@ -7961,7 +7961,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "GRADINJE",
+"settlement": "GRADINJE",
 "settlement_id": 18897
 }
 },
@@ -7975,7 +7975,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "SAVUDRIJA",
+"settlement": "SAVUDRIJA",
 "settlement_id": 20689
 }
 },
@@ -7989,7 +7989,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "FOLI",
+"settlement": "FOLI",
 "settlement_id": 21457
 }
 },
@@ -8003,7 +8003,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "GRIMALDA",
+"settlement": "GRIMALDA",
 "settlement_id": 18898
 }
 },
@@ -8017,7 +8017,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "SEGET",
+"settlement": "SEGET",
 "settlement_id": 20690
 }
 },
@@ -8031,7 +8031,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "JURŠIĆI",
+"settlement": "JURŠIĆI",
 "settlement_id": 21458
 }
 },
@@ -8045,7 +8045,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "KORELIĆI",
+"settlement": "KORELIĆI",
 "settlement_id": 18899
 }
 },
@@ -8059,7 +8059,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "SVETA MARIJA NA KRASU-DIO",
+"settlement": "SVETA MARIJA NA KRASU-DIO",
 "settlement_id": 20691
 }
 },
@@ -8073,7 +8073,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "KRANJČIĆI",
+"settlement": "KRANJČIĆI",
 "settlement_id": 21459
 }
 },
@@ -8087,7 +8087,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "NOVAKI PAZINSKI",
+"settlement": "NOVAKI PAZINSKI",
 "settlement_id": 18900
 }
 },
@@ -8101,7 +8101,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "UMAG",
+"settlement": "UMAG",
 "settlement_id": 20692
 }
 },
@@ -8115,7 +8115,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "PAJKOVIĆI",
+"settlement": "PAJKOVIĆI",
 "settlement_id": 21460
 }
 },
@@ -8129,7 +8129,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "OSLIĆI",
+"settlement": "OSLIĆI",
 "settlement_id": 18901
 }
 },
@@ -8143,7 +8143,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "VALICA",
+"settlement": "VALICA",
 "settlement_id": 20693
 }
 },
@@ -8157,7 +8157,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "PERESIJI",
+"settlement": "PERESIJI",
 "settlement_id": 21461
 }
 },
@@ -8171,7 +8171,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "PAGUBICE",
+"settlement": "PAGUBICE",
 "settlement_id": 18902
 }
 },
@@ -8185,7 +8185,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "VARDICA",
+"settlement": "VARDICA",
 "settlement_id": 20694
 }
 },
@@ -8199,7 +8199,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "PUSTI",
+"settlement": "PUSTI",
 "settlement_id": 21462
 }
 },
@@ -8213,7 +8213,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "PREVIŽ",
+"settlement": "PREVIŽ",
 "settlement_id": 18903
 }
 },
@@ -8227,7 +8227,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "VILANIJA",
+"settlement": "VILANIJA",
 "settlement_id": 20695
 }
 },
@@ -8241,7 +8241,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "RAPONJI",
+"settlement": "RAPONJI",
 "settlement_id": 21463
 }
 },
@@ -8255,7 +8255,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "BAZGALJI",
+"settlement": "BAZGALJI",
 "settlement_id": 18904
 }
 },
@@ -8269,7 +8269,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "ZAMBRATIJA",
+"settlement": "ZAMBRATIJA",
 "settlement_id": 20696
 }
 },
@@ -8283,7 +8283,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "REŽANCI",
+"settlement": "REŽANCI",
 "settlement_id": 21464
 }
 },
@@ -8297,7 +8297,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "GRAČIŠĆE",
+"settlement": "GRAČIŠĆE",
 "settlement_id": 18905
 }
 },
@@ -8311,7 +8311,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Umag (Umago)",
-"settlment": "BRTONIGLA",
+"settlement": "BRTONIGLA",
 "settlement_id": 20697
 }
 },
@@ -8325,7 +8325,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "SALAMBATI",
+"settlement": "SALAMBATI",
 "settlement_id": 21465
 }
 },
@@ -8339,7 +8339,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "JAKAČIĆI",
+"settlement": "JAKAČIĆI",
 "settlement_id": 18906
 }
 },
@@ -8353,7 +8353,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "SMOLJANCI",
+"settlement": "SMOLJANCI",
 "settlement_id": 21466
 }
 },
@@ -8367,7 +8367,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "MANDALENČIĆI",
+"settlement": "MANDALENČIĆI",
 "settlement_id": 18907
 }
 },
@@ -8381,7 +8381,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "SVETVINČENAT",
+"settlement": "SVETVINČENAT",
 "settlement_id": 21467
 }
 },
@@ -8395,7 +8395,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "ŠKOPLJAK",
+"settlement": "ŠKOPLJAK",
 "settlement_id": 18908
 }
 },
@@ -8409,7 +8409,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "ŠTOKOVCI",
+"settlement": "ŠTOKOVCI",
 "settlement_id": 21468
 }
 },
@@ -8423,7 +8423,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "BERAM",
+"settlement": "BERAM",
 "settlement_id": 18909
 }
 },
@@ -8437,7 +8437,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "BALIĆI I",
+"settlement": "BALIĆI I",
 "settlement_id": 21469
 }
 },
@@ -8451,7 +8451,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "BERTOŠI",
+"settlement": "BERTOŠI",
 "settlement_id": 18910
 }
 },
@@ -8465,7 +8465,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "BENČIĆI",
+"settlement": "BENČIĆI",
 "settlement_id": 21470
 }
 },
@@ -8479,7 +8479,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "BRAJKOVIĆI",
+"settlement": "BRAJKOVIĆI",
 "settlement_id": 18911
 }
 },
@@ -8493,7 +8493,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "CERE",
+"settlement": "CERE",
 "settlement_id": 21471
 }
 },
@@ -8507,7 +8507,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "BUTONIGA",
+"settlement": "BUTONIGA",
 "settlement_id": 18912
 }
 },
@@ -8521,7 +8521,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "DEBELJUHI",
+"settlement": "DEBELJUHI",
 "settlement_id": 21472
 }
 },
@@ -8535,7 +8535,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "GRDOSELO",
+"settlement": "GRDOSELO",
 "settlement_id": 18913
 }
 },
@@ -8549,7 +8549,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "DOMIJANIĆI",
+"settlement": "DOMIJANIĆI",
 "settlement_id": 21473
 }
 },
@@ -8563,7 +8563,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "HEKI",
+"settlement": "HEKI",
 "settlement_id": 18914
 }
 },
@@ -8577,7 +8577,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "GRADIŠĆE",
+"settlement": "GRADIŠĆE",
 "settlement_id": 21474
 }
 },
@@ -8591,7 +8591,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "JEŽENJ",
+"settlement": "JEŽENJ",
 "settlement_id": 18915
 }
 },
@@ -8605,7 +8605,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "GRŽINI",
+"settlement": "GRŽINI",
 "settlement_id": 21475
 }
 },
@@ -8619,7 +8619,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "KAŠĆERGA",
+"settlement": "KAŠĆERGA",
 "settlement_id": 18916
 }
 },
@@ -8633,7 +8633,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "JURIĆI",
+"settlement": "JURIĆI",
 "settlement_id": 21476
 }
 },
@@ -8647,7 +8647,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "KRŠIKLA",
+"settlement": "KRŠIKLA",
 "settlement_id": 18917
 }
 },
@@ -8661,7 +8661,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "KARLOVIĆI",
+"settlement": "KARLOVIĆI",
 "settlement_id": 21477
 }
 },
@@ -8675,7 +8675,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "LINDAR",
+"settlement": "LINDAR",
 "settlement_id": 18918
 }
 },
@@ -8689,7 +8689,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "KLIMNI",
+"settlement": "KLIMNI",
 "settlement_id": 21478
 }
 },
@@ -8703,7 +8703,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "LOVRIN",
+"settlement": "LOVRIN",
 "settlement_id": 18919
 }
 },
@@ -8717,7 +8717,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "KRAJCAR BREG",
+"settlement": "KRAJCAR BREG",
 "settlement_id": 21479
 }
 },
@@ -8731,7 +8731,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "PAZIN",
+"settlement": "PAZIN",
 "settlement_id": 18920
 }
 },
@@ -8745,7 +8745,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "KRCULI",
+"settlement": "KRCULI",
 "settlement_id": 21480
 }
 },
@@ -8759,7 +8759,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "TRVIŽ",
+"settlement": "TRVIŽ",
 "settlement_id": 18921
 }
 },
@@ -8773,7 +8773,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "KRESINI",
+"settlement": "KRESINI",
 "settlement_id": 21481
 }
 },
@@ -8787,7 +8787,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "VELA TRABA",
+"settlement": "VELA TRABA",
 "settlement_id": 18922
 }
 },
@@ -8801,7 +8801,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "KRIŽANCI",
+"settlement": "KRIŽANCI",
 "settlement_id": 21482
 }
 },
@@ -8815,7 +8815,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "ZABREŽANI",
+"settlement": "ZABREŽANI",
 "settlement_id": 18923
 }
 },
@@ -8829,7 +8829,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Rovinj (Rovigno)",
-"settlment": "BALE",
+"settlement": "BALE",
 "settlement_id": 19691
 }
 },
@@ -8843,7 +8843,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "KRNIČARI",
+"settlement": "KRNIČARI",
 "settlement_id": 21483
 }
 },
@@ -8857,7 +8857,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "ZAMASK",
+"settlement": "ZAMASK",
 "settlement_id": 18924
 }
 },
@@ -8871,7 +8871,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Rovinj (Rovigno)",
-"settlment": "KRMED",
+"settlement": "KRMED",
 "settlement_id": 19692
 }
 },
@@ -8885,7 +8885,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "KRŠANCI",
+"settlement": "KRŠANCI",
 "settlement_id": 21484
 }
 },
@@ -8899,7 +8899,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "ZAMASKI DOL",
+"settlement": "ZAMASKI DOL",
 "settlement_id": 18925
 }
 },
@@ -8913,7 +8913,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Rovinj (Rovigno)",
-"settlment": "ROVINJ",
+"settlement": "ROVINJ",
 "settlement_id": 19693
 }
 },
@@ -8927,7 +8927,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "LAGINJI",
+"settlement": "LAGINJI",
 "settlement_id": 21485
 }
 },
@@ -8941,7 +8941,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "ZAREČJE",
+"settlement": "ZAREČJE",
 "settlement_id": 18926
 }
 },
@@ -8955,7 +8955,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Rovinj (Rovigno)",
-"settlment": "ROVINJSKO SELO",
+"settlement": "ROVINJSKO SELO",
 "settlement_id": 19694
 }
 },
@@ -8969,7 +8969,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "MATIJAŠI",
+"settlement": "MATIJAŠI",
 "settlement_id": 21486
 }
 },
@@ -8983,7 +8983,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "GROBNIK",
+"settlement": "GROBNIK",
 "settlement_id": 18927
 }
 },
@@ -8997,7 +8997,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Rovinj (Rovigno)",
-"settlment": "BARBARIGA",
+"settlement": "BARBARIGA",
 "settlement_id": 19695
 }
 },
@@ -9011,7 +9011,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "MODRUŠANI",
+"settlement": "MODRUŠANI",
 "settlement_id": 21487
 }
 },
@@ -9025,7 +9025,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "KUKURINI",
+"settlement": "KUKURINI",
 "settlement_id": 18928
 }
 },
@@ -9039,7 +9039,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Rovinj (Rovigno)",
-"settlment": "RAKALJ",
+"settlement": "RAKALJ",
 "settlement_id": 19696
 }
 },
@@ -9053,7 +9053,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "MUŽINI",
+"settlement": "MUŽINI",
 "settlement_id": 21488
 }
 },
@@ -9067,7 +9067,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "MONTOVANI",
+"settlement": "MONTOVANI",
 "settlement_id": 18929
 }
 },
@@ -9081,7 +9081,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "ORBANIĆI",
+"settlement": "ORBANIĆI",
 "settlement_id": 21489
 }
 },
@@ -9095,7 +9095,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "ORIČ",
+"settlement": "ORIČ",
 "settlement_id": 18930
 }
 },
@@ -9109,7 +9109,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "PAMIĆI",
+"settlement": "PAMIĆI",
 "settlement_id": 21490
 }
 },
@@ -9123,7 +9123,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "PIĆAN",
+"settlement": "PIĆAN",
 "settlement_id": 18931
 }
 },
@@ -9137,7 +9137,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "PIFARI",
+"settlement": "PIFARI",
 "settlement_id": 21491
 }
 },
@@ -9151,7 +9151,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "SVETA KATARINA",
+"settlement": "SVETA KATARINA",
 "settlement_id": 18932
 }
 },
@@ -9165,7 +9165,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "PRKAČINI",
+"settlement": "PRKAČINI",
 "settlement_id": 21492
 }
 },
@@ -9179,7 +9179,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "BRČIĆI",
+"settlement": "BRČIĆI",
 "settlement_id": 18933
 }
 },
@@ -9193,7 +9193,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "PUCIĆI",
+"settlement": "PUCIĆI",
 "settlement_id": 21493
 }
 },
@@ -9207,7 +9207,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "BREČEVIĆI",
+"settlement": "BREČEVIĆI",
 "settlement_id": 18934
 }
 },
@@ -9221,7 +9221,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "RUDANI",
+"settlement": "RUDANI",
 "settlement_id": 21494
 }
 },
@@ -9235,7 +9235,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "JAKOVICI",
+"settlement": "JAKOVICI",
 "settlement_id": 18935
 }
 },
@@ -9249,7 +9249,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "ŠIVATI",
+"settlement": "ŠIVATI",
 "settlement_id": 21495
 }
 },
@@ -9263,7 +9263,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Duga Uvala",
-"settlment": "MARČANA",
+"settlement": "MARČANA",
 "settlement_id": 8184
 }
 },
@@ -9277,7 +9277,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "KRINGA",
+"settlement": "KRINGA",
 "settlement_id": 18936
 }
 },
@@ -9291,7 +9291,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "TOMIŠIĆI",
+"settlement": "TOMIŠIĆI",
 "settlement_id": 21496
 }
 },
@@ -9305,7 +9305,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Duga Uvala",
-"settlment": "DUGA UVALA",
+"settlement": "DUGA UVALA",
 "settlement_id": 8185
 }
 },
@@ -9319,7 +9319,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "MUNTRILJ",
+"settlement": "MUNTRILJ",
 "settlement_id": 18937
 }
 },
@@ -9333,7 +9333,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "VADEDIJI",
+"settlement": "VADEDIJI",
 "settlement_id": 21497
 }
 },
@@ -9347,7 +9347,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "RADETIĆI",
+"settlement": "RADETIĆI",
 "settlement_id": 18938
 }
 },
@@ -9361,7 +9361,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "VIDULINI",
+"settlement": "VIDULINI",
 "settlement_id": 21498
 }
 },
@@ -9375,7 +9375,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "TINJAN",
+"settlement": "TINJAN",
 "settlement_id": 18939
 }
 },
@@ -9389,7 +9389,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "ZECI",
+"settlement": "ZECI",
 "settlement_id": 21499
 }
 },
@@ -9403,7 +9403,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "ŽUŽIĆI",
+"settlement": "ŽUŽIĆI",
 "settlement_id": 18940
 }
 },
@@ -9417,7 +9417,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "ŽAGRIĆI",
+"settlement": "ŽAGRIĆI",
 "settlement_id": 21500
 }
 },
@@ -9431,7 +9431,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Pazin",
-"settlment": "BOLJUN",
+"settlement": "BOLJUN",
 "settlement_id": 18941
 }
 },
@@ -9445,7 +9445,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Žminj",
-"settlment": "ŽMINJ",
+"settlement": "ŽMINJ",
 "settlement_id": 21501
 }
 },
@@ -9459,7 +9459,7 @@ export let testObject = [
 "area": null,
 "sub_area": "Istra",
 "place": "Poreč (Parenzo)",
-"settlment": "FUNTANA",
+"settlement": "FUNTANA",
 "settlement_id": 19199
 }
 },
@@ -9472,7 +9472,7 @@ export let testObject = [
 "area": null,
 "sub_area": null,
 "place": null,
-"settlment": null,
+"settlement": null,
 "object_id": "15167"
 },
 "subtitle": "Old istrian Home Martina, Croatia, Poreč, Kosinožići 1"
