@@ -17,9 +17,9 @@ const settlement_id = document.querySelector('#settlement_id');
 function showHideList(){
     //show list on widget click
     optionInput.addEventListener('click',()=>{
-        optionList.classList.toggle('show-block');
+        optionList.classList.add('show-block');
         setTimeout(() => {
-            optionList.classList.toggle('show-transition');
+            optionList.classList.add('show-transition');
         }, 50);
     })
 
@@ -150,4 +150,11 @@ export default function searchWidget(arr){
 });
 }
 searchWidget(testObject);
-// MAIN FUNCTION, FOR EXPORT 
+// MAIN FUNCTION, FOR EXPORT
+
+// get AJAX response
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {};
+xhr.open('GET', 'http://www.google.com');
+xhr.send()
+// get AJAX response
