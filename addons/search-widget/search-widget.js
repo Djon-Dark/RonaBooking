@@ -154,7 +154,12 @@ searchWidget(testObject);
 
 // get AJAX response
 var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function() {};
-xhr.open('GET', 'http://www.google.com');
-xhr.send()
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4){
+        //document.getElementById('result').innerHTML = xhr.responseText;
+        console.log(xhr.responseText);
+    }
+};
+xhr.open('GET', './testObject.txt');
+xhr.send();
 // get AJAX response
