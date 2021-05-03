@@ -57,11 +57,13 @@ function showHideList(){
 }
 showHideList();
 
+// URL OF JSON WITH SEARCH RESULTS
+const url = './testObject.JSON';
 
-
-
-
-
+fetch(url)
+.then(res => res.json())
+.then(data => {searchWidget(data)})
+.catch(err => console.error(err));
 
 // MAIN FUNCTION, FOR EXPORT
 export default function searchWidget(arr){
@@ -155,31 +157,5 @@ export default function searchWidget(arr){
     })
 });
 }
-//searchWidget(testObject);
 // MAIN FUNCTION, FOR EXPORT
 
-
-
-
-
-// get AJAX response
-/*
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4){
-        //document.getElementById('result').innerHTML = xhr.responseText;
-        go = xhr.responseText;
-    }
-};
-xhr.open('GET', './testObject.txt');
-xhr.send();
-*/
-// get AJAX response
-
-
-const url = './testObject.JSON';
-
-fetch('./testObject.JSON')
-.then(res => res.json())
-.then(data => {console.log(data)})
-.catch(err => console.error(err));

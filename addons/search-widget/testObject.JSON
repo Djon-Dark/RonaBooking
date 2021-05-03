@@ -6,11 +6,11 @@
 "subtitle": "Islands",
 "terms": {
 "destination": "Islands",
-"area": 'testArea',
-"sub_area": 'testSubArea',
-"place": 'testPlace',
-"settlement": 'testsettlement',
-"settlement_id": 'testsettlementId'
+"area": "testArea",
+"sub_area": "testSubArea",
+"place": "testPlace",
+"settlement": "testsettlement",
+"settlement_id": "testsettlementId"
 }
 },
 {
